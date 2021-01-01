@@ -17,6 +17,7 @@
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using MupenSharp.Attributes;
+using MupenSharp.Base;
 using MupenSharp.Enums;
 
 // Header information: http://tasvideos.org/EmulatorResources/Mupen/M64.html

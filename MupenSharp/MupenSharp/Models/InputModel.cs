@@ -19,6 +19,7 @@ using System.Globalization;
 using System.Linq;
 using JetBrains.Annotations;
 using MupenSharp.Attributes;
+using MupenSharp.Base;
 using MupenSharp.Extensions;
 using MupenSharp.Resources;
 

@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace MupenSharp.Attributes
+namespace MupenSharp.Base
 {
   public abstract class PropertyChangedBase : INotifyPropertyChanged
   {
