@@ -1,5 +1,5 @@
 # MupenSharp
-![Nuget](https://img.shields.io/nuget/v/MupenSharp)
+![Nuget](https://img.shields.io/nuget/v/MupenSharp) ![nuget build](https://github.com/TimeTravelPenguin/MupenSharp/workflows/publish%20to%20nuget/badge.svg)
 
 MupenSharp is a .Net Standard library to interface with .m64 files for reading and writing.
 
