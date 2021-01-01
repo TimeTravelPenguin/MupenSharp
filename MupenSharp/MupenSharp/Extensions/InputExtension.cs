@@ -2,15 +2,15 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenMovieEditor
+// Solution: MupenSharp
 // Project: MupenSharp
 // File Name: InputExtension.cs
 // 
 // Current Data:
-// 2020-05-12 5:11 PM
+// 2021-01-01 10:44 PM
 // 
 // Creation Date:
-// 2020-05-12 5:07 PM
+// 2021-01-01 8:04 PM
 
 #endregion
 

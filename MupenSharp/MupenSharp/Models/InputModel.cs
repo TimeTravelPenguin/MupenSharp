@@ -2,15 +2,15 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenMovieEditor
+// Solution: MupenSharp
 // Project: MupenSharp
 // File Name: InputModel.cs
 // 
 // Current Data:
-// 2020-06-15 2:01 PM
+// 2021-01-01 10:44 PM
 // 
 // Creation Date:
-// 2020-05-12 5:07 PM
+// 2021-01-01 8:04 PM
 
 #endregion
 
@@ -18,7 +18,6 @@ using System;
 using System.Globalization;
 using System.Linq;
 using JetBrains.Annotations;
-using MupenSharp.Attributes;
 using MupenSharp.Base;
 using MupenSharp.Extensions;
 using MupenSharp.Resources;

@@ -2,15 +2,15 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenMovieEditor
+// Solution: MupenSharp
 // Project: MupenSharp
 // File Name: ITas.cs
 // 
 // Current Data:
-// 2020-06-15 1:50 PM
+// 2021-01-01 10:44 PM
 // 
 // Creation Date:
-// 2020-06-15 1:46 PM
+// 2021-01-01 8:04 PM
 
 #endregion
 
@@ -18,7 +18,6 @@ namespace MupenSharp.Models
 {
   public interface ITas
   {
-    // TODO: Implement missing properties
     string Author { get; set; }
     uint InputFrames { get; set; }
   }

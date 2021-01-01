@@ -2,22 +2,21 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenMovieEditor
+// Solution: MupenSharp
 // Project: MupenSharp
 // File Name: StringEncodingAttribute.cs
 // 
 // Current Data:
-// 2020-05-13 7:36 PM
+// 2021-01-01 10:44 PM
 // 
 // Creation Date:
-// 2020-05-13 5:41 PM
+// 2021-01-01 8:04 PM
 
 #endregion
 
 using System;
 using JetBrains.Annotations;
 using MupenSharp.Enums;
-using MupenSharp.FileParsing;
 
 namespace MupenSharp.Attributes
 {

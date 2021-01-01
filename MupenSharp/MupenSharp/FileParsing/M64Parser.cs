@@ -2,15 +2,15 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenMovieEditor
+// Solution: MupenSharp
 // Project: MupenSharp
 // File Name: M64Parser.cs
 // 
 // Current Data:
-// 2020-06-09 10:26 PM
+// 2021-01-01 10:44 PM
 // 
 // Creation Date:
-// 2020-05-12 5:22 PM
+// 2021-01-01 8:04 PM
 
 #endregion
 
@@ -81,7 +81,7 @@ namespace MupenSharp.FileParsing
       reader.BaseStream.Seek(0x400, SeekOrigin.Begin);
       while (reader.BaseStream.Position != reader.BaseStream.Length && frame < m64.InputFrames)
       {
-        m64.Inputs.Add((InputModel)reader.ReadBytes(4));
+        m64.Inputs.Add((InputModel) reader.ReadBytes(4));
         frame++;
       }
 

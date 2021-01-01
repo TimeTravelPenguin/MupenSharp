@@ -2,21 +2,22 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenMovieEditor
+// Solution: MupenSharp
 // Project: MupenSharp
 // File Name: RegionCode.cs
 // 
 // Current Data:
-// 2020-07-14 10:59 AM
+// 2021-01-01 10:44 PM
 // 
 // Creation Date:
-// 2020-06-10 11:37 AM
+// 2021-01-01 8:04 PM
 
 #endregion
 
 namespace MupenSharp.Enums
 {
   // These are based off the ROM CRC
+  // These are obsolete and are specific only to SM64
   public enum RegionCode : uint
   {
     U = 0xFF2B5A63,

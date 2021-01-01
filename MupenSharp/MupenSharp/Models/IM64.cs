@@ -2,12 +2,12 @@
 
 // Name: Phillip Smith
 // 
-// Solution: ClassLibrary1
+// Solution: MupenSharp
 // Project: MupenSharp
 // File Name: IM64.cs
 // 
 // Current Data:
-// 2021-01-01 8:34 PM
+// 2021-01-01 10:44 PM
 // 
 // Creation Date:
 // 2021-01-01 8:04 PM

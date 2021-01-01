@@ -2,15 +2,15 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenMovieEditor
+// Solution: MupenSharp
 // Project: MupenSharp
 // File Name: M64ParserExtensions.cs
 // 
 // Current Data:
-// 2020-06-09 10:33 PM
+// 2021-01-01 10:44 PM
 // 
 // Creation Date:
-// 2020-05-13 10:27 AM
+// 2021-01-01 8:04 PM
 
 #endregion
 
