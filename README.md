@@ -1,7 +1,7 @@
 # MupenSharp
 ![Nuget](https://img.shields.io/nuget/v/MupenSharp)
 
-.Net Standard library to interface with .m64 files for reading and writing.
+MupenSharp is a .Net Standard library to interface with .m64 files for reading and writing.
 
 This library is designed to assist in reading and writing .m64 files for the Mupen64 application. By using MupenSharp, you do not need to manually process the file's header or encoding types, as it is all maintained within this library.
 
