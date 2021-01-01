@@ -22,3 +22,44 @@ For more specific information on the filetype's header layout, please refer to t
 - ### Why make MupenSharp?
 
   There are several applications that exist that allow a user to edit or combine files, such as the .m64 editor built into the TAS tool [STROOP](https://github.com/SM64-TAS-ABC/STROOP), which is used by the SM64 TASing community. The goal of this library is to provide a simple interface for all future applications to manage these files.
+
+## How to use?
+
+In order to read a .m64 file, you can do the following:
+
+```cs
+M64Parser parser = new M64Parser();
+string file = "C://path/to/file.m64";
+M64 m64 = parser.Parse(file);
+
+Console.WriteLine($"Author(s): {m64.Author}");
+Console.WriteLine($"ROM name: {m64.NameOfRom}");
+
+var frameCount = 1;
+foreach (var inputFrame in m64.Inputs)
+{
+    var inputs = string.Join(", ", inputFrame.GetInputs());
+    Console.WriteLine($"Frame {frameCount++}:\t{inputs}");
+}
+```
+
+An example console output would be:
+
+```console
+Author(s): Phillip Smith
+ROM name: SUPER MARIO 64
+
+Frame 1:
+Frame 2:
+Frame 3:        Start
+Frame 4:        Start
+Frame 5:        Start
+...
+Frame 277:      R, A
+Frame 278:      R, A
+Frame 279:      R, B, A
+Frame 280:      R
+Frame 281:      R
+Frame 282:      R
+```
+
