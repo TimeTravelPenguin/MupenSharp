@@ -38,8 +38,7 @@ Console.WriteLine($"ROM name: {m64.NameOfRom}");
 var frameCount = 1;
 foreach (var inputFrame in m64.Inputs)
 {
-    var inputs = string.Join(", ", inputFrame.GetInputs());
-    Console.WriteLine($"Frame {frameCount++}:\t{inputs}");
+    Console.WriteLine($"Frame {frameCount++}:\t{inputFrame}");
 }
 ```
 
@@ -49,17 +48,19 @@ An example console output would be:
 Author(s): Phillip Smith
 ROM name: SUPER MARIO 64
 
-Frame 1:
-Frame 2:
-Frame 3:        Start
-Frame 4:        Start
-Frame 5:        Start
+Frame 1:        (0, 0)
+Frame 2:        (0, 0)
+Frame 3:        (0, 0) Start
+Frame 4:        (0, 0) Start
+Frame 5:        (0, 0) Start
 ...
-Frame 277:      R, A
-Frame 278:      R, A
-Frame 279:      R, B, A
-Frame 280:      R
-Frame 281:      R
-Frame 282:      R
+Frame 259:      (-10, 127)
+Frame 260:      (-10, 127) B
+Frame 261:      (-21, 127) R
+Frame 262:      (-30, 127) R
+Frame 263:      (-35, 127) R
+Frame 264:      (13, 127) R, B
+Frame 265:      (13, 127) R, B
+Frame 266:      (13, 127) R, B
 ```
 
