@@ -2,15 +2,15 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenMovieEditor
 // Project: MupenSharp
 // File Name: InputModel.cs
 // 
 // Current Data:
-// 2021-01-01 10:44 PM
+// 2021-01-01 11:48 PM
 // 
 // Creation Date:
-// 2021-01-01 8:04 PM
+// 2021-01-01 11:21 PM
 
 #endregion
 
@@ -88,7 +88,34 @@ namespace MupenSharp.Models
     }
 
     /// <summary>
-    ///   Implicitly converts a <see cref="byte" /> array into an InputModel
+    ///   Override to return string of analogue inputs and buttons pressed
+    /// </summary>
+    /// <returns></returns>
+    public override string ToString()
+    {
+      return $"{GetAnalogueInputs()} {GetButtons()}";
+    }
+
+    /// <summary>
+    ///   Returns a string of pressed button inputs
+    /// </summary>
+    /// <returns></returns>
+    public string GetButtons()
+    {
+      return this.GetInputs().Join(", ");
+    }
+
+    /// <summary>
+    ///   Returns a string of pressed analogue inputs
+    /// </summary>
+    /// <returns></returns>
+    public string GetAnalogueInputs()
+    {
+      return $"({Convert.ToInt32(X)}, {Convert.ToInt32(Y)})";
+    }
+
+    /// <summary>
+    ///   Implicitly converts a <see cref="byte" /> array into an <see cref="InputModel" />.
     /// </summary>
     /// <param name="input"></param>
     public static explicit operator InputModel(byte[] input)
@@ -107,13 +134,9 @@ namespace MupenSharp.Models
       return new InputModel(input);
     }
 
-    public override string ToString()
-    {
-      return $"({Convert.ToInt32(X)},{Convert.ToInt32(Y)}) {this.GetInputs().Join(", ")}";
-    }
 
     /// <summary>
-    ///   Explicitly converts a
+    ///   Explicitly converts an <see cref="InputModel" /> array into a <see cref="byte" />.
     /// </summary>
     /// <param name="input"></param>
     public static explicit operator byte[]([NotNull] InputModel input)
