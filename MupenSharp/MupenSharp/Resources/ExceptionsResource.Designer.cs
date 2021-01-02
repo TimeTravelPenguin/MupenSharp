@@ -79,11 +79,29 @@ namespace MupenSharp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The file path has not been set.
+        /// </summary>
+        internal static string FilePathNotSet {
+            get {
+                return ResourceManager.GetString("FilePathNotSet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The array is of an invalid length. The byte[] should be of length 4..
         /// </summary>
         internal static string InputArrayInvalidLength {
             get {
                 return ResourceManager.GetString("InputArrayInvalidLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The given encoding type is invalid.
+        /// </summary>
+        internal static string InvalidEncodingType {
+            get {
+                return ResourceManager.GetString("InvalidEncodingType", resourceCulture);
             }
         }
         

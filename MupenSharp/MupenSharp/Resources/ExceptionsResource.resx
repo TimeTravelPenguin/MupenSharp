@@ -124,10 +124,16 @@
   <data name="CannotBeNullOrWhitespace" xml:space="preserve">
     <value>Value cannot be null or whitespace.</value>
   </data>
+  <data name="FilePathNotSet" xml:space="preserve">
+    <value>The file path has not been set</value>
+  </data>
   <data name="InputArrayInvalidLength" xml:space="preserve">
     <value>The array is of an invalid length. The byte[] should be of length 4.</value>
   </data>
   <data name="InvalidFilePath" xml:space="preserve">
     <value>The file path is invalid.</value>
+  </data>
+  <data name="InvalidEncodingType" xml:space="preserve">
+	  <value>The given encoding type is invalid</value>
   </data>
 </root>
