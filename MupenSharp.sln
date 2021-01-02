@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MupenSharp", "MupenSharp.csproj", "{5459CC25-7D7B-43F1-9A18-4689EE04E760}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MupenSharp", "MupenSharp\MupenSharp\MupenSharp.csproj", "{5459CC25-7D7B-43F1-9A18-4689EE04E760}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MupenSharp.Tests", "..\MupenSharp.Tests\MupenSharp.Tests.csproj", "{CB91FF08-114B-40E6-9CFA-1F2A79C9EC95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MupenSharp.Tests", "MupenSharp\MupenSharp.Tests\MupenSharp.Tests.csproj", "{CB91FF08-114B-40E6-9CFA-1F2A79C9EC95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
