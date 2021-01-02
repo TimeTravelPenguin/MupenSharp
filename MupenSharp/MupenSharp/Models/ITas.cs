@@ -16,6 +16,9 @@
 
 namespace MupenSharp.Models
 {
+  /// <summary>
+  /// Tool-Assisted Speedrun Interface
+  /// </summary>
   public interface ITas
   {
     string Author { get; set; }

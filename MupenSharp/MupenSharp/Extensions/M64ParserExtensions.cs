@@ -7,10 +7,10 @@
 // File Name: M64ParserExtensions.cs
 // 
 // Current Data:
-// 2021-01-01 10:44 PM
+// 2021-01-02 10:48 PM
 // 
 // Creation Date:
-// 2021-01-01 8:04 PM
+// 2021-01-02 8:56 PM
 
 #endregion
 
@@ -25,6 +25,11 @@ using MupenSharp.Resources;
 
 namespace MupenSharp.Extensions
 {
+  // TODO: Refactor methods with an offset and stream length for explicit header read
+
+  /// <summary>
+  ///   Extension methods for <see cref="M64Parser" />.
+  /// </summary>
   public static class M64ParserExtensions
   {
     public static uint ReadBytesAndConvertUInt32([NotNull] this BinaryReader reader, long offset)

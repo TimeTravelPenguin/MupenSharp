@@ -7,10 +7,10 @@
 // File Name: M64.cs
 // 
 // Current Data:
-// 2021-01-01 10:44 PM
+// 2021-01-02 11:13 PM
 // 
 // Creation Date:
-// 2021-01-01 8:04 PM
+// 2021-01-02 8:56 PM
 
 #endregion
 
@@ -20,11 +20,12 @@ using MupenSharp.Attributes;
 using MupenSharp.Base;
 using MupenSharp.Enums;
 
-// Header information: http://tasvideos.org/EmulatorResources/Mupen/M64.html
 namespace MupenSharp.Models
 {
   /// <summary>
   ///   Stores data of a .m64 file.
+  ///   Refer to the <see href="http://tasvideos.org/EmulatorResources/Mupen/M64.html">header documentation</see> for more
+  ///   information.
   /// </summary>
   public class M64 : PropertyChangedBase, ITas, IM64
   {
@@ -217,6 +218,9 @@ namespace MupenSharp.Models
       set => SetValue(ref _author, value);
     }
 
+    /// <summary>
+    ///   Object wrapper to encapsulate the data of a .m64 file
+    /// </summary>
     public M64()
     {
       // Notify change when Inputs notifies change

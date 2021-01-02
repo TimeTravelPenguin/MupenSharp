@@ -7,10 +7,10 @@
 // File Name: M64Parser.cs
 // 
 // Current Data:
-// 2021-01-01 10:44 PM
+// 2021-01-02 11:02 PM
 // 
 // Creation Date:
-// 2021-01-01 8:04 PM
+// 2021-01-02 8:56 PM
 
 #endregion
 
@@ -23,10 +23,17 @@ using MupenSharp.Resources;
 
 namespace MupenSharp.FileParsing
 {
+  /// <summary>
+  ///   Parser object that can read and write a .m64 file
+  /// </summary>
   public class M64Parser
   {
     private FileInfo _mupenFile;
 
+    /// <summary>
+    ///   Sets the file path of the .m64 file to read
+    /// </summary>
+    /// <param name="path"></param>
     public void SetFile(string path)
     {
       if (string.IsNullOrWhiteSpace(path))
@@ -45,20 +52,39 @@ namespace MupenSharp.FileParsing
       }
     }
 
+    /// <summary>
+    ///   Parses the file <paramref name="path" />.
+    /// </summary>
+    /// <param name="path">The path of the .m64 file</param>
+    /// <returns>Returns object with data of parsed file</returns>
     public M64 Parse(string path)
     {
       SetFile(path);
       return Parse();
     }
 
+    /// <summary>
+    ///   Parses the set file
+    /// </summary>
+    /// <returns>Returns object with data of parsed file</returns>
     public M64 Parse()
     {
+      /* TODO: Implement header validation to check for:
+        1. A valid .m64 file for Mupen.
+        2. Validate file version, header properties and length
+      */
+
+      if (_mupenFile is null)
+      {
+        throw new NullReferenceException(ExceptionsResource.FilePathNotSet);
+      }
+
       if (!_mupenFile.Exists)
       {
         throw new FileNotFoundException(ExceptionsResource.InvalidFilePath, nameof(_mupenFile));
       }
 
-      using var reader = new BinaryReader(_mupenFile.Open(FileMode.Open, FileAccess.Read));
+      using var reader = new BinaryReader(_mupenFile?.Open(FileMode.Open, FileAccess.Read));
 
       var m64 = new M64
       {

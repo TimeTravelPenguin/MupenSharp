@@ -16,8 +16,9 @@
 
 namespace MupenSharp.Enums
 {
-  // These are based off the ROM CRC
-  // These are obsolete and are specific only to SM64
+  /// <summary>
+  /// Known region codes for SM64 --- OBSOLETE
+  /// </summary>
   public enum RegionCode : uint
   {
     U = 0xFF2B5A63,

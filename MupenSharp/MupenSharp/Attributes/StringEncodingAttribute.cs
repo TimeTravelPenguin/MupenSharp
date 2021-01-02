@@ -7,10 +7,10 @@
 // File Name: StringEncodingAttribute.cs
 // 
 // Current Data:
-// 2021-01-01 10:44 PM
+// 2021-01-02 10:41 PM
 // 
 // Creation Date:
-// 2021-01-01 8:04 PM
+// 2021-01-02 8:56 PM
 
 #endregion
 

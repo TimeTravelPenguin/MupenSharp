@@ -7,10 +7,10 @@
 // File Name: PropertyChangedBase.cs
 // 
 // Current Data:
-// 2021-01-01 10:44 PM
+// 2021-01-02 10:41 PM
 // 
 // Creation Date:
-// 2021-01-01 9:29 PM
+// 2021-01-02 8:56 PM
 
 #endregion
 
@@ -21,6 +21,9 @@ using System.Runtime.CompilerServices;
 
 namespace MupenSharp.Base
 {
+  /// <summary>
+  ///   Base class to implement INPC
+  /// </summary>
   public abstract class PropertyChangedBase : INotifyPropertyChanged
   {
     public event PropertyChangedEventHandler PropertyChanged;

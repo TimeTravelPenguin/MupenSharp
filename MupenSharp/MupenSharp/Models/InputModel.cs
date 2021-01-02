@@ -2,15 +2,15 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenMovieEditor
+// Solution: MupenSharp
 // Project: MupenSharp
 // File Name: InputModel.cs
 // 
 // Current Data:
-// 2021-01-01 11:48 PM
+// 2021-01-02 11:10 PM
 // 
 // Creation Date:
-// 2021-01-01 11:21 PM
+// 2021-01-02 8:56 PM
 
 #endregion
 
@@ -24,10 +24,24 @@ using MupenSharp.Resources;
 
 namespace MupenSharp.Models
 {
+  /// <summary>
+  ///   A wrapper for controller input for a particular frame
+  /// </summary>
   public class InputModel : PropertyChangedBase
   {
+    /// <summary>
+    ///   The analogue x coordinate
+    /// </summary>
     public sbyte X { get; set; }
+
+    /// <summary>
+    ///   The analogue y coordinate
+    /// </summary>
     public sbyte Y { get; set; }
+
+    /// <summary>
+    ///   The array of bytes representing the combination of buttons pressed
+    /// </summary>
     public ushort Buttons { get; set; }
 
     /// <summary>
