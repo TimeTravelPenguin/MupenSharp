@@ -115,6 +115,15 @@ namespace MupenSharp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The given file is not a m64 file.
+        /// </summary>
+        internal static string NotM64 {
+            get {
+                return ResourceManager.GetString("NotM64", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &apos;{0}&apos; is null.
         /// </summary>
         internal static string NullReference {

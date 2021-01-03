@@ -145,4 +145,7 @@
   <data name="NullReference" xml:space="preserve">
     <value>'{0}' is null</value>
   </data>
+  <data name="NotM64" xml:space="preserve">
+    <value>The given file is not a m64 file</value>
+  </data>
 </root>
