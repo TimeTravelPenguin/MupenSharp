@@ -7,17 +7,18 @@
 // File Name: M64Parser.cs
 // 
 // Current Data:
-// 2021-01-02 11:02 PM
+// 2021-01-03 8:48 PM
 // 
 // Creation Date:
-// 2021-01-02 8:56 PM
+// 2021-01-02 11:17 PM
 
 #endregion
 
 using System;
+using System.Globalization;
 using System.IO;
-using MupenSharp.Enums;
-using MupenSharp.Extensions;
+using System.Linq;
+using MupenSharp.FileParsing.Parsers;
 using MupenSharp.Models;
 using MupenSharp.Resources;
 
@@ -28,7 +29,9 @@ namespace MupenSharp.FileParsing
   /// </summary>
   public class M64Parser
   {
+    private readonly M64ParserFactory _parserFactory = new M64ParserFactory();
     private FileInfo _mupenFile;
+    private IParser _parser = new MupenNullParser();
 
     /// <summary>
     ///   Sets the file path of the .m64 file to read
@@ -50,6 +53,27 @@ namespace MupenSharp.FileParsing
         _mupenFile = null;
         throw new FileNotFoundException(ExceptionsResource.InvalidFilePath, nameof(path));
       }
+
+      _parser = _parserFactory.CreateFromVersion(_mupenFile);
+    }
+
+    /// <summary>
+    ///   Checks the first four bytes of a file to validate it is a mupen file. Should be
+    ///   <see cref="Constants.ValidM64Signature" /> ("M64\x1A").
+    /// </summary>
+    /// <returns>Returns true if the file is a valid m64.</returns>
+    public bool ValidateM64File()
+    {
+      if (_mupenFile is null)
+      {
+        throw new NullReferenceException(string.Format(CultureInfo.InvariantCulture, ExceptionsResource.NullReference,
+          nameof(_mupenFile)));
+      }
+
+      using var reader = new BinaryReader(_mupenFile?.Open(FileMode.Open, FileAccess.Read));
+      var signature = reader.ReadBytes(4);
+
+      return signature.SequenceEqual(Constants.ValidM64Signature);
     }
 
     /// <summary>
@@ -69,49 +93,7 @@ namespace MupenSharp.FileParsing
     /// <returns>Returns object with data of parsed file</returns>
     public M64 Parse()
     {
-      /* TODO: Implement header validation to check for:
-        1. A valid .m64 file for Mupen.
-        2. Validate file version, header properties and length
-      */
-
-      if (_mupenFile is null)
-      {
-        throw new NullReferenceException(ExceptionsResource.FilePathNotSet);
-      }
-
-      if (!_mupenFile.Exists)
-      {
-        throw new FileNotFoundException(ExceptionsResource.InvalidFilePath, nameof(_mupenFile));
-      }
-
-      using var reader = new BinaryReader(_mupenFile?.Open(FileMode.Open, FileAccess.Read));
-
-      var m64 = new M64
-      {
-        Version = reader.ReadBytesAndConvertUInt32(0x4),
-        VerticalInterrupts = reader.ReadBytesAndConvertUInt32(0xC),
-        RerecordCount = reader.ReadBytesAndConvertUInt32(0x10),
-        ViPerSecond = reader.ReadByte(0x15),
-        NumberOfControllers = reader.ReadByte(0x16),
-        InputFrames = reader.ReadBytesAndConvertUInt32(0x18),
-        MovieStartType = reader.ReadBytesAndConvertUInt16(0x1C),
-        ControllerFlags = reader.ReadBytesAndConvertUInt32(0x20),
-        NameOfRom = reader.ReadBytesAndConvertString(0xC4, Encoding.ASCII),
-        Crc32 = reader.ReadBytesAndConvertUInt32(0xE4),
-        CountryCode = reader.ReadBytesAndConvertUInt16(0xE8),
-        Author = reader.ReadBytesAndConvertString(0x222, Encoding.UTF8),
-        MovieDescription = reader.ReadBytesAndConvertString(0x300, Encoding.UTF8)
-      };
-
-      var frame = 0;
-      reader.BaseStream.Seek(0x400, SeekOrigin.Begin);
-      while (reader.BaseStream.Position != reader.BaseStream.Length && frame < m64.InputFrames)
-      {
-        m64.Inputs.Add((InputModel) reader.ReadBytes(4));
-        frame++;
-      }
-
-      return m64;
+      return _parser.Parse(_mupenFile);
     }
   }
 }

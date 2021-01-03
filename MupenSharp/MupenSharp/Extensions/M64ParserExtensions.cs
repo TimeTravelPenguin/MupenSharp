@@ -7,10 +7,10 @@
 // File Name: M64ParserExtensions.cs
 // 
 // Current Data:
-// 2021-01-02 10:48 PM
+// 2021-01-03 8:18 PM
 // 
 // Creation Date:
-// 2021-01-02 8:56 PM
+// 2021-01-02 11:17 PM
 
 #endregion
 
@@ -32,6 +32,25 @@ namespace MupenSharp.Extensions
   /// </summary>
   public static class M64ParserExtensions
   {
+    public static byte[] ReadBytes([NotNull] this BinaryReader reader, long offset, long length)
+    {
+      if (reader is null)
+      {
+        throw new ArgumentNullException(nameof(reader),
+          string.Format(CultureInfo.InvariantCulture, ExceptionsResource.ArgumentIsNull, reader));
+      }
+
+      reader.BaseStream.Seek(offset, SeekOrigin.Begin);
+      var bytes = new List<byte>();
+      for (long i = 0; i < length; i++)
+      {
+        var current = reader.ReadByte();
+        bytes.Add(current);
+      }
+
+      return bytes.ToArray();
+    }
+
     public static uint ReadBytesAndConvertUInt32([NotNull] this BinaryReader reader, long offset)
     {
       if (reader is null)

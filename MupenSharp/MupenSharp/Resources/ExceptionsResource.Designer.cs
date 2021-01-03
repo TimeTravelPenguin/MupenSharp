@@ -113,5 +113,32 @@ namespace MupenSharp.Resources {
                 return ResourceManager.GetString("InvalidFilePath", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;{0}&apos; is null.
+        /// </summary>
+        internal static string NullReference {
+            get {
+                return ResourceManager.GetString("NullReference", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registry does not contain the requested key.
+        /// </summary>
+        internal static string RegistryDoenNotContainKey {
+            get {
+                return ResourceManager.GetString("RegistryDoenNotContainKey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Registry already contains the given key.
+        /// </summary>
+        internal static string RegistryKeyAlreadyExist {
+            get {
+                return ResourceManager.GetString("RegistryKeyAlreadyExist", resourceCulture);
+            }
+        }
     }
 }

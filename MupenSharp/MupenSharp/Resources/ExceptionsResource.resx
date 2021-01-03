@@ -134,6 +134,15 @@
     <value>The file path is invalid.</value>
   </data>
   <data name="InvalidEncodingType" xml:space="preserve">
-	  <value>The given encoding type is invalid</value>
+    <value>The given encoding type is invalid</value>
+  </data>
+  <data name="RegistryDoenNotContainKey" xml:space="preserve">
+    <value>Registry does not contain the requested key</value>
+  </data>
+  <data name="RegistryKeyAlreadyExist" xml:space="preserve">
+    <value>Registry already contains the given key</value>
+  </data>
+  <data name="NullReference" xml:space="preserve">
+    <value>'{0}' is null</value>
   </data>
 </root>
