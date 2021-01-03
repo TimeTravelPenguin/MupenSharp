@@ -4,7 +4,7 @@
 // 
 // Solution: MupenSharp
 // Project: MupenSharp
-// File Name: InputExtension.cs
+// File Name: InputModelExtensions.cs
 // 
 // Current Data:
 // 2021-01-02 10:46 PM
@@ -24,7 +24,7 @@ namespace MupenSharp.Extensions
   /// <summary>
   ///   Extension methods for <see cref="InputModel" />.
   /// </summary>
-  public static class InputExtension
+  public static class InputModelExtensions
   {
     /// <summary>
     ///   Gets the collection of controller buttons pressed for a particular <see cref="InputModel" />.
