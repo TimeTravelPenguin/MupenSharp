@@ -21,6 +21,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+	  <Compile Include="Resources\Constants.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="JetBrains.Annotations" Version="2020.3.0" />
 	</ItemGroup>
 
@@ -31,21 +35,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Compile Update="Resources\ExceptionsResource.Designer.cs">
-			<DesignTime>True</DesignTime>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>ExceptionsResource.resx</DependentUpon>
-		</Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-		<EmbeddedResource Update="Resources\ExceptionsResource.resx">
-			<Generator>ResXFileCodeGenerator</Generator>
-			<LastGenOutput>ExceptionsResource.Designer.cs</LastGenOutput>
-		</EmbeddedResource>
-	</ItemGroup>
-
-	<ItemGroup>
 		<None Include="..\..\icon\MupenSharp.png">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
@@ -53,7 +42,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<Folder Include="Attributes\" />
+	  <Compile Update="Resources\ExceptionsResource.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>ExceptionsResource.resx</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\ExceptionsResource.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>ExceptionsResource.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
 </Project>
