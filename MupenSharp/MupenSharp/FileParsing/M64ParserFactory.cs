@@ -7,10 +7,10 @@
 // File Name: M64ParserFactory.cs
 // 
 // Current Data:
-// 2021-01-03 8:05 PM
+// 2021-01-03 9:55 PM
 // 
 // Creation Date:
-// 2021-01-03 7:34 PM
+// 2021-01-03 8:51 PM
 
 #endregion
 
@@ -41,6 +41,11 @@ namespace MupenSharp.FileParsing
       if (!mupenFile.Exists)
       {
         throw new FileNotFoundException(ExceptionsResource.InvalidFilePath, nameof(mupenFile));
+      }
+
+      if (!M64Parser.ValidateM64File(mupenFile))
+      {
+        throw new InvalidOperationException(ExceptionsResource.NotM64);
       }
 
       using var reader = new BinaryReader(mupenFile?.Open(FileMode.Open, FileAccess.Read));
