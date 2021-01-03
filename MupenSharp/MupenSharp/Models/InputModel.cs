@@ -7,10 +7,10 @@
 // File Name: InputModel.cs
 // 
 // Current Data:
-// 2021-01-02 11:10 PM
+// 2021-01-04 9:49 AM
 // 
 // Creation Date:
-// 2021-01-02 8:56 PM
+// 2021-01-02 11:17 PM
 
 #endregion
 
@@ -19,6 +19,7 @@ using System.Globalization;
 using System.Linq;
 using JetBrains.Annotations;
 using MupenSharp.Base;
+using MupenSharp.Enums;
 using MupenSharp.Extensions;
 using MupenSharp.Resources;
 
@@ -99,6 +100,33 @@ namespace MupenSharp.Models
         .Take(2)
         .Reverse() // Reverse because BitConverter reverses order due to being low-endien
         .ToArray(), 0);
+    }
+
+    /// <summary>
+    ///   Sets a controller input to be either pressed or unpressed
+    /// </summary>
+    /// <param name="input">The button type to set</param>
+    /// <param name="isPressed">The state the button is to be set</param>
+    public void SetControllerInput(ControllerInput input, bool isPressed)
+    {
+      if (isPressed)
+      {
+        Buttons |= (ushort) input;
+      }
+      else
+      {
+        Buttons &= (ushort) ~input;
+      }
+    }
+
+    /// <summary>
+    ///   Returns the state of a particular button
+    /// </summary>
+    /// <param name="input"></param>
+    /// <returns>True is button is pressed</returns>
+    public bool GetButtonState(ControllerInput input)
+    {
+      return ((ushort) input & Buttons) != 0;
     }
 
     /// <summary>
