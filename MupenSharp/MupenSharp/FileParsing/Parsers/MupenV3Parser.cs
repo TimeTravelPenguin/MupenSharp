@@ -1,4 +1,20 @@
-﻿using System;
+﻿#region Title Header
+
+// Name: Phillip Smith
+// 
+// Solution: MupenSharp
+// Project: MupenSharp
+// File Name: MupenV3Parser.cs
+// 
+// Current Data:
+// 2021-01-04 12:54 PM
+// 
+// Creation Date:
+// 2021-01-03 8:51 PM
+
+#endregion
+
+using System;
 using System.IO;
 using MupenSharp.Enums;
 using MupenSharp.Extensions;
@@ -30,21 +46,22 @@ namespace MupenSharp.FileParsing.Parsers
 
       var m64 = new M64
       {
-        Version = reader.ReadBytesAndConvertUInt32(0x4),
-        VerticalInterrupts = reader.ReadBytesAndConvertUInt32(0xC),
-        RerecordCount = reader.ReadBytesAndConvertUInt32(0x10),
+        Version = reader.ReadUInt32(0x4),
+        VerticalInterrupts = reader.ReadUInt32(0xC),
+        RerecordCount = reader.ReadUInt32(0x10),
         ViPerSecond = reader.ReadByte(0x15),
         NumberOfControllers = reader.ReadByte(0x16),
-        InputFrames = reader.ReadBytesAndConvertUInt32(0x18),
-        MovieStartType = reader.ReadBytesAndConvertUInt16(0x1C),
-        ControllerFlags = reader.ReadBytesAndConvertUInt32(0x20),
-        NameOfRom = reader.ReadBytesAndConvertString(0xC4, Encoding.ASCII),
-        Crc32 = reader.ReadBytesAndConvertUInt32(0xE4),
-        CountryCode = reader.ReadBytesAndConvertUInt16(0xE8),
-        Author = reader.ReadBytesAndConvertString(0x222, Encoding.UTF8),
-        MovieDescription = reader.ReadBytesAndConvertString(0x300, Encoding.UTF8)
+        InputFrames = reader.ReadUInt32(0x18),
+        MovieStartType = reader.ReadUInt16(0x1C),
+        ControllerFlags = reader.ReadUInt32(0x20),
+        NameOfRom = reader.ReadString(0xC4, 32, Encoding.ASCII),
+        Crc32 = reader.ReadUInt32(0xE4),
+        CountryCode = reader.ReadUInt16(0xE8),
+        Author = reader.ReadString(0x222, 222, Encoding.UTF8),
+        MovieDescription = reader.ReadString(0x300, 256, Encoding.UTF8)
       };
 
+      // TODO: Implement multiple controller support
       var frame = 0;
       reader.BaseStream.Seek(0x400, SeekOrigin.Begin);
       while (reader.BaseStream.Position != reader.BaseStream.Length && frame < m64.InputFrames)

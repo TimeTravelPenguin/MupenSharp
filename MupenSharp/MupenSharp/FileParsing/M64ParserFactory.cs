@@ -51,7 +51,7 @@ namespace MupenSharp.FileParsing
       using var reader = new BinaryReader(mupenFile?.Open(FileMode.Open, FileAccess.Read));
 
       // TODO: Check offset 0x004 is the header for all m64 versions
-      var version = (int) reader.ReadBytesAndConvertUInt32(0x4);
+      var version = (int) reader.ReadUInt32(0x4);
 
       return Registry.TryGetValue(version, out var parser)
         ? parser.Invoke()
