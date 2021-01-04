@@ -7,10 +7,10 @@
 // File Name: MupenV3Parser.cs
 // 
 // Current Data:
-// 2021-01-04 1:50 PM
+// 2021-01-04 11:48 PM
 // 
 // Creation Date:
-// 2021-01-03 8:51 PM
+// 2021-01-04 4:23 PM
 
 #endregion
 
@@ -68,20 +68,29 @@ namespace MupenSharp.FileParsing.Parsers
         MovieDescription = reader.ReadString(0x300, 256, Encoding.UTF8)
       };
 
+      // BUG: InputFrames may be different and not be equal for multiple controllers
+
+      /*
+        Mupen does not delete old inputs when writing to an m64 file.
+        E.g. if someone loads a save-state and works over the top of the work.
+        Because of this, it is possible for the header to have an InputFrames
+        that is smaller than the list of inputs. This is because Mupen64 plays the file
+        up until the header length. Any other data after is ignored.
+       */
+
+      // Check the file size (minus the header) is not shorter to the header expected value
+      // TODO: This condition will differ when multi-controller support is added
+      if (reader.BaseStream.Length - 0x400 < m64.InputFrames * 4)
+      {
+        throw new InvalidFrameCountException(
+          $"File size is too small. The header expects {m64.InputFrames * 4} bytes of input frame data, but only got {reader.BaseStream.Length - 0x400}");
+      }
+
       // TODO: Implement multiple controller support
-      var frame = 0;
       reader.BaseStream.Seek(0x400, SeekOrigin.Begin);
       while (reader.BaseStream.Position != reader.BaseStream.Length)
       {
         m64.ControllerInputs.Add((InputModel) reader.ReadBytes(4));
-        frame++;
-      }
-
-      // BUG: InputFrames may be different and not be equal for multiple controllers
-      if (m64.InputFrames != frame - 1)
-      {
-        throw new InvalidFrameCountException(
-          $"Property '{nameof(m64.InputFrames)}' does not match '{nameof(m64.ControllerInputs)}' length");
       }
 
       return m64;
