@@ -148,7 +148,7 @@
 				The movie description info.
 			</summary>
 		</member>
-		<member name="P:MupenSharp.Models.IM64.Inputs">
+		<member name="P:MupenSharp.Models.IM64.ControllerInputs">
 			<summary>
 				The input for every input frame, containing analogue x, y positions and buttons pressed.
 			</summary>
@@ -317,7 +317,7 @@
 				The movie description info.
 			</summary>
 		</member>
-		<member name="P:MupenSharp.Models.M64.Inputs">
+		<member name="P:MupenSharp.Models.M64.ControllerInputs">
 			<summary>
 				The input for every input frame, containing analogue x, y positions and buttons pressed.
 			</summary>

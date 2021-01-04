@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MupenSharp", "MupenSharp\Mu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MupenSharp.Tests", "MupenSharp\MupenSharp.Tests\MupenSharp.Tests.csproj", "{CB91FF08-114B-40E6-9CFA-1F2A79C9EC95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingConsoleApp", "TestingConsoleApp\TestingConsoleApp.csproj", "{8CAAF045-3D58-4EAB-8B58-2C6112D1555E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestingConsoleApp", "TestingConsoleApp\TestingConsoleApp.csproj", "{8CAAF045-3D58-4EAB-8B58-2C6112D1555E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
