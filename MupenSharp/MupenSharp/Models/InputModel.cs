@@ -147,8 +147,7 @@ namespace MupenSharp.Models
     /// <returns></returns>
     public override string ToString()
     {
-      var analogueInputs = (GetAnalogueInput(AnalogueInput.X), GetAnalogueInput(AnalogueInput.Y));
-      return $"{analogueInputs} {GetButtons().Join(", ")}";
+      return $"{(X, Y)} {GetButtons().Join(", ")}";
     }
 
     /// <summary>
