@@ -7,10 +7,10 @@
 // File Name: InputModel.cs
 // 
 // Current Data:
-// 2021-01-04 11:16 AM
+// 2021-01-04 1:25 PM
 // 
 // Creation Date:
-// 2021-01-02 11:17 PM
+// 2021-01-04 11:29 AM
 
 #endregion
 
@@ -24,6 +24,9 @@ using MupenSharp.Enums;
 using MupenSharp.Extensions;
 using MupenSharp.Resources;
 
+/* TODO: Implement:
+ Mupen64 will trigger a power off/on reset when the value for the controller info is specifically set to Reserved1 = 0x01, and Reserved2 = 0x01.
+*/
 namespace MupenSharp.Models
 {
   /// <summary>

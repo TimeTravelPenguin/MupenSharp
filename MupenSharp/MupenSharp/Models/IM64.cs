@@ -131,7 +131,7 @@ namespace MupenSharp.Models
     /// <summary>
     ///   The input for every input frame, containing analogue x, y positions and buttons pressed.
     /// </summary>
-    ObservableCollection<InputModel> Inputs { get; }
+    ObservableCollection<InputModel> ControllerInputs { get; }
 
     /// <summary>
     ///   The number of input samples from the controllers.

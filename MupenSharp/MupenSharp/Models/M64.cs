@@ -197,7 +197,7 @@ namespace MupenSharp.Models
     /// <summary>
     ///   The input for every input frame, containing analogue x, y positions and buttons pressed.
     /// </summary>
-    public ObservableCollection<InputModel> Inputs { get; } = new ObservableCollection<InputModel>();
+    public ObservableCollection<InputModel> ControllerInputs { get; } = new ObservableCollection<InputModel>();
 
     /// <summary>
     ///   The number of input samples from the controllers.
@@ -223,8 +223,8 @@ namespace MupenSharp.Models
     /// </summary>
     public M64()
     {
-      // Notify change when Inputs notifies change
-      ((INotifyPropertyChanged) Inputs).PropertyChanged += delegate { OnPropertyChanged(GetType().FullName); };
+      // Notify change when ControllerInputs notifies change
+      ((INotifyPropertyChanged) ControllerInputs).PropertyChanged += delegate { OnPropertyChanged(GetType().FullName); };
     }
   }
 }
