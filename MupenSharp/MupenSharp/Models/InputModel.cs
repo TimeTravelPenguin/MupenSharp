@@ -7,7 +7,7 @@
 // File Name: InputModel.cs
 // 
 // Current Data:
-// 2021-01-04 10:54 AM
+// 2021-01-04 11:16 AM
 // 
 // Creation Date:
 // 2021-01-02 11:17 PM
@@ -31,15 +31,26 @@ namespace MupenSharp.Models
   /// </summary>
   public class InputModel : PropertyChangedBase
   {
+    private sbyte _x;
+    private sbyte _y;
+
     /// <summary>
     ///   The analogue x coordinate
     /// </summary>
-    public sbyte X { get; set; }
+    public int X
+    {
+      get => Convert.ToInt32(_x);
+      set => _x = Convert.ToSByte(value);
+    }
 
     /// <summary>
     ///   The analogue y coordinate
     /// </summary>
-    public sbyte Y { get; set; }
+    public int Y
+    {
+      get => Convert.ToInt32(_y);
+      set => _y = Convert.ToSByte(value);
+    }
 
     /// <summary>
     ///   The array of bytes representing the combination of buttons pressed
@@ -148,20 +159,6 @@ namespace MupenSharp.Models
     {
       return EnumExtensions.EnumToArray<ControllerInput>()
         .Where(input => ((ControllerInput) Buttons).HasFlag(input));
-    }
-
-    /// <summary>
-    ///   Returns the requested input along the axis <paramref name="input" />
-    /// </summary>
-    /// <returns><see cref="int" /> of the analogue stick for a given axis</returns>
-    public int GetAnalogueInput(AnalogueInput input)
-    {
-      return input switch
-      {
-        AnalogueInput.X => Convert.ToInt32(X),
-        AnalogueInput.Y => Convert.ToInt32(Y),
-        _ => throw new ArgumentOutOfRangeException(nameof(input)),
-      };
     }
 
     /// <summary>
