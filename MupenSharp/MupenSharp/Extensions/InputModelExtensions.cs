@@ -7,16 +7,13 @@
 // File Name: InputModelExtensions.cs
 // 
 // Current Data:
-// 2021-01-02 10:46 PM
+// 2021-01-04 10:56 AM
 // 
 // Creation Date:
-// 2021-01-02 8:56 PM
+// 2021-01-02 11:17 PM
 
 #endregion
 
-using System.Collections.Generic;
-using System.Linq;
-using MupenSharp.Enums;
 using MupenSharp.Models;
 
 namespace MupenSharp.Extensions
@@ -26,15 +23,5 @@ namespace MupenSharp.Extensions
   /// </summary>
   public static class InputModelExtensions
   {
-    /// <summary>
-    ///   Gets the collection of controller buttons pressed for a particular <see cref="InputModel" />.
-    /// </summary>
-    /// <param name="inputModel">The current input</param>
-    /// <returns>A collection of buttons pressed.</returns>
-    public static IEnumerable<ControllerInput> GetInputs(this InputModel inputModel)
-    {
-      return EnumExtensions.EnumToArray<ControllerInput>()
-        .Where(input => ((ControllerInput) inputModel.Buttons).HasFlag(input));
-    }
   }
 }
