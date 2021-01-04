@@ -7,7 +7,7 @@
 // File Name: InputModel.cs
 // 
 // Current Data:
-// 2021-01-04 9:49 AM
+// 2021-01-04 10:54 AM
 // 
 // Creation Date:
 // 2021-01-02 11:17 PM
@@ -15,6 +15,7 @@
 #endregion
 
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using JetBrains.Annotations;
@@ -135,25 +136,32 @@ namespace MupenSharp.Models
     /// <returns></returns>
     public override string ToString()
     {
-      return $"{GetAnalogueInputs()} {GetButtons()}";
+      var analogueInputs = (GetAnalogueInput(AnalogueInput.X), GetAnalogueInput(AnalogueInput.Y));
+      return $"{analogueInputs} {GetButtons().Join(", ")}";
     }
 
     /// <summary>
     ///   Returns a string of pressed button inputs
     /// </summary>
     /// <returns></returns>
-    public string GetButtons()
+    public IEnumerable<ControllerInput> GetButtons()
     {
-      return this.GetInputs().Join(", ");
+      return EnumExtensions.EnumToArray<ControllerInput>()
+        .Where(input => ((ControllerInput) Buttons).HasFlag(input));
     }
 
     /// <summary>
-    ///   Returns a string of pressed analogue inputs
+    ///   Returns the requested input along the axis <paramref name="input" />
     /// </summary>
-    /// <returns></returns>
-    public string GetAnalogueInputs()
+    /// <returns><see cref="int" /> of the analogue stick for a given axis</returns>
+    public int GetAnalogueInput(AnalogueInput input)
     {
-      return $"({Convert.ToInt32(X)}, {Convert.ToInt32(Y)})";
+      return input switch
+      {
+        AnalogueInput.X => Convert.ToInt32(X),
+        AnalogueInput.Y => Convert.ToInt32(Y),
+        _ => throw new ArgumentOutOfRangeException(nameof(input)),
+      };
     }
 
     /// <summary>
