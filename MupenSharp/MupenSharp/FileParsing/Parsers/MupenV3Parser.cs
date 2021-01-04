@@ -7,7 +7,7 @@
 // File Name: MupenV3Parser.cs
 // 
 // Current Data:
-// 2021-01-04 12:54 PM
+// 2021-01-04 1:50 PM
 // 
 // Creation Date:
 // 2021-01-03 8:51 PM
@@ -17,6 +17,7 @@
 using System;
 using System.IO;
 using MupenSharp.Enums;
+using MupenSharp.Exceptions;
 using MupenSharp.Extensions;
 using MupenSharp.Models;
 using MupenSharp.Resources;
@@ -25,11 +26,17 @@ namespace MupenSharp.FileParsing.Parsers
 {
   internal class MupenV3Parser : IParser
   {
+    /// <summary>
+    /// </summary>
+    /// <param name="m64File"></param>
+    /// <returns></returns>
+    /// <exception cref="InvalidFrameCountException">
+    ///   Raises exception if the header's frame count does not match the file body length
+    /// </exception>
     public M64 Parse(FileInfo m64File)
     {
       /* TODO: Implement header validation to check for:
-        1. A valid .m64 file for Mupen.
-        2. Validate file version, header properties and length
+        1. Validate file version, header properties and length
       */
 
       if (m64File is null)
@@ -64,10 +71,17 @@ namespace MupenSharp.FileParsing.Parsers
       // TODO: Implement multiple controller support
       var frame = 0;
       reader.BaseStream.Seek(0x400, SeekOrigin.Begin);
-      while (reader.BaseStream.Position != reader.BaseStream.Length && frame < m64.InputFrames)
+      while (reader.BaseStream.Position != reader.BaseStream.Length)
       {
-        m64.Inputs.Add((InputModel) reader.ReadBytes(4));
+        m64.ControllerInputs.Add((InputModel) reader.ReadBytes(4));
         frame++;
+      }
+
+      // BUG: InputFrames may be different and not be equal for multiple controllers
+      if (m64.InputFrames != frame - 1)
+      {
+        throw new InvalidFrameCountException(
+          $"Property '{nameof(m64.InputFrames)}' does not match '{nameof(m64.ControllerInputs)}' length");
       }
 
       return m64;
