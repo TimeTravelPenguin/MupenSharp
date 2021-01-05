@@ -30,9 +30,8 @@ For more specific information on the filetype's header layout, please refer to t
 In order to read a .m64 file, you can do the following:
 
 ```cs
-M64Parser parser = new M64Parser();
-string file = "C://path/to/file.m64";
-M64 m64 = parser.Parse(file);
+const string file = "C://path/to/file.m64";
+M64 m64 = M64Parser.Parse(file);
 
 Console.WriteLine($"Author(s): {m64.Author}");
 Console.WriteLine($"ROM name: {m64.NameOfRom}");
