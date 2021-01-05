@@ -1,0 +1,486 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/ForkRepos/MupenSharp/DocFX/_docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Attributes.StringEncodingAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Attributes.StringEncodingAttribute.html",
+          "hash": "1yPbnRXBRZLFP9DmHrQDEQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Attributes.html",
+          "hash": "rnLEg9izOgU2fuNaZnFREw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Base.PropertyChangedBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Base.PropertyChangedBase.html",
+          "hash": "nbzTRWNBlnt9POJw9Dp58Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Base.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Base.html",
+          "hash": "eoRTGRhuexzY+xgXOpqcpw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Enums.AnalogueInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Enums.AnalogueInput.html",
+          "hash": "Yr64SOvMJitIltLDN6NRmQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Enums.ControllerInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Enums.ControllerInput.html",
+          "hash": "LPQk+2t7v+oWZrcbl4YYoA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Enums.Encoding.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Enums.Encoding.html",
+          "hash": "gKiN4ZGu8QiT5q0J9quxbg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Enums.RegionCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Enums.RegionCode.html",
+          "hash": "dZKWDBgRCcu7ORxAXsCE9w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Enums.html",
+          "hash": "KcFdCyS06Li9Nrdnwj3RRA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Exceptions.InvalidFileVersionException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Exceptions.InvalidFileVersionException.html",
+          "hash": "ltAxvdnapydkLsQUPAQaXg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Exceptions.InvalidFrameCountException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Exceptions.InvalidFrameCountException.html",
+          "hash": "JKR1yDvQyoTFkaXKyXZczg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Exceptions.NoControllerException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Exceptions.NoControllerException.html",
+          "hash": "BcZEiNLiLYd6KYPB9Rkj9w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Exceptions.html",
+          "hash": "wmzYHgzQkCLjs0q1CEK1mg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Extensions.BinaryReaderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Extensions.BinaryReaderExtensions.html",
+          "hash": "GT22WW7iNn6iZf4EL/vFyQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Extensions.EnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Extensions.EnumExtensions.html",
+          "hash": "MsjS9Er9PDpuZbQQMAd2nA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Extensions.EnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Extensions.EnumerableExtensions.html",
+          "hash": "EO89I1laSaUOOFHqej5Uxw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Extensions.InputModelExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Extensions.InputModelExtensions.html",
+          "hash": "WuJD2gP/psZEOQIebCCd+A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Extensions.html",
+          "hash": "+sA1iAfaR5dgkZE6iN89bg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.FileParsing.M64Parser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.FileParsing.M64Parser.html",
+          "hash": "we9uJYqS/BHVy+JLtvAcyQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.FileParsing.Parsers.IParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.FileParsing.Parsers.IParser.html",
+          "hash": "IsAI9PSojDN18Z8nqPWeIw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.FileParsing.Parsers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.FileParsing.Parsers.html",
+          "hash": "3XtyCEJpcweCRlnY7WMslg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.FileParsing.StringEncoder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.FileParsing.StringEncoder.html",
+          "hash": "+6NzZeEkWIkBr2+TlVJnBA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.FileParsing.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.FileParsing.html",
+          "hash": "kcp7BvHQlmjWsB5tEczs5Q=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Models.IM64.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Models.IM64.html",
+          "hash": "g0A+YdeVlYrJkeKLgzfldw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Models.ITas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Models.ITas.html",
+          "hash": "i8yTcAfdQo8sVMMdKimROA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Models.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Models.InputModel.html",
+          "hash": "5Q/UFMwF+tP83xgvzeQMCg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Models.M64.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Models.M64.html",
+          "hash": "A+0OB97DeT4xX6wcaIKyUQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Models.html",
+          "hash": "pQlZfo+d876KlJnr4xhliw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Resources.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Resources.Constants.html",
+          "hash": "uftbTqCKY1vqMDxv3F05PQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MupenSharp.Resources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MupenSharp.Resources.html",
+          "hash": "aIMtRDj/Bp90V0Sun65drQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "Fez2LAJlA/LcxwsSJvD1Lg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "NrgpNXuafHbtf7tCrQcYug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "DBXtMHwGaiVF5p07T4QIuw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "tQO1DM8dSupldq6BULlBCg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "+rHUkRZHZRi5gd1aTU6lJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 30,
+          "skipped_file_count": 30
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
