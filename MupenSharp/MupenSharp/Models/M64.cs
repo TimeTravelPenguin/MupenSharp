@@ -7,10 +7,10 @@
 // File Name: M64.cs
 // 
 // Current Data:
-// 2021-01-02 11:13 PM
+// 2021-01-06 1:15 AM
 // 
 // Creation Date:
-// 2021-01-02 8:56 PM
+// 2021-01-04 4:23 PM
 
 #endregion
 
@@ -31,17 +31,46 @@ namespace MupenSharp.Models
   {
     private string _author;
     private uint _controllerFlags;
+    private ObservableCollection<InputModel> _controllerFourInputs = new ObservableCollection<InputModel>();
+    private ObservableCollection<InputModel> _controllerInputs = new ObservableCollection<InputModel>();
+    private ObservableCollection<InputModel> _controllerOneInputs = new ObservableCollection<InputModel>();
+    private ObservableCollection<InputModel> _controllerThreeInputs = new ObservableCollection<InputModel>();
+    private ObservableCollection<InputModel> _controllerTwoInputs = new ObservableCollection<InputModel>();
     private ushort _countryCode;
     private uint _crc32;
     private uint _inputFrames;
     private string _movieDescription;
     private ushort _movieStartType;
     private string _nameOfRom;
-    private byte _numberOfControllers;
+    private uint _numberOfControllers;
     private uint _rerecordCount;
     private uint _version;
     private uint _verticalInterrupts;
-    private byte _viPerSecond;
+    private uint _viPerSecond;
+
+    public ObservableCollection<InputModel> ControllerOneInputs
+    {
+      get => _controllerOneInputs;
+      set => SetValue(ref _controllerOneInputs, value);
+    }
+
+    public ObservableCollection<InputModel> ControllerTwoInputs
+    {
+      get => _controllerTwoInputs;
+      set => SetValue(ref _controllerTwoInputs, value);
+    }
+
+    public ObservableCollection<InputModel> ControllerThreeInputs
+    {
+      get => _controllerThreeInputs;
+      set => SetValue(ref _controllerThreeInputs, value);
+    }
+
+    public ObservableCollection<InputModel> ControllerFourInputs
+    {
+      get => _controllerFourInputs;
+      set => SetValue(ref _controllerFourInputs, value);
+    }
 
     /// <summary>
     ///   Version number. Should be 3.
@@ -73,7 +102,7 @@ namespace MupenSharp.Models
     /// <summary>
     ///   Frames (vertical interrupts) per second.
     /// </summary>
-    public byte ViPerSecond
+    public uint ViPerSecond
     {
       get => _viPerSecond;
       set => SetValue(ref _viPerSecond, value);
@@ -82,7 +111,7 @@ namespace MupenSharp.Models
     /// <summary>
     ///   The number of controllers enabled for the file.
     /// </summary>
-    public byte NumberOfControllers
+    public uint NumberOfControllers
     {
       get => _numberOfControllers;
       set => SetValue(ref _numberOfControllers, value);
@@ -197,7 +226,11 @@ namespace MupenSharp.Models
     /// <summary>
     ///   The input for every input frame, containing analogue x, y positions and buttons pressed.
     /// </summary>
-    public ObservableCollection<InputModel> ControllerInputs { get; } = new ObservableCollection<InputModel>();
+    public ObservableCollection<InputModel> ControllerInputs
+    {
+      get => _controllerInputs;
+      set => SetValue(ref _controllerInputs, value);
+    }
 
     /// <summary>
     ///   The number of input samples from the controllers.
@@ -224,7 +257,8 @@ namespace MupenSharp.Models
     public M64()
     {
       // Notify change when ControllerInputs notifies change
-      ((INotifyPropertyChanged) ControllerInputs).PropertyChanged += delegate { OnPropertyChanged(GetType().FullName); };
+      ((INotifyPropertyChanged) ControllerInputs).PropertyChanged +=
+        delegate { OnPropertyChanged(GetType().FullName); };
     }
   }
 }

@@ -7,14 +7,16 @@
 // File Name: EnumerableExtensions.cs
 // 
 // Current Data:
-// 2021-01-02 10:45 PM
+// 2021-01-05 10:37 PM
 // 
 // Creation Date:
-// 2021-01-02 8:56 PM
+// 2021-01-02 11:17 PM
 
 #endregion
 
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MupenSharp.Extensions
 {
@@ -33,6 +35,11 @@ namespace MupenSharp.Extensions
     public static string Join<T>(this IEnumerable<T> collection, string separator)
     {
       return string.Join(separator, collection);
+    }
+
+    public static bool IsAll<T>(this IEnumerable<T> collection, T value) where T : IEquatable<T>
+    {
+      return collection.All(t => t.Equals(value));
     }
   }
 }

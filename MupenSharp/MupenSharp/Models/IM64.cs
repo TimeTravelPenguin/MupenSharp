@@ -7,10 +7,10 @@
 // File Name: IM64.cs
 // 
 // Current Data:
-// 2021-01-02 11:07 PM
+// 2021-01-05 10:13 PM
 // 
 // Creation Date:
-// 2021-01-02 8:56 PM
+// 2021-01-04 4:23 PM
 
 #endregion
 
@@ -41,12 +41,12 @@ namespace MupenSharp.Models
     /// <summary>
     ///   Frames (vertical interrupts) per second.
     /// </summary>
-    byte ViPerSecond { get; set; }
+    uint ViPerSecond { get; set; }
 
     /// <summary>
     ///   The number of controllers enabled for the file.
     /// </summary>
-    byte NumberOfControllers { get; set; }
+    uint NumberOfControllers { get; set; }
 
     /// <summary>
     ///   The movie start type.
@@ -131,7 +131,12 @@ namespace MupenSharp.Models
     /// <summary>
     ///   The input for every input frame, containing analogue x, y positions and buttons pressed.
     /// </summary>
-    ObservableCollection<InputModel> ControllerInputs { get; }
+    ObservableCollection<InputModel> ControllerInputs { get; set; }
+
+    public ObservableCollection<InputModel> ControllerOneInputs { get; set; }
+    public ObservableCollection<InputModel> ControllerTwoInputs { get; set; }
+    public ObservableCollection<InputModel> ControllerThreeInputs { get; set; }
+    public ObservableCollection<InputModel> ControllerFourInputs { get; set; }
 
     /// <summary>
     ///   The number of input samples from the controllers.

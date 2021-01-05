@@ -7,10 +7,10 @@
 // File Name: IParser.cs
 // 
 // Current Data:
-// 2021-01-03 8:09 PM
+// 2021-01-05 9:49 PM
 // 
 // Creation Date:
-// 2021-01-03 7:53 PM
+// 2021-01-03 8:51 PM
 
 #endregion
 
@@ -30,5 +30,7 @@ namespace MupenSharp.FileParsing.Parsers
     /// <param name="m64File">The file to parse</param>
     /// <returns></returns>
     M64 Parse(FileInfo m64File);
+
+    bool ValidateFile(FileInfo m64File);
   }
 }

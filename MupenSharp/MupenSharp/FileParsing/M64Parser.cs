@@ -7,18 +7,17 @@
 // File Name: M64Parser.cs
 // 
 // Current Data:
-// 2021-01-03 9:55 PM
+// 2021-01-05 11:13 PM
 // 
 // Creation Date:
-// 2021-01-03 9:47 PM
+// 2021-01-04 4:23 PM
 
 #endregion
 
 using System;
-using System.Globalization;
 using System.IO;
 using System.Linq;
-using MupenSharp.FileParsing.Parsers;
+using MupenSharp.Extensions;
 using MupenSharp.Models;
 using MupenSharp.Resources;
 
@@ -27,84 +26,37 @@ namespace MupenSharp.FileParsing
   /// <summary>
   ///   Parser object that can read and write a .m64 file
   /// </summary>
-  public class M64Parser
+  public static class M64Parser
   {
-    private readonly M64ParserFactory _parserFactory = new M64ParserFactory();
-    private FileInfo _mupenFile;
-    private IParser _parser = new MupenNullParser();
-
-    /// <summary>
-    ///   Sets the file path of the .m64 file to read
-    /// </summary>
-    /// <param name="path"></param>
-    public void SetFile(string path)
-    {
-      if (string.IsNullOrWhiteSpace(path))
-      {
-        throw new ArgumentException(ExceptionsResource.CannotBeNullOrWhitespace, nameof(path));
-      }
-
-      if (File.Exists(path))
-      {
-        _mupenFile = new FileInfo(path);
-      }
-      else
-      {
-        _mupenFile = null;
-        throw new FileNotFoundException(ExceptionsResource.InvalidFilePath, nameof(path));
-      }
-
-      _parser = _parserFactory.CreateFromVersion(_mupenFile);
-    }
-
-    /// <summary>
-    ///   Checks the first four bytes of a file to validate it is a mupen file. Should be
-    ///   <see cref="Constants.ValidM64Signature" /> ("M64\x1A").
-    /// </summary>
-    /// <param name="file">The file to validate</param>
-    /// <returns>Returns true if the file is a valid m64.</returns>
-    public static bool ValidateM64File(FileInfo file)
-    {
-      if (file is null)
-      {
-        throw new NullReferenceException(string.Format(CultureInfo.InvariantCulture, ExceptionsResource.NullReference,
-          nameof(file)));
-      }
-
-      using var reader = new BinaryReader(file?.Open(FileMode.Open, FileAccess.Read));
-      var signature = reader.ReadBytes(4);
-
-      return signature.SequenceEqual(Constants.ValidM64Signature);
-    }
-
-    /// <summary>
-    ///   Checks the first four bytes of a file to validate it is a mupen file. Should be
-    ///   <see cref="Constants.ValidM64Signature" /> ("M64\x1A").
-    /// </summary>
-    /// <returns>Returns true if the file is a valid m64.</returns>
-    public bool ValidateM64File()
-    {
-      return ValidateM64File(_mupenFile);
-    }
+    private static readonly M64ParserFactory ParserFactory = new M64ParserFactory();
 
     /// <summary>
     ///   Parses the file <paramref name="path" />.
     /// </summary>
     /// <param name="path">The path of the .m64 file</param>
     /// <returns>Returns object with data of parsed file</returns>
-    public M64 Parse(string path)
+    public static M64 Parse(string path)
     {
-      SetFile(path);
-      return Parse();
-    }
+      var m64 = new FileInfo(path);
 
-    /// <summary>
-    ///   Parses the set file
-    /// </summary>
-    /// <returns>Returns object with data of parsed file</returns>
-    public M64 Parse()
-    {
-      return _parser.Parse(_mupenFile);
+      int version;
+      using (var reader = new BinaryReader(m64.Open(FileMode.Open, FileAccess.Read)))
+      {
+        // Validate file is a mupen file
+        var signature = reader.ReadBytes(4);
+        var validSig = signature.SequenceEqual(Constants.ValidM64Signature);
+
+        if (!validSig)
+        {
+          throw new InvalidOperationException(ExceptionsResource.NotM64);
+        }
+
+        // TODO: Check offset 0x004 is the header for all m64 versions
+        version = (int) reader.ReadUInt32(0x4);
+      }
+
+      var parser = ParserFactory.CreateFromVersion(version);
+      return parser.Parse(m64);
     }
   }
 }
