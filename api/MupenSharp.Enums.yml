@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: MupenSharp.Enums
+  commentId: N:MupenSharp.Enums
+  id: MupenSharp.Enums
+  children:
+  - MupenSharp.Enums.AnalogueInput
+  - MupenSharp.Enums.ControllerInput
+  - MupenSharp.Enums.Encoding
+  - MupenSharp.Enums.RegionCode
+  langs:
+  - csharp
+  - vb
+  name: MupenSharp.Enums
+  nameWithType: MupenSharp.Enums
+  fullName: MupenSharp.Enums
+  type: Namespace
+  assemblies:
+  - MupenSharp
+references:
+- uid: MupenSharp.Enums.AnalogueInput
+  commentId: T:MupenSharp.Enums.AnalogueInput
+  parent: MupenSharp.Enums
+  name: AnalogueInput
+  nameWithType: AnalogueInput
+  fullName: MupenSharp.Enums.AnalogueInput
+- uid: MupenSharp.Enums.ControllerInput
+  commentId: T:MupenSharp.Enums.ControllerInput
+  parent: MupenSharp.Enums
+  name: ControllerInput
+  nameWithType: ControllerInput
+  fullName: MupenSharp.Enums.ControllerInput
+- uid: MupenSharp.Enums.Encoding
+  commentId: T:MupenSharp.Enums.Encoding
+  parent: MupenSharp.Enums
+  name: Encoding
+  nameWithType: Encoding
+  fullName: MupenSharp.Enums.Encoding
+- uid: MupenSharp.Enums.RegionCode
+  commentId: T:MupenSharp.Enums.RegionCode
+  parent: MupenSharp.Enums
+  name: RegionCode
+  nameWithType: RegionCode
+  fullName: MupenSharp.Enums.RegionCode
+- uid: MupenSharp.Enums
+  commentId: N:MupenSharp.Enums
+  name: MupenSharp.Enums
+  nameWithType: MupenSharp.Enums
+  fullName: MupenSharp.Enums

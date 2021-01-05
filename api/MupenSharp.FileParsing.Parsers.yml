@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: MupenSharp.FileParsing.Parsers
+  commentId: N:MupenSharp.FileParsing.Parsers
+  id: MupenSharp.FileParsing.Parsers
+  children:
+  - MupenSharp.FileParsing.Parsers.IParser
+  langs:
+  - csharp
+  - vb
+  name: MupenSharp.FileParsing.Parsers
+  nameWithType: MupenSharp.FileParsing.Parsers
+  fullName: MupenSharp.FileParsing.Parsers
+  type: Namespace
+  assemblies:
+  - MupenSharp
+references:
+- uid: MupenSharp.FileParsing.Parsers.IParser
+  commentId: T:MupenSharp.FileParsing.Parsers.IParser
+  name: IParser
+  nameWithType: IParser
+  fullName: MupenSharp.FileParsing.Parsers.IParser

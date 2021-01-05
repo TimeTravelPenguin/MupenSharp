@@ -1,0 +1,848 @@
+### YamlMime:ManagedReference
+items:
+- uid: MupenSharp.Models.IM64
+  commentId: T:MupenSharp.Models.IM64
+  id: IM64
+  parent: MupenSharp.Models
+  children:
+  - MupenSharp.Models.IM64.Author
+  - MupenSharp.Models.IM64.ControllerFlags
+  - MupenSharp.Models.IM64.ControllerFourInputs
+  - MupenSharp.Models.IM64.ControllerInputs
+  - MupenSharp.Models.IM64.ControllerOneInputs
+  - MupenSharp.Models.IM64.ControllerThreeInputs
+  - MupenSharp.Models.IM64.ControllerTwoInputs
+  - MupenSharp.Models.IM64.CountryCode
+  - MupenSharp.Models.IM64.Crc32
+  - MupenSharp.Models.IM64.InputFrames
+  - MupenSharp.Models.IM64.MovieDescription
+  - MupenSharp.Models.IM64.MovieStartType
+  - MupenSharp.Models.IM64.NameOfRom
+  - MupenSharp.Models.IM64.NumberOfControllers
+  - MupenSharp.Models.IM64.RerecordCount
+  - MupenSharp.Models.IM64.Version
+  - MupenSharp.Models.IM64.VerticalInterrupts
+  - MupenSharp.Models.IM64.ViPerSecond
+  langs:
+  - csharp
+  - vb
+  name: IM64
+  nameWithType: IM64
+  fullName: MupenSharp.Models.IM64
+  type: Interface
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: IM64
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 23
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nM64 file interface\n"
+  example: []
+  syntax:
+    content: public interface IM64
+    content.vb: Public Interface IM64
+  modifiers.csharp:
+  - public
+  - interface
+  modifiers.vb:
+  - Public
+  - Interface
+- uid: MupenSharp.Models.IM64.Version
+  commentId: P:MupenSharp.Models.IM64.Version
+  id: Version
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: Version
+  nameWithType: IM64.Version
+  fullName: MupenSharp.Models.IM64.Version
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: Version
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 28
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nVersion number. Should be 3.\n"
+  example: []
+  syntax:
+    content: uint Version { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Property Version As UInteger
+  overload: MupenSharp.Models.IM64.Version*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.VerticalInterrupts
+  commentId: P:MupenSharp.Models.IM64.VerticalInterrupts
+  id: VerticalInterrupts
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: VerticalInterrupts
+  nameWithType: IM64.VerticalInterrupts
+  fullName: MupenSharp.Models.IM64.VerticalInterrupts
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: VerticalInterrupts
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 33
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nThe number of frames (vertical interrupts).\n"
+  example: []
+  syntax:
+    content: uint VerticalInterrupts { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Property VerticalInterrupts As UInteger
+  overload: MupenSharp.Models.IM64.VerticalInterrupts*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.RerecordCount
+  commentId: P:MupenSharp.Models.IM64.RerecordCount
+  id: RerecordCount
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: RerecordCount
+  nameWithType: IM64.RerecordCount
+  fullName: MupenSharp.Models.IM64.RerecordCount
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: RerecordCount
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 38
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nThe number of file rerecords.\n"
+  example: []
+  syntax:
+    content: uint RerecordCount { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Property RerecordCount As UInteger
+  overload: MupenSharp.Models.IM64.RerecordCount*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.ViPerSecond
+  commentId: P:MupenSharp.Models.IM64.ViPerSecond
+  id: ViPerSecond
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: ViPerSecond
+  nameWithType: IM64.ViPerSecond
+  fullName: MupenSharp.Models.IM64.ViPerSecond
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: ViPerSecond
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 43
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nFrames (vertical interrupts) per second.\n"
+  example: []
+  syntax:
+    content: uint ViPerSecond { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Property ViPerSecond As UInteger
+  overload: MupenSharp.Models.IM64.ViPerSecond*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.NumberOfControllers
+  commentId: P:MupenSharp.Models.IM64.NumberOfControllers
+  id: NumberOfControllers
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: NumberOfControllers
+  nameWithType: IM64.NumberOfControllers
+  fullName: MupenSharp.Models.IM64.NumberOfControllers
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: NumberOfControllers
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 48
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nThe number of controllers enabled for the file.\n"
+  example: []
+  syntax:
+    content: uint NumberOfControllers { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Property NumberOfControllers As UInteger
+  overload: MupenSharp.Models.IM64.NumberOfControllers*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.MovieStartType
+  commentId: P:MupenSharp.Models.IM64.MovieStartType
+  id: MovieStartType
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: MovieStartType
+  nameWithType: IM64.MovieStartType
+  fullName: MupenSharp.Models.IM64.MovieStartType
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: MovieStartType
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 82
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nThe movie start type.\n<table><thead><tr><th>\n      Value\n</th><th>\n  Description\n</th></tr></thead><tbody><tr><td>1</td><td>\n  movie begins from snapshot (the snapshot will be loaded from an external file with the movie filename.\n  and a .st extension)\n</td></tr><tr><td> 2</td><td>\n  movie begins from power-on\n</td></tr><tr><td>other values</td><td>\n  invalid movie\n</td></tr></tbody></table>\n"
+  example: []
+  syntax:
+    content: ushort MovieStartType { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Property MovieStartType As UShort
+  overload: MupenSharp.Models.IM64.MovieStartType*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.ControllerFlags
+  commentId: P:MupenSharp.Models.IM64.ControllerFlags
+  id: ControllerFlags
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: ControllerFlags
+  nameWithType: IM64.ControllerFlags
+  fullName: MupenSharp.Models.IM64.ControllerFlags
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: ControllerFlags
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 108
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nFlags set for each controller.\n<ul><li>bit 0\n      Controller 1 present\n</li><li>bit 4\n  Controller 1 has mempak\n</li><li>bit 8\n  Controller 1 has rumblepak\n</li></ul>\n+1..3 for controllers 2..4.\n"
+  example: []
+  syntax:
+    content: uint ControllerFlags { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Property ControllerFlags As UInteger
+  overload: MupenSharp.Models.IM64.ControllerFlags*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.NameOfRom
+  commentId: P:MupenSharp.Models.IM64.NameOfRom
+  id: NameOfRom
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: NameOfRom
+  nameWithType: IM64.NameOfRom
+  fullName: MupenSharp.Models.IM64.NameOfRom
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: NameOfRom
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 113
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nThe internal name of ROM used when recording, directly from ROM.\n"
+  example: []
+  syntax:
+    content: string NameOfRom { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property NameOfRom As String
+  overload: MupenSharp.Models.IM64.NameOfRom*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.Crc32
+  commentId: P:MupenSharp.Models.IM64.Crc32
+  id: Crc32
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: Crc32
+  nameWithType: IM64.Crc32
+  fullName: MupenSharp.Models.IM64.Crc32
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: Crc32
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 118
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nCRC32 of ROM used when recording, directly from ROM.\n"
+  example: []
+  syntax:
+    content: uint Crc32 { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Property Crc32 As UInteger
+  overload: MupenSharp.Models.IM64.Crc32*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.CountryCode
+  commentId: P:MupenSharp.Models.IM64.CountryCode
+  id: CountryCode
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: CountryCode
+  nameWithType: IM64.CountryCode
+  fullName: MupenSharp.Models.IM64.CountryCode
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: CountryCode
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 123
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nThe country code of ROM used when recording, directly from ROM.\n"
+  example: []
+  syntax:
+    content: ushort CountryCode { get; set; }
+    parameters: []
+    return:
+      type: System.UInt16
+    content.vb: Property CountryCode As UShort
+  overload: MupenSharp.Models.IM64.CountryCode*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.MovieDescription
+  commentId: P:MupenSharp.Models.IM64.MovieDescription
+  id: MovieDescription
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: MovieDescription
+  nameWithType: IM64.MovieDescription
+  fullName: MupenSharp.Models.IM64.MovieDescription
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: MovieDescription
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 128
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nThe movie description info.\n"
+  example: []
+  syntax:
+    content: string MovieDescription { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property MovieDescription As String
+  overload: MupenSharp.Models.IM64.MovieDescription*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.ControllerInputs
+  commentId: P:MupenSharp.Models.IM64.ControllerInputs
+  id: ControllerInputs
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: ControllerInputs
+  nameWithType: IM64.ControllerInputs
+  fullName: MupenSharp.Models.IM64.ControllerInputs
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: ControllerInputs
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 133
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nThe input for every input frame, containing analogue x, y positions and buttons pressed.\n"
+  example: []
+  syntax:
+    content: ObservableCollection<InputModel> ControllerInputs { get; set; }
+    parameters: []
+    return:
+      type: ObservableCollection{MupenSharp.Models.InputModel}
+    content.vb: Property ControllerInputs As ObservableCollection(Of InputModel)
+  overload: MupenSharp.Models.IM64.ControllerInputs*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.ControllerOneInputs
+  commentId: P:MupenSharp.Models.IM64.ControllerOneInputs
+  id: ControllerOneInputs
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: ControllerOneInputs
+  nameWithType: IM64.ControllerOneInputs
+  fullName: MupenSharp.Models.IM64.ControllerOneInputs
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: ControllerOneInputs
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 135
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  syntax:
+    content: ObservableCollection<InputModel> ControllerOneInputs { get; set; }
+    parameters: []
+    return:
+      type: ObservableCollection{MupenSharp.Models.InputModel}
+    content.vb: Property ControllerOneInputs As ObservableCollection(Of InputModel)
+  overload: MupenSharp.Models.IM64.ControllerOneInputs*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.ControllerTwoInputs
+  commentId: P:MupenSharp.Models.IM64.ControllerTwoInputs
+  id: ControllerTwoInputs
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: ControllerTwoInputs
+  nameWithType: IM64.ControllerTwoInputs
+  fullName: MupenSharp.Models.IM64.ControllerTwoInputs
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: ControllerTwoInputs
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 136
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  syntax:
+    content: ObservableCollection<InputModel> ControllerTwoInputs { get; set; }
+    parameters: []
+    return:
+      type: ObservableCollection{MupenSharp.Models.InputModel}
+    content.vb: Property ControllerTwoInputs As ObservableCollection(Of InputModel)
+  overload: MupenSharp.Models.IM64.ControllerTwoInputs*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.ControllerThreeInputs
+  commentId: P:MupenSharp.Models.IM64.ControllerThreeInputs
+  id: ControllerThreeInputs
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: ControllerThreeInputs
+  nameWithType: IM64.ControllerThreeInputs
+  fullName: MupenSharp.Models.IM64.ControllerThreeInputs
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: ControllerThreeInputs
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 137
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  syntax:
+    content: ObservableCollection<InputModel> ControllerThreeInputs { get; set; }
+    parameters: []
+    return:
+      type: ObservableCollection{MupenSharp.Models.InputModel}
+    content.vb: Property ControllerThreeInputs As ObservableCollection(Of InputModel)
+  overload: MupenSharp.Models.IM64.ControllerThreeInputs*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.ControllerFourInputs
+  commentId: P:MupenSharp.Models.IM64.ControllerFourInputs
+  id: ControllerFourInputs
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: ControllerFourInputs
+  nameWithType: IM64.ControllerFourInputs
+  fullName: MupenSharp.Models.IM64.ControllerFourInputs
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: ControllerFourInputs
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 138
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  syntax:
+    content: ObservableCollection<InputModel> ControllerFourInputs { get; set; }
+    parameters: []
+    return:
+      type: ObservableCollection{MupenSharp.Models.InputModel}
+    content.vb: Property ControllerFourInputs As ObservableCollection(Of InputModel)
+  overload: MupenSharp.Models.IM64.ControllerFourInputs*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.InputFrames
+  commentId: P:MupenSharp.Models.IM64.InputFrames
+  id: InputFrames
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: InputFrames
+  nameWithType: IM64.InputFrames
+  fullName: MupenSharp.Models.IM64.InputFrames
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: InputFrames
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 143
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nThe number of input samples from the controllers.\n"
+  example: []
+  syntax:
+    content: uint InputFrames { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Property InputFrames As UInteger
+  overload: MupenSharp.Models.IM64.InputFrames*
+  modifiers.csharp:
+  - get
+  - set
+- uid: MupenSharp.Models.IM64.Author
+  commentId: P:MupenSharp.Models.IM64.Author
+  id: Author
+  parent: MupenSharp.Models.IM64
+  langs:
+  - csharp
+  - vb
+  name: Author
+  nameWithType: IM64.Author
+  fullName: MupenSharp.Models.IM64.Author
+  type: Property
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Models/IM64.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: Author
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Models/IM64.cs
+    startLine: 148
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Models
+  summary: "\nThe Author info of the movie.\n"
+  example: []
+  syntax:
+    content: string Author { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Author As String
+  overload: MupenSharp.Models.IM64.Author*
+  modifiers.csharp:
+  - get
+  - set
+references:
+- uid: MupenSharp.Models
+  commentId: N:MupenSharp.Models
+  name: MupenSharp.Models
+  nameWithType: MupenSharp.Models
+  fullName: MupenSharp.Models
+- uid: MupenSharp.Models.IM64.Version*
+  commentId: Overload:MupenSharp.Models.IM64.Version
+  name: Version
+  nameWithType: IM64.Version
+  fullName: MupenSharp.Models.IM64.Version
+- uid: System.UInt32
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: MupenSharp.Models.IM64.VerticalInterrupts*
+  commentId: Overload:MupenSharp.Models.IM64.VerticalInterrupts
+  name: VerticalInterrupts
+  nameWithType: IM64.VerticalInterrupts
+  fullName: MupenSharp.Models.IM64.VerticalInterrupts
+- uid: MupenSharp.Models.IM64.RerecordCount*
+  commentId: Overload:MupenSharp.Models.IM64.RerecordCount
+  name: RerecordCount
+  nameWithType: IM64.RerecordCount
+  fullName: MupenSharp.Models.IM64.RerecordCount
+- uid: MupenSharp.Models.IM64.ViPerSecond*
+  commentId: Overload:MupenSharp.Models.IM64.ViPerSecond
+  name: ViPerSecond
+  nameWithType: IM64.ViPerSecond
+  fullName: MupenSharp.Models.IM64.ViPerSecond
+- uid: MupenSharp.Models.IM64.NumberOfControllers*
+  commentId: Overload:MupenSharp.Models.IM64.NumberOfControllers
+  name: NumberOfControllers
+  nameWithType: IM64.NumberOfControllers
+  fullName: MupenSharp.Models.IM64.NumberOfControllers
+- uid: MupenSharp.Models.IM64.MovieStartType*
+  commentId: Overload:MupenSharp.Models.IM64.MovieStartType
+  name: MovieStartType
+  nameWithType: IM64.MovieStartType
+  fullName: MupenSharp.Models.IM64.MovieStartType
+- uid: System.UInt16
+  isExternal: true
+  name: UInt16
+  nameWithType: UInt16
+  fullName: System.UInt16
+- uid: MupenSharp.Models.IM64.ControllerFlags*
+  commentId: Overload:MupenSharp.Models.IM64.ControllerFlags
+  name: ControllerFlags
+  nameWithType: IM64.ControllerFlags
+  fullName: MupenSharp.Models.IM64.ControllerFlags
+- uid: MupenSharp.Models.IM64.NameOfRom*
+  commentId: Overload:MupenSharp.Models.IM64.NameOfRom
+  name: NameOfRom
+  nameWithType: IM64.NameOfRom
+  fullName: MupenSharp.Models.IM64.NameOfRom
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: MupenSharp.Models.IM64.Crc32*
+  commentId: Overload:MupenSharp.Models.IM64.Crc32
+  name: Crc32
+  nameWithType: IM64.Crc32
+  fullName: MupenSharp.Models.IM64.Crc32
+- uid: MupenSharp.Models.IM64.CountryCode*
+  commentId: Overload:MupenSharp.Models.IM64.CountryCode
+  name: CountryCode
+  nameWithType: IM64.CountryCode
+  fullName: MupenSharp.Models.IM64.CountryCode
+- uid: MupenSharp.Models.IM64.MovieDescription*
+  commentId: Overload:MupenSharp.Models.IM64.MovieDescription
+  name: MovieDescription
+  nameWithType: IM64.MovieDescription
+  fullName: MupenSharp.Models.IM64.MovieDescription
+- uid: MupenSharp.Models.IM64.ControllerInputs*
+  commentId: Overload:MupenSharp.Models.IM64.ControllerInputs
+  name: ControllerInputs
+  nameWithType: IM64.ControllerInputs
+  fullName: MupenSharp.Models.IM64.ControllerInputs
+- uid: ObservableCollection{MupenSharp.Models.InputModel}
+  commentId: '!:ObservableCollection{MupenSharp.Models.InputModel}'
+  definition: ObservableCollection`1
+  name: ObservableCollection<InputModel>
+  nameWithType: ObservableCollection<InputModel>
+  fullName: ObservableCollection<MupenSharp.Models.InputModel>
+  nameWithType.vb: ObservableCollection(Of InputModel)
+  fullName.vb: ObservableCollection(Of MupenSharp.Models.InputModel)
+  name.vb: ObservableCollection(Of InputModel)
+  spec.csharp:
+  - uid: ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: ObservableCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: MupenSharp.Models.InputModel
+    name: InputModel
+    nameWithType: InputModel
+    fullName: MupenSharp.Models.InputModel
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: ObservableCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: MupenSharp.Models.InputModel
+    name: InputModel
+    nameWithType: InputModel
+    fullName: MupenSharp.Models.InputModel
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: ObservableCollection`1
+  isExternal: true
+  name: ObservableCollection<>
+  nameWithType: ObservableCollection<>
+  fullName: ObservableCollection<>
+  nameWithType.vb: ObservableCollection(Of )
+  fullName.vb: ObservableCollection(Of )
+  name.vb: ObservableCollection(Of )
+  spec.csharp:
+  - uid: ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: ObservableCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: ObservableCollection`1
+    name: ObservableCollection
+    nameWithType: ObservableCollection
+    fullName: ObservableCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: MupenSharp.Models.IM64.ControllerOneInputs*
+  commentId: Overload:MupenSharp.Models.IM64.ControllerOneInputs
+  name: ControllerOneInputs
+  nameWithType: IM64.ControllerOneInputs
+  fullName: MupenSharp.Models.IM64.ControllerOneInputs
+- uid: MupenSharp.Models.IM64.ControllerTwoInputs*
+  commentId: Overload:MupenSharp.Models.IM64.ControllerTwoInputs
+  name: ControllerTwoInputs
+  nameWithType: IM64.ControllerTwoInputs
+  fullName: MupenSharp.Models.IM64.ControllerTwoInputs
+- uid: MupenSharp.Models.IM64.ControllerThreeInputs*
+  commentId: Overload:MupenSharp.Models.IM64.ControllerThreeInputs
+  name: ControllerThreeInputs
+  nameWithType: IM64.ControllerThreeInputs
+  fullName: MupenSharp.Models.IM64.ControllerThreeInputs
+- uid: MupenSharp.Models.IM64.ControllerFourInputs*
+  commentId: Overload:MupenSharp.Models.IM64.ControllerFourInputs
+  name: ControllerFourInputs
+  nameWithType: IM64.ControllerFourInputs
+  fullName: MupenSharp.Models.IM64.ControllerFourInputs
+- uid: MupenSharp.Models.IM64.InputFrames*
+  commentId: Overload:MupenSharp.Models.IM64.InputFrames
+  name: InputFrames
+  nameWithType: IM64.InputFrames
+  fullName: MupenSharp.Models.IM64.InputFrames
+- uid: MupenSharp.Models.IM64.Author*
+  commentId: Overload:MupenSharp.Models.IM64.Author
+  name: Author
+  nameWithType: IM64.Author
+  fullName: MupenSharp.Models.IM64.Author

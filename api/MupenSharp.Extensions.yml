@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: MupenSharp.Extensions
+  commentId: N:MupenSharp.Extensions
+  id: MupenSharp.Extensions
+  children:
+  - MupenSharp.Extensions.BinaryReaderExtensions
+  - MupenSharp.Extensions.EnumerableExtensions
+  - MupenSharp.Extensions.EnumExtensions
+  - MupenSharp.Extensions.InputModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: MupenSharp.Extensions
+  nameWithType: MupenSharp.Extensions
+  fullName: MupenSharp.Extensions
+  type: Namespace
+  assemblies:
+  - MupenSharp
+references:
+- uid: MupenSharp.Extensions.BinaryReaderExtensions
+  commentId: T:MupenSharp.Extensions.BinaryReaderExtensions
+  name: BinaryReaderExtensions
+  nameWithType: BinaryReaderExtensions
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions
+- uid: MupenSharp.Extensions.EnumerableExtensions
+  commentId: T:MupenSharp.Extensions.EnumerableExtensions
+  name: EnumerableExtensions
+  nameWithType: EnumerableExtensions
+  fullName: MupenSharp.Extensions.EnumerableExtensions
+- uid: MupenSharp.Extensions.EnumExtensions
+  commentId: T:MupenSharp.Extensions.EnumExtensions
+  name: EnumExtensions
+  nameWithType: EnumExtensions
+  fullName: MupenSharp.Extensions.EnumExtensions
+- uid: MupenSharp.Extensions.InputModelExtensions
+  commentId: T:MupenSharp.Extensions.InputModelExtensions
+  name: InputModelExtensions
+  nameWithType: InputModelExtensions
+  fullName: MupenSharp.Extensions.InputModelExtensions

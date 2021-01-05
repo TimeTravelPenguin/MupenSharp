@@ -1,0 +1,377 @@
+### YamlMime:ManagedReference
+items:
+- uid: MupenSharp.Extensions.BinaryReaderExtensions
+  commentId: T:MupenSharp.Extensions.BinaryReaderExtensions
+  id: BinaryReaderExtensions
+  parent: MupenSharp.Extensions
+  children:
+  - MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(BinaryReader,System.Int64)
+  - MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(BinaryReader,System.Int64,System.Int32)
+  - MupenSharp.Extensions.BinaryReaderExtensions.ReadString(BinaryReader,System.Int64,System.Int32,MupenSharp.Enums.Encoding)
+  - MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(BinaryReader,System.Int64)
+  - MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(BinaryReader,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: BinaryReaderExtensions
+  nameWithType: BinaryReaderExtensions
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions
+  type: Class
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: BinaryReaderExtensions
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs
+    startLine: 29
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Extensions
+  summary: "\nExtension methods for <xref href=\"MupenSharp.FileParsing.M64Parser\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: 'public static class BinaryReaderExtensions : object'
+    content.vb: >-
+      Public Module BinaryReaderExtensions
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(BinaryReader,System.Int64)
+  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(BinaryReader,System.Int64)
+  id: ReadByte(BinaryReader,System.Int64)
+  isExtensionMethod: true
+  parent: MupenSharp.Extensions.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadByte(BinaryReader, Int64)
+  nameWithType: BinaryReaderExtensions.ReadByte(BinaryReader, Int64)
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(BinaryReader, System.Int64)
+  type: Method
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: ReadByte
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs
+    startLine: 31
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Extensions
+  syntax:
+    content: public static byte ReadByte(this BinaryReader reader, long offset)
+    parameters:
+    - id: reader
+      type: BinaryReader
+    - id: offset
+      type: System.Int64
+    return:
+      type: System.Byte
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadByte(reader As BinaryReader, offset As Long) As Byte
+  overload: MupenSharp.Extensions.BinaryReaderExtensions.ReadByte*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(BinaryReader,System.Int64,System.Int32)
+  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(BinaryReader,System.Int64,System.Int32)
+  id: ReadBytes(BinaryReader,System.Int64,System.Int32)
+  isExtensionMethod: true
+  parent: MupenSharp.Extensions.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadBytes(BinaryReader, Int64, Int32)
+  nameWithType: BinaryReaderExtensions.ReadBytes(BinaryReader, Int64, Int32)
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(BinaryReader, System.Int64, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: ReadBytes
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs
+    startLine: 43
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Extensions
+  syntax:
+    content: public static byte[] ReadBytes(this BinaryReader reader, long offset, int length)
+    parameters:
+    - id: reader
+      type: BinaryReader
+    - id: offset
+      type: System.Int64
+    - id: length
+      type: System.Int32
+    return:
+      type: System.Byte[]
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadBytes(reader As BinaryReader, offset As Long, length As Integer) As Byte()
+  overload: MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(BinaryReader,System.Int64)
+  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(BinaryReader,System.Int64)
+  id: ReadUInt32(BinaryReader,System.Int64)
+  isExtensionMethod: true
+  parent: MupenSharp.Extensions.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadUInt32(BinaryReader, Int64)
+  nameWithType: BinaryReaderExtensions.ReadUInt32(BinaryReader, Int64)
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(BinaryReader, System.Int64)
+  type: Method
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: ReadUInt32
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs
+    startLine: 55
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Extensions
+  syntax:
+    content: public static uint ReadUInt32(this BinaryReader reader, long offset)
+    parameters:
+    - id: reader
+      type: BinaryReader
+    - id: offset
+      type: System.Int64
+    return:
+      type: System.UInt32
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadUInt32(reader As BinaryReader, offset As Long) As UInteger
+  overload: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(BinaryReader,System.Int64)
+  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(BinaryReader,System.Int64)
+  id: ReadUInt16(BinaryReader,System.Int64)
+  isExtensionMethod: true
+  parent: MupenSharp.Extensions.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadUInt16(BinaryReader, Int64)
+  nameWithType: BinaryReaderExtensions.ReadUInt16(BinaryReader, Int64)
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(BinaryReader, System.Int64)
+  type: Method
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: ReadUInt16
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs
+    startLine: 66
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Extensions
+  syntax:
+    content: public static ushort ReadUInt16(this BinaryReader reader, long offset)
+    parameters:
+    - id: reader
+      type: BinaryReader
+    - id: offset
+      type: System.Int64
+    return:
+      type: System.UInt16
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadUInt16(reader As BinaryReader, offset As Long) As UShort
+  overload: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadString(BinaryReader,System.Int64,System.Int32,MupenSharp.Enums.Encoding)
+  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadString(BinaryReader,System.Int64,System.Int32,MupenSharp.Enums.Encoding)
+  id: ReadString(BinaryReader,System.Int64,System.Int32,MupenSharp.Enums.Encoding)
+  isExtensionMethod: true
+  parent: MupenSharp.Extensions.BinaryReaderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadString(BinaryReader, Int64, Int32, Encoding)
+  nameWithType: BinaryReaderExtensions.ReadString(BinaryReader, Int64, Int32, Encoding)
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadString(BinaryReader, System.Int64, System.Int32, MupenSharp.Enums.Encoding)
+  type: Method
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: ReadString
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs
+    startLine: 77
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Extensions
+  syntax:
+    content: public static string ReadString(this BinaryReader reader, long offset, int length, Encoding encoding)
+    parameters:
+    - id: reader
+      type: BinaryReader
+    - id: offset
+      type: System.Int64
+    - id: length
+      type: System.Int32
+    - id: encoding
+      type: MupenSharp.Enums.Encoding
+    return:
+      type: System.String
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function ReadString(reader As BinaryReader, offset As Long, length As Integer, encoding As Encoding) As String
+  overload: MupenSharp.Extensions.BinaryReaderExtensions.ReadString*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: MupenSharp.FileParsing.M64Parser
+  commentId: T:MupenSharp.FileParsing.M64Parser
+  name: M64Parser
+  nameWithType: M64Parser
+  fullName: MupenSharp.FileParsing.M64Parser
+- uid: MupenSharp.Extensions
+  commentId: N:MupenSharp.Extensions
+  name: MupenSharp.Extensions
+  nameWithType: MupenSharp.Extensions
+  fullName: MupenSharp.Extensions
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadByte*
+  commentId: Overload:MupenSharp.Extensions.BinaryReaderExtensions.ReadByte
+  name: ReadByte
+  nameWithType: BinaryReaderExtensions.ReadByte
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadByte
+- uid: BinaryReader
+  isExternal: true
+  name: BinaryReader
+  nameWithType: BinaryReader
+  fullName: BinaryReader
+- uid: System.Int64
+  isExternal: true
+  name: Int64
+  nameWithType: Int64
+  fullName: System.Int64
+- uid: System.Byte
+  commentId: '!:System.Byte'
+  isExternal: true
+  name: Byte
+  nameWithType: Byte
+  fullName: System.Byte
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes*
+  commentId: Overload:MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes
+  name: ReadBytes
+  nameWithType: BinaryReaderExtensions.ReadBytes
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes
+- uid: System.Int32
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32*
+  commentId: Overload:MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32
+  name: ReadUInt32
+  nameWithType: BinaryReaderExtensions.ReadUInt32
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32
+- uid: System.UInt32
+  isExternal: true
+  name: UInt32
+  nameWithType: UInt32
+  fullName: System.UInt32
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16*
+  commentId: Overload:MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16
+  name: ReadUInt16
+  nameWithType: BinaryReaderExtensions.ReadUInt16
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16
+- uid: System.UInt16
+  isExternal: true
+  name: UInt16
+  nameWithType: UInt16
+  fullName: System.UInt16
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadString*
+  commentId: Overload:MupenSharp.Extensions.BinaryReaderExtensions.ReadString
+  name: ReadString
+  nameWithType: BinaryReaderExtensions.ReadString
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadString
+- uid: MupenSharp.Enums.Encoding
+  commentId: T:MupenSharp.Enums.Encoding
+  parent: MupenSharp.Enums
+  name: Encoding
+  nameWithType: Encoding
+  fullName: MupenSharp.Enums.Encoding
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: MupenSharp.Enums
+  commentId: N:MupenSharp.Enums
+  name: MupenSharp.Enums
+  nameWithType: MupenSharp.Enums
+  fullName: MupenSharp.Enums

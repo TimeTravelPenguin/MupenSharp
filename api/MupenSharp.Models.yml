@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: MupenSharp.Models
+  commentId: N:MupenSharp.Models
+  id: MupenSharp.Models
+  children:
+  - MupenSharp.Models.IM64
+  - MupenSharp.Models.InputModel
+  - MupenSharp.Models.ITas
+  - MupenSharp.Models.M64
+  langs:
+  - csharp
+  - vb
+  name: MupenSharp.Models
+  nameWithType: MupenSharp.Models
+  fullName: MupenSharp.Models
+  type: Namespace
+  assemblies:
+  - MupenSharp
+references:
+- uid: MupenSharp.Models.IM64
+  commentId: T:MupenSharp.Models.IM64
+  parent: MupenSharp.Models
+  name: IM64
+  nameWithType: IM64
+  fullName: MupenSharp.Models.IM64
+- uid: MupenSharp.Models.InputModel
+  commentId: T:MupenSharp.Models.InputModel
+  parent: MupenSharp.Models
+  name: InputModel
+  nameWithType: InputModel
+  fullName: MupenSharp.Models.InputModel
+- uid: MupenSharp.Models.ITas
+  commentId: T:MupenSharp.Models.ITas
+  parent: MupenSharp.Models
+  name: ITas
+  nameWithType: ITas
+  fullName: MupenSharp.Models.ITas
+- uid: MupenSharp.Models.M64
+  commentId: T:MupenSharp.Models.M64
+  parent: MupenSharp.Models
+  name: M64
+  nameWithType: M64
+  fullName: MupenSharp.Models.M64
+- uid: MupenSharp.Models
+  commentId: N:MupenSharp.Models
+  name: MupenSharp.Models
+  nameWithType: MupenSharp.Models
+  fullName: MupenSharp.Models

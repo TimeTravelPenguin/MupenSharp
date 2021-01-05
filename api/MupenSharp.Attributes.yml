@@ -1,0 +1,22 @@
+### YamlMime:ManagedReference
+items:
+- uid: MupenSharp.Attributes
+  commentId: N:MupenSharp.Attributes
+  id: MupenSharp.Attributes
+  children:
+  - MupenSharp.Attributes.StringEncodingAttribute
+  langs:
+  - csharp
+  - vb
+  name: MupenSharp.Attributes
+  nameWithType: MupenSharp.Attributes
+  fullName: MupenSharp.Attributes
+  type: Namespace
+  assemblies:
+  - MupenSharp
+references:
+- uid: MupenSharp.Attributes.StringEncodingAttribute
+  commentId: T:MupenSharp.Attributes.StringEncodingAttribute
+  name: StringEncodingAttribute
+  nameWithType: StringEncodingAttribute
+  fullName: MupenSharp.Attributes.StringEncodingAttribute

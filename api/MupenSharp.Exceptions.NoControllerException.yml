@@ -1,0 +1,120 @@
+### YamlMime:ManagedReference
+items:
+- uid: MupenSharp.Exceptions.NoControllerException
+  commentId: T:MupenSharp.Exceptions.NoControllerException
+  id: NoControllerException
+  parent: MupenSharp.Exceptions
+  children:
+  - MupenSharp.Exceptions.NoControllerException.#ctor
+  - MupenSharp.Exceptions.NoControllerException.#ctor(System.String)
+  langs:
+  - csharp
+  - vb
+  name: NoControllerException
+  nameWithType: NoControllerException
+  fullName: MupenSharp.Exceptions.NoControllerException
+  type: Class
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Exceptions/NoControllerException.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: NoControllerException
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Exceptions/NoControllerException.cs
+    startLine: 20
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Exceptions
+  syntax:
+    content: 'public class NoControllerException : Exception'
+    content.vb: >-
+      Public Class NoControllerException
+
+          Inherits Exception
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: MupenSharp.Exceptions.NoControllerException.#ctor
+  commentId: M:MupenSharp.Exceptions.NoControllerException.#ctor
+  id: '#ctor'
+  parent: MupenSharp.Exceptions.NoControllerException
+  langs:
+  - csharp
+  - vb
+  name: NoControllerException()
+  nameWithType: NoControllerException.NoControllerException()
+  fullName: MupenSharp.Exceptions.NoControllerException.NoControllerException()
+  type: Constructor
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Exceptions/NoControllerException.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: .ctor
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Exceptions/NoControllerException.cs
+    startLine: 22
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Exceptions
+  syntax:
+    content: public NoControllerException()
+    content.vb: Public Sub New
+  overload: MupenSharp.Exceptions.NoControllerException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: MupenSharp.Exceptions.NoControllerException.#ctor(System.String)
+  commentId: M:MupenSharp.Exceptions.NoControllerException.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: MupenSharp.Exceptions.NoControllerException
+  langs:
+  - csharp
+  - vb
+  name: NoControllerException(String)
+  nameWithType: NoControllerException.NoControllerException(String)
+  fullName: MupenSharp.Exceptions.NoControllerException.NoControllerException(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/Exceptions/NoControllerException.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: .ctor
+    path: ../../MupenSharp/MupenSharp/MupenSharp/Exceptions/NoControllerException.cs
+    startLine: 26
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.Exceptions
+  syntax:
+    content: public NoControllerException(string message)
+    parameters:
+    - id: message
+      type: System.String
+    content.vb: Public Sub New(message As String)
+  overload: MupenSharp.Exceptions.NoControllerException.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: MupenSharp.Exceptions
+  commentId: N:MupenSharp.Exceptions
+  name: MupenSharp.Exceptions
+  nameWithType: MupenSharp.Exceptions
+  fullName: MupenSharp.Exceptions
+- uid: MupenSharp.Exceptions.NoControllerException.#ctor*
+  commentId: Overload:MupenSharp.Exceptions.NoControllerException.#ctor
+  name: NoControllerException
+  nameWithType: NoControllerException.NoControllerException
+  fullName: MupenSharp.Exceptions.NoControllerException.NoControllerException
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String

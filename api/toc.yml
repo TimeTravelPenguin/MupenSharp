@@ -1,0 +1,70 @@
+### YamlMime:TableOfContent
+- uid: MupenSharp.Attributes
+  name: MupenSharp.Attributes
+  items:
+  - uid: MupenSharp.Attributes.StringEncodingAttribute
+    name: StringEncodingAttribute
+- uid: MupenSharp.Base
+  name: MupenSharp.Base
+  items:
+  - uid: MupenSharp.Base.PropertyChangedBase
+    name: PropertyChangedBase
+- uid: MupenSharp.Enums
+  name: MupenSharp.Enums
+  items:
+  - uid: MupenSharp.Enums.AnalogueInput
+    name: AnalogueInput
+  - uid: MupenSharp.Enums.ControllerInput
+    name: ControllerInput
+  - uid: MupenSharp.Enums.Encoding
+    name: Encoding
+  - uid: MupenSharp.Enums.RegionCode
+    name: RegionCode
+- uid: MupenSharp.Exceptions
+  name: MupenSharp.Exceptions
+  items:
+  - uid: MupenSharp.Exceptions.InvalidFileVersionException
+    name: InvalidFileVersionException
+  - uid: MupenSharp.Exceptions.InvalidFrameCountException
+    name: InvalidFrameCountException
+  - uid: MupenSharp.Exceptions.NoControllerException
+    name: NoControllerException
+- uid: MupenSharp.Extensions
+  name: MupenSharp.Extensions
+  items:
+  - uid: MupenSharp.Extensions.BinaryReaderExtensions
+    name: BinaryReaderExtensions
+  - uid: MupenSharp.Extensions.EnumerableExtensions
+    name: EnumerableExtensions
+  - uid: MupenSharp.Extensions.EnumExtensions
+    name: EnumExtensions
+  - uid: MupenSharp.Extensions.InputModelExtensions
+    name: InputModelExtensions
+- uid: MupenSharp.FileParsing
+  name: MupenSharp.FileParsing
+  items:
+  - uid: MupenSharp.FileParsing.M64Parser
+    name: M64Parser
+  - uid: MupenSharp.FileParsing.StringEncoder
+    name: StringEncoder
+- uid: MupenSharp.FileParsing.Parsers
+  name: MupenSharp.FileParsing.Parsers
+  items:
+  - uid: MupenSharp.FileParsing.Parsers.IParser
+    name: IParser
+- uid: MupenSharp.Models
+  name: MupenSharp.Models
+  items:
+  - uid: MupenSharp.Models.IM64
+    name: IM64
+  - uid: MupenSharp.Models.InputModel
+    name: InputModel
+  - uid: MupenSharp.Models.ITas
+    name: ITas
+  - uid: MupenSharp.Models.M64
+    name: M64
+- uid: MupenSharp.Resources
+  name: MupenSharp.Resources
+  items:
+  - uid: MupenSharp.Resources.Constants
+    name: Constants

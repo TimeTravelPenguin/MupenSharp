@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: MupenSharp.FileParsing.StringEncoder
+  commentId: T:MupenSharp.FileParsing.StringEncoder
+  id: StringEncoder
+  parent: MupenSharp.FileParsing
+  children:
+  - MupenSharp.FileParsing.StringEncoder.Encode(System.Byte[],MupenSharp.Enums.Encoding)
+  langs:
+  - csharp
+  - vb
+  name: StringEncoder
+  nameWithType: StringEncoder
+  fullName: MupenSharp.FileParsing.StringEncoder
+  type: Class
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/FileParsing/StringEncoder.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: StringEncoder
+    path: ../../MupenSharp/MupenSharp/MupenSharp/FileParsing/StringEncoder.cs
+    startLine: 25
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.FileParsing
+  summary: "\nStatic class string encoder helper\n"
+  example: []
+  syntax:
+    content: 'public static class StringEncoder : object'
+    content.vb: >-
+      Public Module StringEncoder
+
+          Inherits Object
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: MupenSharp.FileParsing.StringEncoder.Encode(System.Byte[],MupenSharp.Enums.Encoding)
+  commentId: M:MupenSharp.FileParsing.StringEncoder.Encode(System.Byte[],MupenSharp.Enums.Encoding)
+  id: Encode(System.Byte[],MupenSharp.Enums.Encoding)
+  isExtensionMethod: true
+  parent: MupenSharp.FileParsing.StringEncoder
+  langs:
+  - csharp
+  - vb
+  name: Encode(Byte[], Encoding)
+  nameWithType: StringEncoder.Encode(Byte[], Encoding)
+  fullName: MupenSharp.FileParsing.StringEncoder.Encode(System.Byte[], MupenSharp.Enums.Encoding)
+  type: Method
+  source:
+    remote:
+      path: MupenSharp/MupenSharp/FileParsing/StringEncoder.cs
+      branch: dev
+      repo: https://github.com/TimeTravelPenguin/MupenSharp.git
+    id: Encode
+    path: ../../MupenSharp/MupenSharp/MupenSharp/FileParsing/StringEncoder.cs
+    startLine: 33
+  assemblies:
+  - MupenSharp
+  namespace: MupenSharp.FileParsing
+  summary: "\nEncode a byte array with a particular <xref href=\"MupenSharp.Enums.Encoding\" data-throw-if-not-resolved=\"false\"></xref>.\n"
+  example: []
+  syntax:
+    content: public static string Encode(this byte[] bytes, Encoding encoding)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: Byte array to be encoded
+    - id: encoding
+      type: MupenSharp.Enums.Encoding
+      description: The encoding type.
+    return:
+      type: System.String
+      description: Encoded string
+    content.vb: >-
+      <ExtensionAttribute>
+
+      Public Shared Function Encode(bytes As Byte(), encoding As Encoding) As String
+  overload: MupenSharp.FileParsing.StringEncoder.Encode*
+  nameWithType.vb: StringEncoder.Encode(Byte(), Encoding)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: MupenSharp.FileParsing.StringEncoder.Encode(System.Byte(), MupenSharp.Enums.Encoding)
+  name.vb: Encode(Byte(), Encoding)
+references:
+- uid: MupenSharp.FileParsing
+  commentId: N:MupenSharp.FileParsing
+  name: MupenSharp.FileParsing
+  nameWithType: MupenSharp.FileParsing
+  fullName: MupenSharp.FileParsing
+- uid: MupenSharp.Enums.Encoding
+  commentId: T:MupenSharp.Enums.Encoding
+  parent: MupenSharp.Enums
+  name: Encoding
+  nameWithType: Encoding
+  fullName: MupenSharp.Enums.Encoding
+- uid: MupenSharp.FileParsing.StringEncoder.Encode*
+  commentId: Overload:MupenSharp.FileParsing.StringEncoder.Encode
+  name: Encode
+  nameWithType: StringEncoder.Encode
+  fullName: MupenSharp.FileParsing.StringEncoder.Encode
+- uid: System.Byte[]
+  isExternal: true
+  name: Byte[]
+  nameWithType: Byte[]
+  fullName: System.Byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: System.Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    nameWithType: Byte
+    fullName: System.Byte
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()
+- uid: System.String
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: MupenSharp.Enums
+  commentId: N:MupenSharp.Enums
+  name: MupenSharp.Enums
+  nameWithType: MupenSharp.Enums
+  fullName: MupenSharp.Enums
