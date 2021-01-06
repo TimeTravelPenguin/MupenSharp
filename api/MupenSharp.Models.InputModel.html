@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -82,6 +82,10 @@
     <div class="level1"><a class="xref" href="MupenSharp.Base.PropertyChangedBase.html">PropertyChangedBase</a></div>
     <div class="level2"><span class="xref">InputModel</span></div>
   </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
+  </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
@@ -93,12 +97,30 @@
     <div>
       <a class="xref" href="MupenSharp.Base.PropertyChangedBase.html#MupenSharp_Base_PropertyChangedBase_SetValue__1___0____0_System_String_">PropertyChangedBase.SetValue&lt;T&gt;(T, T, String)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MupenSharp.Models.html">MupenSharp.Models</a></h6>
   <h6><strong>Assembly</strong>: MupenSharp.dll</h6>
   <h5 id="MupenSharp_Models_InputModel_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class InputModel : PropertyChangedBase</code></pre>
+    <pre><code class="lang-csharp hljs">public class InputModel : PropertyChangedBase, INotifyPropertyChanged</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -116,7 +138,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public InputModel(byte[] input)</code></pre>
+    <pre><code class="lang-csharp hljs">public InputModel([NotNull] byte[] input)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -270,7 +292,7 @@ represented by 1-byte each.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="MupenSharp.Enums.ControllerInput.html">ControllerInput</a>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="MupenSharp.Enums.ControllerInput.html">ControllerInput</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -395,6 +417,8 @@ represented by 1-byte each.</p>
       </tr>
     </tbody>
   </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
   <h3 id="operators">Operators
   </h3>
   <span class="small pull-right mobile-hide">
@@ -406,12 +430,12 @@ represented by 1-byte each.</p>
   </span>
   <a id="MupenSharp_Models_InputModel_op_Explicit_" data-uid="MupenSharp.Models.InputModel.op_Explicit*"></a>
   <h4 id="MupenSharp_Models_InputModel_op_Explicit_MupenSharp_Models_InputModel__System_Byte__" data-uid="MupenSharp.Models.InputModel.op_Explicit(MupenSharp.Models.InputModel)~System.Byte[]">Explicit(InputModel to Byte[])</h4>
-  <div class="markdown level1 summary"><p>Explicitly converts an <a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a> array into a <see cref="!:System.Byte"></see>.</p>
+  <div class="markdown level1 summary"><p>Explicitly converts an <a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a> array into a <span class="xref">System.Byte</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static explicit operator byte[](InputModel input)</code></pre>
+    <pre><code class="lang-csharp hljs">public static explicit operator byte[]([NotNull] InputModel input)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -454,7 +478,7 @@ represented by 1-byte each.</p>
   </span>
   <a id="MupenSharp_Models_InputModel_op_Explicit_" data-uid="MupenSharp.Models.InputModel.op_Explicit*"></a>
   <h4 id="MupenSharp_Models_InputModel_op_Explicit_System_Byte____MupenSharp_Models_InputModel" data-uid="MupenSharp.Models.InputModel.op_Explicit(System.Byte[])~MupenSharp.Models.InputModel">Explicit(Byte[] to InputModel)</h4>
-  <div class="markdown level1 summary"><p>Implicitly converts a <see cref="!:System.Byte"></see> array into an <a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a>.</p>
+  <div class="markdown level1 summary"><p>Implicitly converts a <span class="xref">System.Byte</span> array into an <a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -493,6 +517,10 @@ represented by 1-byte each.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
 </article>
           </div>
           

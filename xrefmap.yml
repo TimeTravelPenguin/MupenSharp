@@ -366,11 +366,11 @@ references:
   commentId: T:MupenSharp.Extensions.BinaryReaderExtensions
   fullName: MupenSharp.Extensions.BinaryReaderExtensions
   nameWithType: BinaryReaderExtensions
-- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(BinaryReader,System.Int64)
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(System.IO.BinaryReader,System.Int64)
   name: ReadByte(BinaryReader, Int64)
-  href: api/MupenSharp.Extensions.BinaryReaderExtensions.html#MupenSharp_Extensions_BinaryReaderExtensions_ReadByte_BinaryReader_System_Int64_
-  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(BinaryReader,System.Int64)
-  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(BinaryReader, System.Int64)
+  href: api/MupenSharp.Extensions.BinaryReaderExtensions.html#MupenSharp_Extensions_BinaryReaderExtensions_ReadByte_System_IO_BinaryReader_System_Int64_
+  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(System.IO.BinaryReader,System.Int64)
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(System.IO.BinaryReader, System.Int64)
   nameWithType: BinaryReaderExtensions.ReadByte(BinaryReader, Int64)
 - uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadByte*
   name: ReadByte
@@ -379,11 +379,11 @@ references:
   isSpec: "True"
   fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadByte
   nameWithType: BinaryReaderExtensions.ReadByte
-- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(BinaryReader,System.Int64,System.Int32)
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(System.IO.BinaryReader,System.Int64,System.Int32)
   name: ReadBytes(BinaryReader, Int64, Int32)
-  href: api/MupenSharp.Extensions.BinaryReaderExtensions.html#MupenSharp_Extensions_BinaryReaderExtensions_ReadBytes_BinaryReader_System_Int64_System_Int32_
-  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(BinaryReader,System.Int64,System.Int32)
-  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(BinaryReader, System.Int64, System.Int32)
+  href: api/MupenSharp.Extensions.BinaryReaderExtensions.html#MupenSharp_Extensions_BinaryReaderExtensions_ReadBytes_System_IO_BinaryReader_System_Int64_System_Int32_
+  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(System.IO.BinaryReader,System.Int64,System.Int32)
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(System.IO.BinaryReader, System.Int64, System.Int32)
   nameWithType: BinaryReaderExtensions.ReadBytes(BinaryReader, Int64, Int32)
 - uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes*
   name: ReadBytes
@@ -392,11 +392,11 @@ references:
   isSpec: "True"
   fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes
   nameWithType: BinaryReaderExtensions.ReadBytes
-- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadString(BinaryReader,System.Int64,System.Int32,MupenSharp.Enums.Encoding)
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadString(System.IO.BinaryReader,System.Int64,System.Int32,MupenSharp.Enums.Encoding)
   name: ReadString(BinaryReader, Int64, Int32, Encoding)
-  href: api/MupenSharp.Extensions.BinaryReaderExtensions.html#MupenSharp_Extensions_BinaryReaderExtensions_ReadString_BinaryReader_System_Int64_System_Int32_MupenSharp_Enums_Encoding_
-  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadString(BinaryReader,System.Int64,System.Int32,MupenSharp.Enums.Encoding)
-  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadString(BinaryReader, System.Int64, System.Int32, MupenSharp.Enums.Encoding)
+  href: api/MupenSharp.Extensions.BinaryReaderExtensions.html#MupenSharp_Extensions_BinaryReaderExtensions_ReadString_System_IO_BinaryReader_System_Int64_System_Int32_MupenSharp_Enums_Encoding_
+  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadString(System.IO.BinaryReader,System.Int64,System.Int32,MupenSharp.Enums.Encoding)
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadString(System.IO.BinaryReader, System.Int64, System.Int32, MupenSharp.Enums.Encoding)
   nameWithType: BinaryReaderExtensions.ReadString(BinaryReader, Int64, Int32, Encoding)
 - uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadString*
   name: ReadString
@@ -405,11 +405,11 @@ references:
   isSpec: "True"
   fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadString
   nameWithType: BinaryReaderExtensions.ReadString
-- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(BinaryReader,System.Int64)
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(System.IO.BinaryReader,System.Int64)
   name: ReadUInt16(BinaryReader, Int64)
-  href: api/MupenSharp.Extensions.BinaryReaderExtensions.html#MupenSharp_Extensions_BinaryReaderExtensions_ReadUInt16_BinaryReader_System_Int64_
-  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(BinaryReader,System.Int64)
-  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(BinaryReader, System.Int64)
+  href: api/MupenSharp.Extensions.BinaryReaderExtensions.html#MupenSharp_Extensions_BinaryReaderExtensions_ReadUInt16_System_IO_BinaryReader_System_Int64_
+  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(System.IO.BinaryReader,System.Int64)
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(System.IO.BinaryReader, System.Int64)
   nameWithType: BinaryReaderExtensions.ReadUInt16(BinaryReader, Int64)
 - uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16*
   name: ReadUInt16
@@ -418,11 +418,11 @@ references:
   isSpec: "True"
   fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16
   nameWithType: BinaryReaderExtensions.ReadUInt16
-- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(BinaryReader,System.Int64)
+- uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(System.IO.BinaryReader,System.Int64)
   name: ReadUInt32(BinaryReader, Int64)
-  href: api/MupenSharp.Extensions.BinaryReaderExtensions.html#MupenSharp_Extensions_BinaryReaderExtensions_ReadUInt32_BinaryReader_System_Int64_
-  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(BinaryReader,System.Int64)
-  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(BinaryReader, System.Int64)
+  href: api/MupenSharp.Extensions.BinaryReaderExtensions.html#MupenSharp_Extensions_BinaryReaderExtensions_ReadUInt32_System_IO_BinaryReader_System_Int64_
+  commentId: M:MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(System.IO.BinaryReader,System.Int64)
+  fullName: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(System.IO.BinaryReader, System.Int64)
   nameWithType: BinaryReaderExtensions.ReadUInt32(BinaryReader, Int64)
 - uid: MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32*
   name: ReadUInt32
@@ -444,13 +444,13 @@ references:
   isSpec: "True"
   fullName: MupenSharp.Extensions.EnumerableExtensions.IsAll
   nameWithType: EnumerableExtensions.IsAll
-- uid: MupenSharp.Extensions.EnumerableExtensions.IsAll``1(IEnumerable{``0},``0)
+- uid: MupenSharp.Extensions.EnumerableExtensions.IsAll``1(System.Collections.Generic.IEnumerable{``0},``0)
   name: IsAll<T>(IEnumerable<T>, T)
-  href: api/MupenSharp.Extensions.EnumerableExtensions.html#MupenSharp_Extensions_EnumerableExtensions_IsAll__1_IEnumerable___0____0_
-  commentId: M:MupenSharp.Extensions.EnumerableExtensions.IsAll``1(IEnumerable{``0},``0)
+  href: api/MupenSharp.Extensions.EnumerableExtensions.html#MupenSharp_Extensions_EnumerableExtensions_IsAll__1_System_Collections_Generic_IEnumerable___0____0_
+  commentId: M:MupenSharp.Extensions.EnumerableExtensions.IsAll``1(System.Collections.Generic.IEnumerable{``0},``0)
   name.vb: IsAll(Of T)(IEnumerable(Of T), T)
-  fullName: MupenSharp.Extensions.EnumerableExtensions.IsAll<T>(IEnumerable<T>, T)
-  fullName.vb: MupenSharp.Extensions.EnumerableExtensions.IsAll(Of T)(IEnumerable(Of T), T)
+  fullName: MupenSharp.Extensions.EnumerableExtensions.IsAll<T>(System.Collections.Generic.IEnumerable<T>, T)
+  fullName.vb: MupenSharp.Extensions.EnumerableExtensions.IsAll(Of T)(System.Collections.Generic.IEnumerable(Of T), T)
   nameWithType: EnumerableExtensions.IsAll<T>(IEnumerable<T>, T)
   nameWithType.vb: EnumerableExtensions.IsAll(Of T)(IEnumerable(Of T), T)
 - uid: MupenSharp.Extensions.EnumerableExtensions.Join*
@@ -460,13 +460,13 @@ references:
   isSpec: "True"
   fullName: MupenSharp.Extensions.EnumerableExtensions.Join
   nameWithType: EnumerableExtensions.Join
-- uid: MupenSharp.Extensions.EnumerableExtensions.Join``1(IEnumerable{``0},System.String)
+- uid: MupenSharp.Extensions.EnumerableExtensions.Join``1(System.Collections.Generic.IEnumerable{``0},System.String)
   name: Join<T>(IEnumerable<T>, String)
-  href: api/MupenSharp.Extensions.EnumerableExtensions.html#MupenSharp_Extensions_EnumerableExtensions_Join__1_IEnumerable___0__System_String_
-  commentId: M:MupenSharp.Extensions.EnumerableExtensions.Join``1(IEnumerable{``0},System.String)
+  href: api/MupenSharp.Extensions.EnumerableExtensions.html#MupenSharp_Extensions_EnumerableExtensions_Join__1_System_Collections_Generic_IEnumerable___0__System_String_
+  commentId: M:MupenSharp.Extensions.EnumerableExtensions.Join``1(System.Collections.Generic.IEnumerable{``0},System.String)
   name.vb: Join(Of T)(IEnumerable(Of T), String)
-  fullName: MupenSharp.Extensions.EnumerableExtensions.Join<T>(IEnumerable<T>, System.String)
-  fullName.vb: MupenSharp.Extensions.EnumerableExtensions.Join(Of T)(IEnumerable(Of T), System.String)
+  fullName: MupenSharp.Extensions.EnumerableExtensions.Join<T>(System.Collections.Generic.IEnumerable<T>, System.String)
+  fullName.vb: MupenSharp.Extensions.EnumerableExtensions.Join(Of T)(System.Collections.Generic.IEnumerable(Of T), System.String)
   nameWithType: EnumerableExtensions.Join<T>(IEnumerable<T>, String)
   nameWithType.vb: EnumerableExtensions.Join(Of T)(IEnumerable(Of T), String)
 - uid: MupenSharp.Extensions.EnumExtensions
@@ -534,11 +534,11 @@ references:
   commentId: T:MupenSharp.FileParsing.Parsers.IParser
   fullName: MupenSharp.FileParsing.Parsers.IParser
   nameWithType: IParser
-- uid: MupenSharp.FileParsing.Parsers.IParser.Parse(FileInfo)
+- uid: MupenSharp.FileParsing.Parsers.IParser.Parse(System.IO.FileInfo)
   name: Parse(FileInfo)
-  href: api/MupenSharp.FileParsing.Parsers.IParser.html#MupenSharp_FileParsing_Parsers_IParser_Parse_FileInfo_
-  commentId: M:MupenSharp.FileParsing.Parsers.IParser.Parse(FileInfo)
-  fullName: MupenSharp.FileParsing.Parsers.IParser.Parse(FileInfo)
+  href: api/MupenSharp.FileParsing.Parsers.IParser.html#MupenSharp_FileParsing_Parsers_IParser_Parse_System_IO_FileInfo_
+  commentId: M:MupenSharp.FileParsing.Parsers.IParser.Parse(System.IO.FileInfo)
+  fullName: MupenSharp.FileParsing.Parsers.IParser.Parse(System.IO.FileInfo)
   nameWithType: IParser.Parse(FileInfo)
 - uid: MupenSharp.FileParsing.Parsers.IParser.Parse*
   name: Parse
@@ -547,11 +547,11 @@ references:
   isSpec: "True"
   fullName: MupenSharp.FileParsing.Parsers.IParser.Parse
   nameWithType: IParser.Parse
-- uid: MupenSharp.FileParsing.Parsers.IParser.ValidateFile(FileInfo)
+- uid: MupenSharp.FileParsing.Parsers.IParser.ValidateFile(System.IO.FileInfo)
   name: ValidateFile(FileInfo)
-  href: api/MupenSharp.FileParsing.Parsers.IParser.html#MupenSharp_FileParsing_Parsers_IParser_ValidateFile_FileInfo_
-  commentId: M:MupenSharp.FileParsing.Parsers.IParser.ValidateFile(FileInfo)
-  fullName: MupenSharp.FileParsing.Parsers.IParser.ValidateFile(FileInfo)
+  href: api/MupenSharp.FileParsing.Parsers.IParser.html#MupenSharp_FileParsing_Parsers_IParser_ValidateFile_System_IO_FileInfo_
+  commentId: M:MupenSharp.FileParsing.Parsers.IParser.ValidateFile(System.IO.FileInfo)
+  fullName: MupenSharp.FileParsing.Parsers.IParser.ValidateFile(System.IO.FileInfo)
   nameWithType: IParser.ValidateFile(FileInfo)
 - uid: MupenSharp.FileParsing.Parsers.IParser.ValidateFile*
   name: ValidateFile

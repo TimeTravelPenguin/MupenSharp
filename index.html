@@ -5,22 +5,22 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>This is the HOMEPAGE. </title>
+    <title>MupenSharp Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="This is the HOMEPAGE. ">
+    <meta name="title" content="MupenSharp Documentation ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
     <link rel="stylesheet" href="styles/docfx.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta property="docfx:navrel" content="toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -60,13 +60,23 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="this-is-the-homepage">This is the <strong>HOMEPAGE</strong>.</h1>
+<h1 id="mupensharp-documentation">MupenSharp Documentation</h1>
 
-<p>Refer to <a href="http://daringfireball.net/projects/markdown/">Markdown</a> for how to write markdown files.</p>
-<h2 id="quick-start-notes">Quick Start Notes:</h2>
-<ol>
-<li>Add images to the <em>images</em> folder if the file is referencing an image.</li>
-</ol>
+<p>MupenSharp is a .Net Standard library to interface with .m64 files for reading and writing.</p>
+<p>This library is designed to assist in reading and writing .m64 files for the Mupen64 application. By using MupenSharp, you do not need to manually process the file's header or encoding types, as it is all maintained within this library.</p>
+<p>For more specific information on the filetype's header layout, please refer to the <a href="http://tasvideos.org/EmulatorResources/Mupen/M64.html">TASVideos page</a> which documents the format.</p>
+<h2 id="overview">Overview</h2>
+<ul>
+<li><h3 id="what-is-mupen64">What is Mupen64?</h3>
+<p>Mupen64 is an emulation tool designed and used for <a href="https://en.wikipedia.org/wiki/Tool-assisted_speedrun">Tool-Assisted Speedrunning</a> Nintendo 64 titles. It is largely used by the Super Mario 64 TASing community, with various application version for video playback recording and LUA plugin support.</p>
+</li>
+<li><h3 id="what-is-a-m64-file">What is a .m64 file?</h3>
+<p>The <a href="http://tasvideos.org/EmulatorResources/Mupen/M64.html">.m64 file</a> is the movie playback file which holds the inputs of a TAS. This file is made and read by Mupen64 and holds information for the game title, ROM CRC, region code, and other information to ensure a valid emulation can be played back.</p>
+</li>
+<li><h3 id="why-make-mupensharp">Why make MupenSharp?</h3>
+<p>There are several applications that exist that allow a user to edit or combine files, such as the .m64 editor built into the TAS tool <a href="https://github.com/SM64-TAS-ABC/STROOP">STROOP</a>, which is used by the SM64 TASing community. The goal of this library is to provide a simple interface for all future applications to manage these files.</p>
+</li>
+</ul>
 </article>
           </div>
           

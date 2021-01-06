@@ -16,13 +16,13 @@
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     
     
-  </head>
-  <body data-spy="scroll" data-target="#affix" data-offset="120">
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
     <div id="wrapper">
       <header>
         
@@ -86,6 +86,7 @@ information.</p>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
+    <div><span class="xref">System.ComponentModel.INotifyPropertyChanged</span></div>
     <div><a class="xref" href="MupenSharp.Models.ITas.html">ITas</a></div>
     <div><a class="xref" href="MupenSharp.Models.IM64.html">IM64</a></div>
   </div>
@@ -100,12 +101,33 @@ information.</p>
     <div>
       <a class="xref" href="MupenSharp.Base.PropertyChangedBase.html#MupenSharp_Base_PropertyChangedBase_SetValue__1___0____0_System_String_">PropertyChangedBase.SetValue&lt;T&gt;(T, T, String)</a>
     </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="MupenSharp.Models.html">MupenSharp.Models</a></h6>
   <h6><strong>Assembly</strong>: MupenSharp.dll</h6>
   <h5 id="MupenSharp_Models_M64_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class M64 : PropertyChangedBase, ITas, IM64</code></pre>
+    <pre><code class="lang-csharp hljs">public class M64 : PropertyChangedBase, INotifyPropertyChanged, ITas, IM64</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -141,7 +163,8 @@ information.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Author { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[StringEncoding(Encoding.UTF8, 222)]
+public string Author { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -222,7 +245,7 @@ information.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ObservableCollection</span>&lt;<a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a>&gt;</td>
+        <td><span class="xref">System.Collections.ObjectModel.ObservableCollection</span>&lt;<a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -253,7 +276,7 @@ information.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ObservableCollection</span>&lt;<a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a>&gt;</td>
+        <td><span class="xref">System.Collections.ObjectModel.ObservableCollection</span>&lt;<a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -283,7 +306,7 @@ information.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ObservableCollection</span>&lt;<a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a>&gt;</td>
+        <td><span class="xref">System.Collections.ObjectModel.ObservableCollection</span>&lt;<a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -313,7 +336,7 @@ information.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ObservableCollection</span>&lt;<a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a>&gt;</td>
+        <td><span class="xref">System.Collections.ObjectModel.ObservableCollection</span>&lt;<a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -343,7 +366,7 @@ information.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ObservableCollection</span>&lt;<a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a>&gt;</td>
+        <td><span class="xref">System.Collections.ObjectModel.ObservableCollection</span>&lt;<a class="xref" href="MupenSharp.Models.InputModel.html">InputModel</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -455,7 +478,8 @@ information.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string MovieDescription { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[StringEncoding(Encoding.UTF8, 256)]
+public string MovieDescription { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -529,7 +553,8 @@ information.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string NameOfRom { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[StringEncoding(Encoding.ASCII, 32)]
+public string NameOfRom { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -702,6 +727,9 @@ information.</p>
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.ComponentModel.INotifyPropertyChanged</span>
+  </div>
   <div>
       <a class="xref" href="MupenSharp.Models.ITas.html">ITas</a>
   </div>
