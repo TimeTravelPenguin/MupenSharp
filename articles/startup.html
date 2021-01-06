@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Add your introductions here! | MupenSharp </title>
+    <title>Quick startup | MupenSharp </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Add your introductions here! | MupenSharp ">
+    <meta name="title" content="Quick startup | MupenSharp ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href=".././images/MupenSharpIco.ico">
@@ -67,8 +67,21 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="add-your-introductions-here">Add your introductions here!</h1>
+<h1 id="quick-startup">Quick startup</h1>
 
+<p>MupenSharp is designed to be intuitive to give you full access and control over your .m64 files. In order to read an .m64 file, you can simply use the following code:</p>
+<pre><code class="lang-cs">const string file = &quot;C://path/to/file.m64&quot;;
+M64 m64 = M64Parser.Parse(file);
+
+Console.WriteLine($&quot;Author(s): {m64.Author}&quot;);
+Console.WriteLine($&quot;ROM name: {m64.NameOfRom}&quot;);
+
+var frameCount = 1;
+foreach (var inputFrame in m64.Inputs)
+{
+    Console.WriteLine($&quot;Frame {frameCount++}:\t{inputFrame}&quot;);
+}
+</code></pre>
 </article>
           </div>
           
@@ -77,7 +90,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/DocFx/articles/intro.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/DocFx/articles/startup.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
