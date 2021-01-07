@@ -7,18 +7,25 @@
 		<Authors>Phillip Smith</Authors>
 		<Company>Phillip Smith</Company>
 		<Description>.Net Standard library to read and write .m64 files for Mupen64</Description>
-		<PackageIcon>MupenSharp.png</PackageIcon>
+		<PackageIcon>nugetIcon.png</PackageIcon>
 		<PackageTags>mupen, n64, m64</PackageTags>
 		<EnableNETAnalyzers>true</EnableNETAnalyzers>
 		<PackageProjectUrl>https://github.com/TimeTravelPenguin/MupenSharp</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/TimeTravelPenguin/MupenSharp</RepositoryUrl>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Version>1.0.3.4</Version>
+		<Copyright>Phillip Smith</Copyright>
+		<PackageLicenseExpression></PackageLicenseExpression>
+		<ApplicationIcon>icon.ico</ApplicationIcon>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<DocumentationFile>D:\C#_Offline\MupenMovieEditor\MupenSharp\MupenSharp.xml</DocumentationFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="icon.ico" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="JetBrains.Annotations" Version="2020.3.0" />
@@ -31,7 +38,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<None Include="..\..\icon\MupenSharp.png">
+		<None Include="..\..\Images\nugetIcon.png">
 			<Pack>True</Pack>
 			<PackagePath></PackagePath>
 		</None>

@@ -68,10 +68,10 @@ namespace MupenSharp.FileParsing.Parsers
         MovieDescription = reader.ReadString(0x300, 256, Encoding.UTF8)
       };
 
-      var numControllers = (m64.ControllerFlags & (uint) Controller.ControllerOnePresent)
-                           + ((m64.ControllerFlags & (uint) Controller.ControllerTwoPresent) >> 1)
-                           + ((m64.ControllerFlags & (uint) Controller.ControllerThreePresent) >> 2)
-                           + ((m64.ControllerFlags & (uint) Controller.ControllerFourPresent) >> 3);
+      var numControllers = (m64.ControllerFlags & (uint) ControllerProperty.ControllerOnePresent)
+                           + ((m64.ControllerFlags & (uint) ControllerProperty.ControllerTwoPresent) >> 1)
+                           + ((m64.ControllerFlags & (uint) ControllerProperty.ControllerThreePresent) >> 2)
+                           + ((m64.ControllerFlags & (uint) ControllerProperty.ControllerFourPresent) >> 3);
 
 #if DEBUG
       Debug.Assert(0 < numControllers && numControllers <= 4);

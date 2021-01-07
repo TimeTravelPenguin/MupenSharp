@@ -7,10 +7,10 @@
 // File Name: IM64.cs
 // 
 // Current Data:
-// 2021-01-05 10:13 PM
+// 2021-01-07 12:13 PM
 // 
 // Creation Date:
-// 2021-01-04 4:23 PM
+// 2021-01-06 9:56 AM
 
 #endregion
 
@@ -133,9 +133,24 @@ namespace MupenSharp.Models
     /// </summary>
     ObservableCollection<InputModel> ControllerInputs { get; set; }
 
+    /// <summary>
+    ///   The inputs of controller 1
+    /// </summary>
     public ObservableCollection<InputModel> ControllerOneInputs { get; set; }
+
+    /// <summary>
+    ///   The inputs of controller 2
+    /// </summary>
     public ObservableCollection<InputModel> ControllerTwoInputs { get; set; }
+
+    /// <summary>
+    ///   The inputs of controller 3
+    /// </summary>
     public ObservableCollection<InputModel> ControllerThreeInputs { get; set; }
+
+    /// <summary>
+    ///   The inputs of controller 4
+    /// </summary>
     public ObservableCollection<InputModel> ControllerFourInputs { get; set; }
 
     /// <summary>

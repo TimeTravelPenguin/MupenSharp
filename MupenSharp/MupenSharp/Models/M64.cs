@@ -7,10 +7,10 @@
 // File Name: M64.cs
 // 
 // Current Data:
-// 2021-01-06 1:15 AM
+// 2021-01-07 12:14 PM
 // 
 // Creation Date:
-// 2021-01-04 4:23 PM
+// 2021-01-06 9:56 AM
 
 #endregion
 
@@ -27,7 +27,7 @@ namespace MupenSharp.Models
   ///   Refer to the <see href="http://tasvideos.org/EmulatorResources/Mupen/M64.html">header documentation</see> for more
   ///   information.
   /// </summary>
-  public class M64 : PropertyChangedBase, ITas, IM64
+  public class M64 : PropertyChangedBase, IM64
   {
     private string _author;
     private uint _controllerFlags;
@@ -48,24 +48,36 @@ namespace MupenSharp.Models
     private uint _verticalInterrupts;
     private uint _viPerSecond;
 
+    /// <summary>
+    ///   The inputs of controller 1.
+    /// </summary>
     public ObservableCollection<InputModel> ControllerOneInputs
     {
       get => _controllerOneInputs;
       set => SetValue(ref _controllerOneInputs, value);
     }
 
+    /// <summary>
+    ///   The inputs of controller 2.
+    /// </summary>
     public ObservableCollection<InputModel> ControllerTwoInputs
     {
       get => _controllerTwoInputs;
       set => SetValue(ref _controllerTwoInputs, value);
     }
 
+    /// <summary>
+    ///   The inputs of controller 3.
+    /// </summary>
     public ObservableCollection<InputModel> ControllerThreeInputs
     {
       get => _controllerThreeInputs;
       set => SetValue(ref _controllerThreeInputs, value);
     }
 
+    /// <summary>
+    ///   The inputs of controller 4.
+    /// </summary>
     public ObservableCollection<InputModel> ControllerFourInputs
     {
       get => _controllerFourInputs;
