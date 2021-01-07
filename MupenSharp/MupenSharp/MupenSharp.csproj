@@ -13,7 +13,7 @@
 		<PackageProjectUrl>https://github.com/TimeTravelPenguin/MupenSharp</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/TimeTravelPenguin/MupenSharp</RepositoryUrl>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>1.0.3.4</Version>
+		<Version>1.0.3.5</Version>
 		<Copyright>Phillip Smith</Copyright>
 		<PackageLicenseExpression></PackageLicenseExpression>
 		<ApplicationIcon>icon.ico</ApplicationIcon>
