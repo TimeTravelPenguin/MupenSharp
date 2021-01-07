@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Enums.RegionCode.html",
-          "hash": "Oc9lmdZ1lMd0I5ALEcOmDA=="
+          "hash": "kbm73So0R6eOKH4kZhydIw=="
         }
       },
       "is_incremental": true,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Exceptions.InvalidFileVersionException.html",
-          "hash": "tlUqERH/W0eOfXz3vNBiew=="
+          "hash": "LPIcQ31kQiPVvKqTAQVfLQ=="
         }
       },
       "is_incremental": true,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Exceptions.NoControllerException.html",
-          "hash": "OjqwASpEODejYkOeIDM3KQ=="
+          "hash": "kMRz8vL8JLUbdfd5hZT1ng=="
         }
       },
       "is_incremental": true,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Exceptions.html",
-          "hash": "B89C4fjWAzQhhKFISX72dg=="
+          "hash": "HFYmxdr2d/0qHn+LqpUp/A=="
         }
       },
       "is_incremental": true,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Extensions.BinaryReaderExtensions.html",
-          "hash": "3gNyzRRF3LzzZ0m4Fo67pA=="
+          "hash": "q+YXLtdgUtSSDMXg+BGZfA=="
         }
       },
       "is_incremental": true,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Extensions.EnumerableExtensions.html",
-          "hash": "34RL21tt2HZ9MehBzC+SqA=="
+          "hash": "VFUJSf0jS2Rs+UosHSZLRA=="
         }
       },
       "is_incremental": true,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Extensions.html",
-          "hash": "2drgTwupezZEvL9MSaoD4A=="
+          "hash": "olgLsPOEeZjfcAkjwIjQnw=="
         }
       },
       "is_incremental": true,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.FileParsing.Parsers.IParser.html",
-          "hash": "3/cU+gAz0LRL5cnFBVf1oA=="
+          "hash": "Z7K+J3ZnYh8mifRKK/oykQ=="
         }
       },
       "is_incremental": true,
@@ -285,19 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Models.IM64.html",
-          "hash": "KN+hOYWRY0wUh0aIOX1wIQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Models.ITas.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Models.ITas.html",
-          "hash": "A8Yayn5yJUxwaNtazB8mKQ=="
+          "hash": "agGvVQaBq56twz+k9OWOaA=="
         }
       },
       "is_incremental": true,
@@ -321,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Models.M64.html",
-          "hash": "GpUcpVj8s6b2alsPX5qwTw=="
+          "hash": "w/E9oFnGdwt2g877S/l63g=="
         }
       },
       "is_incremental": true,
@@ -333,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Models.html",
-          "hash": "EUApVfUOHcv9+e1GlLiguQ=="
+          "hash": "tnB3RXRdSHrPRSXGTyLNTw=="
         }
       },
       "is_incremental": true,
@@ -369,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "vTk7w4qYKLYmMQ9thcnmqw=="
+          "hash": "HQxbznXXF8OZGf8v30PLIQ=="
         }
       },
       "is_incremental": true,
@@ -381,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "NrgpNXuafHbtf7tCrQcYug=="
+          "hash": "dBYB3xFwSLEJTinQkk9SsA=="
         }
       },
       "is_incremental": false,
@@ -453,7 +441,7 @@
           "hash": "jiCMCq5LbUNnm9WsDwDbzg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -482,13 +470,13 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 2
+          "skipped_file_count": 3
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 30,
-          "skipped_file_count": 30
+          "total_file_count": 29,
+          "skipped_file_count": 29
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,

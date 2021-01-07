@@ -118,11 +118,12 @@
     <a href="https://github.com/TimeTravelPenguin/MupenSharp/new/dev/apiSpec/new?filename=MupenSharp_Extensions_EnumerableExtensions_IsAll__1_System_Collections_Generic_IEnumerable___0____0_.md&amp;value=---%0Auid%3A%20MupenSharp.Extensions.EnumerableExtensions.IsAll%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/MupenSharp/MupenSharp/Extensions/EnumerableExtensions.cs/#L40">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/MupenSharp/MupenSharp/Extensions/EnumerableExtensions.cs/#L47">View Source</a>
   </span>
   <a id="MupenSharp_Extensions_EnumerableExtensions_IsAll_" data-uid="MupenSharp.Extensions.EnumerableExtensions.IsAll*"></a>
   <h4 id="MupenSharp_Extensions_EnumerableExtensions_IsAll__1_System_Collections_Generic_IEnumerable___0____0_" data-uid="MupenSharp.Extensions.EnumerableExtensions.IsAll``1(System.Collections.Generic.IEnumerable{``0},``0)">IsAll&lt;T&gt;(IEnumerable&lt;T&gt;, T)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Check all elements of the collection are equal to a given value.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -142,12 +143,14 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><span class="parametername">collection</span></td>
-        <td></td>
+        <td><p>The collection of elements which will be equated.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The value to equate each element of the collection to.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -162,7 +165,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td></td>
+        <td><p>True if all elements equate <span class="xref">true</span> to <code data-dev-comment-type="paramref" class="paramref">value</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -177,7 +181,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The element type of the IEnumerable that inherits <span class="xref">System.IEquatable`1</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -190,12 +195,12 @@
   </span>
   <a id="MupenSharp_Extensions_EnumerableExtensions_Join_" data-uid="MupenSharp.Extensions.EnumerableExtensions.Join*"></a>
   <h4 id="MupenSharp_Extensions_EnumerableExtensions_Join__1_System_Collections_Generic_IEnumerable___0__System_String_" data-uid="MupenSharp.Extensions.EnumerableExtensions.Join``1(System.Collections.Generic.IEnumerable{``0},System.String)">Join&lt;T&gt;(IEnumerable&lt;T&gt;, String)</h4>
-  <div class="markdown level1 summary"><p>String joiner helper method</p>
+  <div class="markdown level1 summary"><p>Join a collection of elements and return them as a comma-separated string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string Join&lt;T&gt;(this IEnumerable&lt;T&gt; collection, string separator)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string Join&lt;T&gt;(this IEnumerable&lt;T&gt; collection, string separator = &quot;, &quot;)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -210,13 +215,13 @@
       <tr>
         <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
         <td><span class="parametername">collection</span></td>
-        <td><p>The collection of elements</p>
+        <td><p>The collection of elements to join.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">separator</span></td>
-        <td><p>The separator</p>
+        <td><p>The separator character. Default is &quot;, &quot;.</p>
 </td>
       </tr>
     </tbody>
@@ -248,7 +253,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The object type contained by the IEnumerable.</p>
+</td>
       </tr>
     </tbody>
   </table>

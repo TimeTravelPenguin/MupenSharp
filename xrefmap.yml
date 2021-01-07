@@ -249,18 +249,18 @@ references:
   commentId: T:MupenSharp.Enums.RegionCode
   fullName: MupenSharp.Enums.RegionCode
   nameWithType: RegionCode
-- uid: MupenSharp.Enums.RegionCode.Ghost_v1
-  name: Ghost_v1
-  href: api/MupenSharp.Enums.RegionCode.html#MupenSharp_Enums_RegionCode_Ghost_v1
-  commentId: F:MupenSharp.Enums.RegionCode.Ghost_v1
-  fullName: MupenSharp.Enums.RegionCode.Ghost_v1
-  nameWithType: RegionCode.Ghost_v1
-- uid: MupenSharp.Enums.RegionCode.Ghost_v2
-  name: Ghost_v2
-  href: api/MupenSharp.Enums.RegionCode.html#MupenSharp_Enums_RegionCode_Ghost_v2
-  commentId: F:MupenSharp.Enums.RegionCode.Ghost_v2
-  fullName: MupenSharp.Enums.RegionCode.Ghost_v2
-  nameWithType: RegionCode.Ghost_v2
+- uid: MupenSharp.Enums.RegionCode.GhostV1
+  name: GhostV1
+  href: api/MupenSharp.Enums.RegionCode.html#MupenSharp_Enums_RegionCode_GhostV1
+  commentId: F:MupenSharp.Enums.RegionCode.GhostV1
+  fullName: MupenSharp.Enums.RegionCode.GhostV1
+  nameWithType: RegionCode.GhostV1
+- uid: MupenSharp.Enums.RegionCode.GhostV2
+  name: GhostV2
+  href: api/MupenSharp.Enums.RegionCode.html#MupenSharp_Enums_RegionCode_GhostV2
+  commentId: F:MupenSharp.Enums.RegionCode.GhostV2
+  fullName: MupenSharp.Enums.RegionCode.GhostV2
+  nameWithType: RegionCode.GhostV2
 - uid: MupenSharp.Enums.RegionCode.J
   name: J
   href: api/MupenSharp.Enums.RegionCode.html#MupenSharp_Enums_RegionCode_J
@@ -969,38 +969,6 @@ references:
   isSpec: "True"
   fullName: MupenSharp.Models.InputModel.Y
   nameWithType: InputModel.Y
-- uid: MupenSharp.Models.ITas
-  name: ITas
-  href: api/MupenSharp.Models.ITas.html
-  commentId: T:MupenSharp.Models.ITas
-  fullName: MupenSharp.Models.ITas
-  nameWithType: ITas
-- uid: MupenSharp.Models.ITas.Author
-  name: Author
-  href: api/MupenSharp.Models.ITas.html#MupenSharp_Models_ITas_Author
-  commentId: P:MupenSharp.Models.ITas.Author
-  fullName: MupenSharp.Models.ITas.Author
-  nameWithType: ITas.Author
-- uid: MupenSharp.Models.ITas.Author*
-  name: Author
-  href: api/MupenSharp.Models.ITas.html#MupenSharp_Models_ITas_Author_
-  commentId: Overload:MupenSharp.Models.ITas.Author
-  isSpec: "True"
-  fullName: MupenSharp.Models.ITas.Author
-  nameWithType: ITas.Author
-- uid: MupenSharp.Models.ITas.InputFrames
-  name: InputFrames
-  href: api/MupenSharp.Models.ITas.html#MupenSharp_Models_ITas_InputFrames
-  commentId: P:MupenSharp.Models.ITas.InputFrames
-  fullName: MupenSharp.Models.ITas.InputFrames
-  nameWithType: ITas.InputFrames
-- uid: MupenSharp.Models.ITas.InputFrames*
-  name: InputFrames
-  href: api/MupenSharp.Models.ITas.html#MupenSharp_Models_ITas_InputFrames_
-  commentId: Overload:MupenSharp.Models.ITas.InputFrames
-  isSpec: "True"
-  fullName: MupenSharp.Models.ITas.InputFrames
-  nameWithType: ITas.InputFrames
 - uid: MupenSharp.Models.M64
   name: M64
   href: api/MupenSharp.Models.M64.html

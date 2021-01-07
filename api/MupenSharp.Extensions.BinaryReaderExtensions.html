@@ -73,7 +73,7 @@
   
   <h1 id="MupenSharp_Extensions_BinaryReaderExtensions" data-uid="MupenSharp.Extensions.BinaryReaderExtensions" class="text-break">Class BinaryReaderExtensions
   </h1>
-  <div class="markdown level0 summary"><p>Extension methods for <a class="xref" href="MupenSharp.FileParsing.M64Parser.html">M64Parser</a>.</p>
+  <div class="markdown level0 summary"><p>Extension methods for <span class="xref">System.IO.BinaryReader</span>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -118,11 +118,12 @@
     <a href="https://github.com/TimeTravelPenguin/MupenSharp/new/dev/apiSpec/new?filename=MupenSharp_Extensions_BinaryReaderExtensions_ReadByte_System_IO_BinaryReader_System_Int64_.md&amp;value=---%0Auid%3A%20MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(System.IO.BinaryReader%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs/#L32">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs/#L38">View Source</a>
   </span>
   <a id="MupenSharp_Extensions_BinaryReaderExtensions_ReadByte_" data-uid="MupenSharp.Extensions.BinaryReaderExtensions.ReadByte*"></a>
   <h4 id="MupenSharp_Extensions_BinaryReaderExtensions_ReadByte_System_IO_BinaryReader_System_Int64_" data-uid="MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(System.IO.BinaryReader,System.Int64)">ReadByte(BinaryReader, Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Read a single byte from a given offset of a binary stream.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -141,12 +142,14 @@
       <tr>
         <td><span class="xref">System.IO.BinaryReader</span></td>
         <td><span class="parametername">reader</span></td>
-        <td></td>
+        <td><p>The binary reader.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>The offset byte to read onward from.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -161,7 +164,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Byte</span></td>
-        <td></td>
+        <td><p>The byte read.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -170,11 +174,12 @@
     <a href="https://github.com/TimeTravelPenguin/MupenSharp/new/dev/apiSpec/new?filename=MupenSharp_Extensions_BinaryReaderExtensions_ReadBytes_System_IO_BinaryReader_System_Int64_System_Int32_.md&amp;value=---%0Auid%3A%20MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(System.IO.BinaryReader%2CSystem.Int64%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs/#L44">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs/#L57">View Source</a>
   </span>
   <a id="MupenSharp_Extensions_BinaryReaderExtensions_ReadBytes_" data-uid="MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes*"></a>
   <h4 id="MupenSharp_Extensions_BinaryReaderExtensions_ReadBytes_System_IO_BinaryReader_System_Int64_System_Int32_" data-uid="MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(System.IO.BinaryReader,System.Int64,System.Int32)">ReadBytes(BinaryReader, Int64, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads a number of bytes from a given offset of a binary stream.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -193,17 +198,20 @@
       <tr>
         <td><span class="xref">System.IO.BinaryReader</span></td>
         <td><span class="parametername">reader</span></td>
-        <td></td>
+        <td><p>The binary reader.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>The offset byte to read onward from.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">length</span></td>
-        <td></td>
+        <td><p>The number of bytes to read from the offset.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -218,7 +226,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Byte</span>[]</td>
-        <td></td>
+        <td><p>The array of bytes read.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -227,11 +236,12 @@
     <a href="https://github.com/TimeTravelPenguin/MupenSharp/new/dev/apiSpec/new?filename=MupenSharp_Extensions_BinaryReaderExtensions_ReadString_System_IO_BinaryReader_System_Int64_System_Int32_MupenSharp_Enums_Encoding_.md&amp;value=---%0Auid%3A%20MupenSharp.Extensions.BinaryReaderExtensions.ReadString(System.IO.BinaryReader%2CSystem.Int64%2CSystem.Int32%2CMupenSharp.Enums.Encoding)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs/#L78">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs/#L113">View Source</a>
   </span>
   <a id="MupenSharp_Extensions_BinaryReaderExtensions_ReadString_" data-uid="MupenSharp.Extensions.BinaryReaderExtensions.ReadString*"></a>
   <h4 id="MupenSharp_Extensions_BinaryReaderExtensions_ReadString_System_IO_BinaryReader_System_Int64_System_Int32_MupenSharp_Enums_Encoding_" data-uid="MupenSharp.Extensions.BinaryReaderExtensions.ReadString(System.IO.BinaryReader,System.Int64,System.Int32,MupenSharp.Enums.Encoding)">ReadString(BinaryReader, Int64, Int32, Encoding)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads a number of bytes from a given offset of a binary stream and returns it as a string with a specific encoding.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -250,22 +260,26 @@
       <tr>
         <td><span class="xref">System.IO.BinaryReader</span></td>
         <td><span class="parametername">reader</span></td>
-        <td></td>
+        <td><p>The binary reader.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>The offset byte to read onward from.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">length</span></td>
-        <td></td>
+        <td><p>The number of bytes to read.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="MupenSharp.Enums.Encoding.html">Encoding</a></td>
         <td><span class="parametername">encoding</span></td>
-        <td></td>
+        <td><p>The encoding type of the string.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -280,7 +294,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>A string, decoded from the read bytes.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -289,11 +304,12 @@
     <a href="https://github.com/TimeTravelPenguin/MupenSharp/new/dev/apiSpec/new?filename=MupenSharp_Extensions_BinaryReaderExtensions_ReadUInt16_System_IO_BinaryReader_System_Int64_.md&amp;value=---%0Auid%3A%20MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(System.IO.BinaryReader%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs/#L67">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs/#L93">View Source</a>
   </span>
   <a id="MupenSharp_Extensions_BinaryReaderExtensions_ReadUInt16_" data-uid="MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16*"></a>
   <h4 id="MupenSharp_Extensions_BinaryReaderExtensions_ReadUInt16_System_IO_BinaryReader_System_Int64_" data-uid="MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(System.IO.BinaryReader,System.Int64)">ReadUInt16(BinaryReader, Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads 2 bytes from a given offset of a binary stream and returns it as an <span class="xref">System.UInt16</span>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -312,12 +328,14 @@
       <tr>
         <td><span class="xref">System.IO.BinaryReader</span></td>
         <td><span class="parametername">reader</span></td>
-        <td></td>
+        <td><p>The binary reader.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>The offset byte to read onward from.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -332,7 +350,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt16</span></td>
-        <td></td>
+        <td><p>Returns the read <span class="xref">System.UInt16</span> value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -341,11 +360,12 @@
     <a href="https://github.com/TimeTravelPenguin/MupenSharp/new/dev/apiSpec/new?filename=MupenSharp_Extensions_BinaryReaderExtensions_ReadUInt32_System_IO_BinaryReader_System_Int64_.md&amp;value=---%0Auid%3A%20MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(System.IO.BinaryReader%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs/#L56">View Source</a>
+    <a href="https://github.com/TimeTravelPenguin/MupenSharp/blob/dev/MupenSharp/MupenSharp/Extensions/BinaryReaderExtensions.cs/#L75">View Source</a>
   </span>
   <a id="MupenSharp_Extensions_BinaryReaderExtensions_ReadUInt32_" data-uid="MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32*"></a>
   <h4 id="MupenSharp_Extensions_BinaryReaderExtensions_ReadUInt32_System_IO_BinaryReader_System_Int64_" data-uid="MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(System.IO.BinaryReader,System.Int64)">ReadUInt32(BinaryReader, Int64)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Reads 4 bytes from a given offset of a binary stream and returns it as an <span class="xref">System.UInt32</span>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -364,12 +384,14 @@
       <tr>
         <td><span class="xref">System.IO.BinaryReader</span></td>
         <td><span class="parametername">reader</span></td>
-        <td></td>
+        <td><p>The binary reader.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">offset</span></td>
-        <td></td>
+        <td><p>The offset byte to read onward from.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -384,7 +406,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>Returns the read <span class="xref">System.UInt32</span> value.</p>
+</td>
       </tr>
     </tbody>
   </table>
