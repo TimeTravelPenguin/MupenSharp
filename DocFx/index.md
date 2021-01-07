@@ -6,7 +6,7 @@ This library is designed to assist in reading and writing .m64 files for the Mup
 
 For more specific information on the filetype's header layout, please refer to the [TASVideos page](http://tasvideos.org/EmulatorResources/Mupen/M64.html) which documents the format.
 
-<object data="images/MupenSharpSvg.svg" type="image/svg+xml" style="display: block; margin: auto; margin-top: 50px; margin-bottom: -50px" height="100px" alt="MupenSharp logo"/>
+<object data="images/MupenSharpSvg.svg" type="image/svg+xml" style="display: block; margin: auto; margin-top: 50px;" height="100px" alt="MupenSharp logo"/>
 
 ## Overview
 

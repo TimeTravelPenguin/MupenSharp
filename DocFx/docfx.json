@@ -60,8 +60,8 @@
       "_appFooter": "Copyright © Phillip Smith",
       "_enableNewTab": true,
       "_disableContribution": false,
-      "_appLogoPath": "./images/logo.png",
-      "_appFaviconPath": "./images/MupenSharpIco.ico"
+      "_appLogoPath": "images/MupenSharpLogo.png",
+      "_appFaviconPath": "images/MupenSharpIco.ico"
     },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
