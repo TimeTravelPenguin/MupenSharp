@@ -19,7 +19,7 @@ using System;
 namespace MupenSharp.Enums
 {
   [Flags]
-  internal enum Controller
+  internal enum ControllerProperty
   {
     ControllerOnePresent = 0x0001,
     ControllerTwoPresent = 0x0002,
