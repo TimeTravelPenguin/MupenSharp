@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Attributes.StringEncodingAttribute.html",
-          "hash": "vUg6xQVjFAJSnC4Dg2SAEg=="
+          "hash": "yfpMErUA/ILWhQGNp1LW/w=="
         }
       },
       "is_incremental": true,
@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Attributes.html",
-          "hash": "1N7m8i/NX5q2v6deEyrBQQ=="
+          "hash": "fiaTBDWUavaY/o3C6qnp7A=="
         }
       },
       "is_incremental": true,
@@ -33,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Base.PropertyChangedBase.html",
-          "hash": "yRhjWWvxD4IsjGLgjIJ5qw=="
+          "hash": "S3rRdvY1EhhF4PLEcHuOFA=="
         }
       },
       "is_incremental": true,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Base.html",
-          "hash": "r4lvBcoXUKBv6GFXDN/1RA=="
+          "hash": "eLs2qSDG8juXigSuQtPEtQ=="
         }
       },
       "is_incremental": true,
@@ -57,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Enums.AnalogueInput.html",
-          "hash": "TvkccIXzBe5+frpe/IF/8g=="
+          "hash": "Dxv4fNOpjbMu55p2hWo3Uw=="
         }
       },
       "is_incremental": true,
@@ -69,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Enums.ControllerInput.html",
-          "hash": "EtB/PUetba2KMrh95Gglug=="
+          "hash": "LcKWUt8RjtUWZGemuweAEA=="
         }
       },
       "is_incremental": true,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Enums.Encoding.html",
-          "hash": "afVc7jv7VsFjto3eAP1Mqw=="
+          "hash": "2cMMAGvZK2pXubq16N7mqw=="
         }
       },
       "is_incremental": true,
@@ -93,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Enums.RegionCode.html",
-          "hash": "0hCfobromdSWH8I15OgBBg=="
+          "hash": "Oc9lmdZ1lMd0I5ALEcOmDA=="
         }
       },
       "is_incremental": true,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Enums.html",
-          "hash": "gT0abhVT3RIWkoL7PIfQvw=="
+          "hash": "2gC15UlxZRSgr36YxBfBhQ=="
         }
       },
       "is_incremental": true,
@@ -117,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Exceptions.InvalidFileVersionException.html",
-          "hash": "S4L+CyhjmXyuXR/pE3vegw=="
+          "hash": "tlUqERH/W0eOfXz3vNBiew=="
         }
       },
       "is_incremental": true,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Exceptions.InvalidFrameCountException.html",
-          "hash": "CpKHT/IAK3tp4A4O0+nEtg=="
+          "hash": "gWUvaqwYmqRNcRnUQss90Q=="
         }
       },
       "is_incremental": true,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Exceptions.NoControllerException.html",
-          "hash": "P4T9twZCa3WjiFxR9MNwdg=="
+          "hash": "OjqwASpEODejYkOeIDM3KQ=="
         }
       },
       "is_incremental": true,
@@ -153,7 +153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Exceptions.html",
-          "hash": "/pwkC6UsQW+d5+ko23PfbA=="
+          "hash": "B89C4fjWAzQhhKFISX72dg=="
         }
       },
       "is_incremental": true,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Extensions.BinaryReaderExtensions.html",
-          "hash": "HedBhBFvAd6FeKKjjUUHLw=="
+          "hash": "3gNyzRRF3LzzZ0m4Fo67pA=="
         }
       },
       "is_incremental": true,
@@ -177,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Extensions.EnumExtensions.html",
-          "hash": "I7D80js21qJI8VTZDckYnA=="
+          "hash": "uioEO7NjABKUNC2hMHvhxg=="
         }
       },
       "is_incremental": true,
@@ -189,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Extensions.EnumerableExtensions.html",
-          "hash": "oVJnL/+bc8Bnzfk/33EhcQ=="
+          "hash": "34RL21tt2HZ9MehBzC+SqA=="
         }
       },
       "is_incremental": true,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Extensions.InputModelExtensions.html",
-          "hash": "qaaS4vVn8brsD1lojinGxg=="
+          "hash": "+UzcNBnQ9RvmdoOcrBp65w=="
         }
       },
       "is_incremental": true,
@@ -213,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Extensions.html",
-          "hash": "IZPLSe1/LNkTSvNd+knK2Q=="
+          "hash": "2drgTwupezZEvL9MSaoD4A=="
         }
       },
       "is_incremental": true,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.FileParsing.M64Parser.html",
-          "hash": "n3vLDTBIIQw4w7rzC8SRVg=="
+          "hash": "DlU0E+HMBZWvTMbabtd04Q=="
         }
       },
       "is_incremental": true,
@@ -237,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.FileParsing.Parsers.IParser.html",
-          "hash": "JZlvaNblkWEuQHZvWgNoDQ=="
+          "hash": "3/cU+gAz0LRL5cnFBVf1oA=="
         }
       },
       "is_incremental": true,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.FileParsing.Parsers.html",
-          "hash": "+TTu7M1DiQjQq+OXdVEeCA=="
+          "hash": "hMZFEksR9EB/ELTHO+dOdQ=="
         }
       },
       "is_incremental": true,
@@ -261,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.FileParsing.StringEncoder.html",
-          "hash": "RuWDlxoTHck+aXclZSLZHw=="
+          "hash": "P7v7kCnRL9n1HMw6CcbVCw=="
         }
       },
       "is_incremental": true,
@@ -273,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.FileParsing.html",
-          "hash": "R9Uz3btRfx1n4A76u3U93g=="
+          "hash": "b4NrnvOA7yFTK4KorG3M5Q=="
         }
       },
       "is_incremental": true,
@@ -285,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Models.IM64.html",
-          "hash": "GUc+WyK4oQkiFjn6JWAXbg=="
+          "hash": "KN+hOYWRY0wUh0aIOX1wIQ=="
         }
       },
       "is_incremental": true,
@@ -297,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Models.ITas.html",
-          "hash": "tdLZx8zFXcVWvkI1t+pJ4A=="
+          "hash": "A8Yayn5yJUxwaNtazB8mKQ=="
         }
       },
       "is_incremental": true,
@@ -309,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Models.InputModel.html",
-          "hash": "zlhMHpNQxpj/1TJ/68IMsQ=="
+          "hash": "ouluU+yUoXmhFDk1ZzuEHw=="
         }
       },
       "is_incremental": true,
@@ -321,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Models.M64.html",
-          "hash": "Cu9TT/VL72TvZIs0cWXX5A=="
+          "hash": "GpUcpVj8s6b2alsPX5qwTw=="
         }
       },
       "is_incremental": true,
@@ -333,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Models.html",
-          "hash": "/4WUOoGQSfI1xnRjdeB5rA=="
+          "hash": "EUApVfUOHcv9+e1GlLiguQ=="
         }
       },
       "is_incremental": true,
@@ -345,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Resources.Constants.html",
-          "hash": "AT3B10tvPGprtXBzAmubzw=="
+          "hash": "t5kftmo925YHUG5gshgRyg=="
         }
       },
       "is_incremental": true,
@@ -357,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/MupenSharp.Resources.html",
-          "hash": "3FMW8WdRigXghUqBWGyWLA=="
+          "hash": "nF6rl5r3Fs/OZoap1p9YkQ=="
         }
       },
       "is_incremental": true,
@@ -369,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "XoxbS9skANYYogCXHHQgkw=="
+          "hash": "vTk7w4qYKLYmMQ9thcnmqw=="
         }
       },
       "is_incremental": true,
@@ -393,10 +393,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/startup.html",
-          "hash": "GQaYaIUVIsdieRiw7SyyOw=="
+          "hash": "AEfRa6Rk+UPym83K8sevHA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -424,32 +424,21 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/MupenSharpLogo.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/MupenSharpLogo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/MupenSharpSvg.svg",
       "output": {
         "resource": {
           "relative_path": "images/MupenSharpSvg.svg"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/logo.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/logo.png"
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "Resource",
-      "source_relative_path": "images/logo200px.png",
-      "output": {
-        "resource": {
-          "relative_path": "images/logo200px.png"
         }
       },
       "is_incremental": false,
@@ -461,10 +450,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "9cpu8cl48bVSV2LirP9btw=="
+          "hash": "jiCMCq5LbUNnm9WsDwDbzg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {

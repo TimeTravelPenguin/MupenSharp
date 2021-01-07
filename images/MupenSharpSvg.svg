@@ -16,10 +16,10 @@
    version="1.0"
    sodipodi:docname="MupenSharpSvg.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:export-filename="D:\ForkRepos\MupenSharp\MupenSharp\DocFx\images\logo200px.png"
-   inkscape:export-xdpi="165.51691"
-   inkscape:export-ydpi="165.51691"
-   viewBox="0 0 115.8082 116.00024">
+   inkscape:export-filename="D:\ForkRepos\MupenSharp\MupenSharp\DocFx\images\MupenSharpLogo.png"
+   inkscape:export-xdpi="43.034393"
+   inkscape:export-ydpi="43.034393"
+   viewBox="-9.4 -7 130.86326 131.08027">
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -28,7 +28,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
         <dc:date>August 17, 2008</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -135,7 +135,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient3786"
        id="linearGradient2552"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(6.730946,3.1870015)"
+       gradientTransform="translate(6.730946,3.1870012)"
        x1="64.584572"
        y1="43.5"
        x2="64.584572"
@@ -155,7 +155,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient3832"
        id="linearGradient2558"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,1,136.5961,2.8475355)"
+       gradientTransform="matrix(-1,0,0,1,136.5961,2.8475351)"
        x1="27.349958"
        y1="101.33946"
        x2="65.280579"
@@ -165,7 +165,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient3824"
        id="linearGradient2561"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(75.745265,-0.15246458)"
+       gradientTransform="translate(75.745265,-0.15246492)"
        x1="20.173897"
        y1="97.839462"
        x2="46.827847"
@@ -175,7 +175,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient3840"
        id="linearGradient2564"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,1,135.90009,3.1870015)"
+       gradientTransform="matrix(-1,0,0,1,135.90009,3.1870012)"
        x1="48.18214"
        y1="79.5"
        x2="42.031227"
@@ -185,7 +185,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient3802"
        id="linearGradient2567"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,1,135.90009,3.1870015)"
+       gradientTransform="matrix(-1,0,0,1,135.90009,3.1870012)"
        x1="46.131836"
        y1="57.5"
        x2="33.830013"
@@ -195,7 +195,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient3848"
        id="linearGradient2570"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,1,135.90009,3.1870015)"
+       gradientTransform="matrix(-1,0,0,1,135.90009,3.1870012)"
        x1="64.584572"
        y1="35.5"
        x2="31.779709"
@@ -225,7 +225,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient3832"
        id="linearGradient2579"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(6.034937,2.8475355)"
+       gradientTransform="translate(6.034937,2.8475351)"
        x1="27.349958"
        y1="101.33946"
        x2="65.280579"
@@ -235,7 +235,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient3824"
        id="linearGradient2582"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(-1,0,0,1,66.885767,-0.15246458)"
+       gradientTransform="matrix(-1,0,0,1,66.885767,-0.15246492)"
        x1="20.173897"
        y1="97.839462"
        x2="46.827847"
@@ -245,7 +245,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient3840"
        id="linearGradient2585"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(6.730946,3.1870015)"
+       gradientTransform="translate(6.730946,3.1870012)"
        x1="48.18214"
        y1="79.5"
        x2="42.031227"
@@ -255,7 +255,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient3802"
        id="linearGradient2588"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(6.730946,3.1870015)"
+       gradientTransform="translate(6.730946,3.1870012)"
        x1="46.131836"
        y1="57.5"
        x2="33.830013"
@@ -265,7 +265,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient3848"
        id="linearGradient2591"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(6.730946,3.1870015)"
+       gradientTransform="translate(6.730946,3.1870012)"
        x1="64.584572"
        y1="35.5"
        x2="31.779709"
@@ -300,7 +300,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        y2="114"
        gradientUnits="userSpaceOnUse"
        spreadMethod="pad"
-       gradientTransform="translate(4.2812499,3.2182515)" />
+       gradientTransform="translate(4.2812499,3.2182512)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient5199"
@@ -317,7 +317,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient5199"
        id="linearGradient1348"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(3.2485389,5.0941265)"
+       gradientTransform="translate(3.2485389,5.0941262)"
        x1="97.387909"
        y1="83.593742"
        x2="108.875"
@@ -328,7 +328,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient5199"
        id="linearGradient1528"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(4.2812499,3.2182515)"
+       gradientTransform="translate(4.2812499,3.2182512)"
        x1="97.387909"
        y1="83.593742"
        x2="108.875"
@@ -339,7 +339,7 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
        xlink:href="#linearGradient5199"
        id="linearGradient893"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(4.2812499,3.2182515)"
+       gradientTransform="translate(4.2812499,3.2182512)"
        x1="97.387909"
        y1="83.593742"
        x2="108.875"
@@ -362,9 +362,9 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
      inkscape:snap-global="true"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:zoom="10.232738"
-     inkscape:cx="57.904099"
-     inkscape:cy="58.000118"
+     inkscape:zoom="3.6178192"
+     inkscape:cx="-1.2968582"
+     inkscape:cy="15.97601"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:current-layer="layer2"
@@ -372,11 +372,17 @@ It is the author's desire that SVG / vector format copies be GPLed and rasteriza
      inkscape:window-maximized="1"
      inkscape:snap-text-baseline="false"
      viewbox-height="128"
-     scale-x="1"
+     scale-x="1.13"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
+     fit-margin-bottom="0"
+     viewbox-width="129.68902"
+     inkscape:document-units="px"
+     lock-margins="false"
+     inkscape:pagecheckerboard="true"
+     viewbox-x="-9.4"
+     viewbox-y="-7" />
   <g
      inkscape:groupmode="layer"
      id="layer1"
