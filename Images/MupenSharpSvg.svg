@@ -16,9 +16,9 @@
    version="1.0"
    sodipodi:docname="MupenSharpSvg.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:export-filename="D:\ForkRepos\MupenSharp\MupenSharp\DocFx\images\logo.png"
-   inkscape:export-xdpi="33.103382"
-   inkscape:export-ydpi="33.103382"
+   inkscape:export-filename="D:\ForkRepos\MupenSharp\MupenSharp\Images\nugetIcon.png"
+   inkscape:export-xdpi="105.93082"
+   inkscape:export-ydpi="105.93082"
    viewBox="0 0 115.8082 116.00024">
   <metadata
      id="metadata7">
@@ -28,7 +28,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>August 17, 2008</dc:date>
         <dc:creator>
           <cc:Agent>
