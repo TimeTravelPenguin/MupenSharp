@@ -1,0 +1,2 @@
+# Ignore DocFx from languages detection
+./DocFx -linguist-generated
