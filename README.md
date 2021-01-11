@@ -7,7 +7,9 @@ This library is designed to assist in reading and writing .m64 files for the Mup
 
 For more specific information on the filetype's header layout, please refer to the [TASVideos page](http://tasvideos.org/EmulatorResources/Mupen/M64.html) which documents the format.
 
-## Documentation coming soon
+## Documentation
+
+You can view the [documentation](https://timetravelpenguin.github.io/MupenSharp/) anytime here!
 
 ## Overview
 

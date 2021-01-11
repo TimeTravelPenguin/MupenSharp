@@ -1,2 +1,2 @@
 # Ignore DocFx from languages detection by marking as documentation
-DocFx linguist-documentation
+DocFx/* linguist-documentation
