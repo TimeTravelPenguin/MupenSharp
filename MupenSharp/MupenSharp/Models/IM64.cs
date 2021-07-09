@@ -2,19 +2,23 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: IM64.cs
 // 
 // Current Data:
-// 2021-01-07 12:13 PM
+// 2021-07-09 12:56 PM
 // 
 // Creation Date:
-// 2021-01-06 9:56 AM
+// 2021-07-06 3:25 PM
 
 #endregion
 
+#region usings
+
 using System.Collections.ObjectModel;
+
+#endregion
 
 namespace MupenSharp.Models
 {
@@ -31,7 +35,7 @@ namespace MupenSharp.Models
     /// <summary>
     ///   The number of frames (vertical interrupts).
     /// </summary>
-    uint VerticalInterrupts { get; set; }
+    uint ViCount { get; set; }
 
     /// <summary>
     ///   The number of file rerecords.
@@ -46,7 +50,7 @@ namespace MupenSharp.Models
     /// <summary>
     ///   The number of controllers enabled for the file.
     /// </summary>
-    uint NumberOfControllers { get; set; }
+    uint ControllerCount { get; set; }
 
     /// <summary>
     ///   The movie start type.
@@ -111,7 +115,27 @@ namespace MupenSharp.Models
     /// <summary>
     ///   The internal name of ROM used when recording, directly from ROM.
     /// </summary>
-    string NameOfRom { get; set; }
+    string RomName { get; set; }
+
+    /// <summary>
+    ///   The name of video plugin used when recording, directly from plugin
+    /// </summary>
+    string VideoPluginName { get; set; }
+
+    /// <summary>
+    ///   The name of audio plugin used when recording, directly from plugin
+    /// </summary>
+    string AudioPluginName { get; set; }
+
+    /// <summary>
+    ///   The name of input plugin used when recording, directly from plugin
+    /// </summary>
+    string InputPluginName { get; set; }
+
+    /// <summary>
+    ///   The name of rsp plugin used when recording, directly from plugin
+    /// </summary>
+    string RspPluginName { get; set; }
 
     /// <summary>
     ///   CRC32 of ROM used when recording, directly from ROM.
@@ -121,7 +145,7 @@ namespace MupenSharp.Models
     /// <summary>
     ///   The country code of ROM used when recording, directly from ROM.
     /// </summary>
-    ushort CountryCode { get; set; }
+    ushort RegionCode { get; set; }
 
     /// <summary>
     ///   The movie description info.
@@ -129,34 +153,15 @@ namespace MupenSharp.Models
     string MovieDescription { get; set; }
 
     /// <summary>
-    ///   The input for every input frame, containing analogue x, y positions and buttons pressed.
+    ///   The collection of controller inputs every input frame and controller,
+    ///   containing analogue x, y positions and buttons pressed.
     /// </summary>
-    ObservableCollection<InputModel> ControllerInputs { get; set; }
-
-    /// <summary>
-    ///   The inputs of controller 1
-    /// </summary>
-    public ObservableCollection<InputModel> ControllerOneInputs { get; set; }
-
-    /// <summary>
-    ///   The inputs of controller 2
-    /// </summary>
-    public ObservableCollection<InputModel> ControllerTwoInputs { get; set; }
-
-    /// <summary>
-    ///   The inputs of controller 3
-    /// </summary>
-    public ObservableCollection<InputModel> ControllerThreeInputs { get; set; }
-
-    /// <summary>
-    ///   The inputs of controller 4
-    /// </summary>
-    public ObservableCollection<InputModel> ControllerFourInputs { get; set; }
+    ObservableCollection<InputModel> ControllerInputs { get; }
 
     /// <summary>
     ///   The number of input samples from the controllers.
     /// </summary>
-    uint InputFrames { get; set; }
+    uint InputCount { get; set; }
 
     /// <summary>
     ///   The Author info of the movie.

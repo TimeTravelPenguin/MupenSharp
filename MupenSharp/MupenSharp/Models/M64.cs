@@ -2,23 +2,27 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: M64.cs
 // 
 // Current Data:
-// 2021-01-07 12:14 PM
+// 2021-07-09 12:57 PM
 // 
 // Creation Date:
-// 2021-01-06 9:56 AM
+// 2021-07-06 3:25 PM
 
 #endregion
+
+#region usings
 
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using MupenSharp.Attributes;
 using MupenSharp.Base;
 using MupenSharp.Enums;
+
+#endregion
 
 namespace MupenSharp.Models
 {
@@ -29,59 +33,94 @@ namespace MupenSharp.Models
   /// </summary>
   public class M64 : PropertyChangedBase, IM64
   {
+    private string _audioPluginName;
     private string _author;
+    private uint _controllerCount;
     private uint _controllerFlags;
-    private ObservableCollection<InputModel> _controllerFourInputs = new ObservableCollection<InputModel>();
-    private ObservableCollection<InputModel> _controllerInputs = new ObservableCollection<InputModel>();
-    private ObservableCollection<InputModel> _controllerOneInputs = new ObservableCollection<InputModel>();
-    private ObservableCollection<InputModel> _controllerThreeInputs = new ObservableCollection<InputModel>();
-    private ObservableCollection<InputModel> _controllerTwoInputs = new ObservableCollection<InputModel>();
-    private ushort _countryCode;
+    private ObservableCollection<InputModel> _controllerInputs = new();
     private uint _crc32;
-    private uint _inputFrames;
+    private uint _inputCount;
+    private string _inputPluginName;
     private string _movieDescription;
     private ushort _movieStartType;
-    private string _nameOfRom;
-    private uint _numberOfControllers;
+    private int _movieUid;
+    private ushort _regionCode;
     private uint _rerecordCount;
+    private string _romName;
+    private string _rspPluginName;
     private uint _version;
-    private uint _verticalInterrupts;
+    private uint _vICount;
+    private string _videoPluginName;
     private uint _viPerSecond;
 
     /// <summary>
-    ///   The inputs of controller 1.
+    ///   The UID of the movie.
     /// </summary>
-    public ObservableCollection<InputModel> ControllerOneInputs
+    public int MovieUid
     {
-      get => _controllerOneInputs;
-      set => SetValue(ref _controllerOneInputs, value);
+      get => _movieUid;
+      set => SetValue(ref _movieUid, value);
     }
 
     /// <summary>
-    ///   The inputs of controller 2.
+    ///   The internal name of ROM used when recording, directly from ROM.
     /// </summary>
-    public ObservableCollection<InputModel> ControllerTwoInputs
+    [StringEncoding(Encoding.ASCII, 32)]
+    public string RomName
     {
-      get => _controllerTwoInputs;
-      set => SetValue(ref _controllerTwoInputs, value);
+      get => _romName;
+      set => SetValue(ref _romName, value);
     }
 
     /// <summary>
-    ///   The inputs of controller 3.
+    ///   The name of video plugin used when recording, directly from plugin
     /// </summary>
-    public ObservableCollection<InputModel> ControllerThreeInputs
+    [StringEncoding(Encoding.ASCII, 64)]
+    public string VideoPluginName
     {
-      get => _controllerThreeInputs;
-      set => SetValue(ref _controllerThreeInputs, value);
+      get => _videoPluginName;
+      set => SetValue(ref _videoPluginName, value);
     }
 
     /// <summary>
-    ///   The inputs of controller 4.
+    ///   The name of audio plugin used when recording, directly from plugin
     /// </summary>
-    public ObservableCollection<InputModel> ControllerFourInputs
+    [StringEncoding(Encoding.ASCII, 64)]
+    public string AudioPluginName
     {
-      get => _controllerFourInputs;
-      set => SetValue(ref _controllerFourInputs, value);
+      get => _audioPluginName;
+      set => SetValue(ref _audioPluginName, value);
+    }
+
+    /// <summary>
+    ///   The name of input plugin used when recording, directly from plugin
+    /// </summary>
+    [StringEncoding(Encoding.ASCII, 64)]
+    public string InputPluginName
+    {
+      get => _inputPluginName;
+      set => SetValue(ref _inputPluginName, value);
+    }
+
+    /// <summary>
+    ///   The name of rsp plugin used when recording, directly from plugin
+    /// </summary>
+    [StringEncoding(Encoding.ASCII, 64)]
+    public string RspPluginName
+    {
+      get => _rspPluginName;
+      set => SetValue(ref _rspPluginName, value);
+    }
+
+    /// <summary>
+    ///   The collection of controller inputs every input frame and controller,
+    ///   containing analogue x, y positions and buttons pressed.
+    /// </summary>
+    public ObservableCollection<InputModel> ControllerInputs
+    {
+      // TODO: Implement multiple controller support
+      get => _controllerInputs;
+      set => SetValue(ref _controllerInputs, value);
     }
 
     /// <summary>
@@ -96,10 +135,10 @@ namespace MupenSharp.Models
     /// <summary>
     ///   The number of frames (vertical interrupts).
     /// </summary>
-    public uint VerticalInterrupts
+    public uint ViCount
     {
-      get => _verticalInterrupts;
-      set => SetValue(ref _verticalInterrupts, value);
+      get => _vICount;
+      set => SetValue(ref _vICount, value);
     }
 
     /// <summary>
@@ -123,10 +162,10 @@ namespace MupenSharp.Models
     /// <summary>
     ///   The number of controllers enabled for the file.
     /// </summary>
-    public uint NumberOfControllers
+    public uint ControllerCount
     {
-      get => _numberOfControllers;
-      set => SetValue(ref _numberOfControllers, value);
+      get => _controllerCount;
+      set => SetValue(ref _controllerCount, value);
     }
 
     /// <summary>
@@ -198,16 +237,6 @@ namespace MupenSharp.Models
     }
 
     /// <summary>
-    ///   The internal name of ROM used when recording, directly from ROM.
-    /// </summary>
-    [StringEncoding(Encoding.ASCII, 32)]
-    public string NameOfRom
-    {
-      get => _nameOfRom;
-      set => SetValue(ref _nameOfRom, value);
-    }
-
-    /// <summary>
     ///   CRC32 of ROM used when recording, directly from ROM.
     /// </summary>
     public uint Crc32
@@ -219,10 +248,10 @@ namespace MupenSharp.Models
     /// <summary>
     ///   The country code of ROM used when recording, directly from ROM.
     /// </summary>
-    public ushort CountryCode
+    public ushort RegionCode
     {
-      get => _countryCode;
-      set => SetValue(ref _countryCode, value);
+      get => _regionCode;
+      set => SetValue(ref _regionCode, value);
     }
 
     /// <summary>
@@ -236,21 +265,12 @@ namespace MupenSharp.Models
     }
 
     /// <summary>
-    ///   The input for every input frame, containing analogue x, y positions and buttons pressed.
+    ///   The number of input samples from the controllers (for one controller).
     /// </summary>
-    public ObservableCollection<InputModel> ControllerInputs
+    public uint InputCount
     {
-      get => _controllerInputs;
-      set => SetValue(ref _controllerInputs, value);
-    }
-
-    /// <summary>
-    ///   The number of input samples from the controllers.
-    /// </summary>
-    public uint InputFrames
-    {
-      get => _inputFrames;
-      set => SetValue(ref _inputFrames, value);
+      get => _inputCount;
+      set => SetValue(ref _inputCount, value);
     }
 
     /// <summary>

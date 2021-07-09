@@ -48,7 +48,7 @@
 				Version number. Should be 3.
 			</summary>
 		</member>
-		<member name="P:MupenSharp.Models.IM64.VerticalInterrupts">
+		<member name="P:MupenSharp.Models.IM64.VICount">
 			<summary>
 				The number of frames (vertical interrupts).
 			</summary>
@@ -63,7 +63,7 @@
 				Frames (vertical interrupts) per second.
 			</summary>
 		</member>
-		<member name="P:MupenSharp.Models.IM64.NumberOfControllers">
+		<member name="P:MupenSharp.Models.IM64.ControllerCount">
 			<summary>
 				The number of controllers enabled for the file.
 			</summary>
@@ -138,7 +138,7 @@
 				CRC32 of ROM used when recording, directly from ROM.
 			</summary>
 		</member>
-		<member name="P:MupenSharp.Models.IM64.CountryCode">
+		<member name="P:MupenSharp.Models.IM64.RegionCode">
 			<summary>
 				The country code of ROM used when recording, directly from ROM.
 			</summary>
@@ -153,7 +153,7 @@
 				The input for every input frame, containing analogue x, y positions and buttons pressed.
 			</summary>
 		</member>
-		<member name="P:MupenSharp.Models.IM64.InputFrames">
+		<member name="P:MupenSharp.Models.IM64.InputCount">
 			<summary>
 				The number of input samples from the controllers.
 			</summary>
@@ -217,7 +217,7 @@
 				Version number. Should be 3.
 			</summary>
 		</member>
-		<member name="P:MupenSharp.Models.M64.VerticalInterrupts">
+		<member name="P:MupenSharp.Models.M64.VICount">
 			<summary>
 				The number of frames (vertical interrupts).
 			</summary>
@@ -232,7 +232,7 @@
 				Frames (vertical interrupts) per second.
 			</summary>
 		</member>
-		<member name="P:MupenSharp.Models.M64.NumberOfControllers">
+		<member name="P:MupenSharp.Models.M64.ControllerCount">
 			<summary>
 				The number of controllers enabled for the file.
 			</summary>
@@ -307,7 +307,7 @@
 				CRC32 of ROM used when recording, directly from ROM.
 			</summary>
 		</member>
-		<member name="P:MupenSharp.Models.M64.CountryCode">
+		<member name="P:MupenSharp.Models.M64.RegionCode">
 			<summary>
 				The country code of ROM used when recording, directly from ROM.
 			</summary>
@@ -322,7 +322,7 @@
 				The input for every input frame, containing analogue x, y positions and buttons pressed.
 			</summary>
 		</member>
-		<member name="P:MupenSharp.Models.M64.InputFrames">
+		<member name="P:MupenSharp.Models.M64.InputCount">
 			<summary>
 				The number of input samples from the controllers.
 			</summary>

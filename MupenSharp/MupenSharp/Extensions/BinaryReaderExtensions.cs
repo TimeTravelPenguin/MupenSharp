@@ -2,17 +2,19 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: BinaryReaderExtensions.cs
 // 
 // Current Data:
-// 2021-01-07 12:03 PM
+// 2021-07-09 12:52 PM
 // 
 // Creation Date:
-// 2021-01-06 9:56 AM
+// 2021-07-06 3:25 PM
 
 #endregion
+
+#region usings
 
 using System;
 using System.Globalization;
@@ -21,6 +23,8 @@ using JetBrains.Annotations;
 using MupenSharp.Enums;
 using MupenSharp.FileParsing;
 using MupenSharp.Resources;
+
+#endregion
 
 namespace MupenSharp.Extensions
 {
@@ -83,6 +87,22 @@ namespace MupenSharp.Extensions
       return BitConverter.ToUInt32(reader.ReadBytes(offset, 4), 0);
     }
 
+    /// <summary>
+    ///   Reads 4 bytes from a given offset of a binary stream and returns it as an <see cref="int" />.
+    /// </summary>
+    /// <param name="reader">The binary reader.</param>
+    /// <param name="offset">The offset byte to read onward from.</param>
+    /// <returns>Returns the read <see cref="int" /> value.</returns>
+    public static int ReadInt32([NotNull] this BinaryReader reader, long offset)
+    {
+      if (reader is null)
+      {
+        throw new ArgumentNullException(nameof(reader),
+          string.Format(CultureInfo.InvariantCulture, ExceptionsResource.ArgumentIsNull, reader));
+      }
+
+      return BitConverter.ToInt32(reader.ReadBytes(offset, 4), 0);
+    }
 
     /// <summary>
     ///   Reads 2 bytes from a given offset of a binary stream and returns it as an <see cref="ushort" />.
