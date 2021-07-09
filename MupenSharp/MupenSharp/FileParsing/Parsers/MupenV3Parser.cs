@@ -7,7 +7,7 @@
 // File Name: MupenV3Parser.cs
 // 
 // Current Data:
-// 2021-07-09 12:54 PM
+// 2021-07-09 2:14 PM
 // 
 // Creation Date:
 // 2021-07-06 3:25 PM
@@ -74,16 +74,16 @@ namespace MupenSharp.FileParsing.Parsers
         RomName = reader.ReadString(0xC4, stringAttribs[nameof(M64.RomName)].ByteSize,
           stringAttribs[nameof(M64.RomName)].Encoding),
 
-        VideoPluginName = reader.ReadString(0xC4, stringAttribs[nameof(M64.VideoPluginName)].ByteSize,
+        VideoPluginName = reader.ReadString(0x122, stringAttribs[nameof(M64.VideoPluginName)].ByteSize,
           stringAttribs[nameof(M64.VideoPluginName)].Encoding),
 
-        AudioPluginName = reader.ReadString(0xC4, stringAttribs[nameof(M64.AudioPluginName)].ByteSize,
+        AudioPluginName = reader.ReadString(0x162, stringAttribs[nameof(M64.AudioPluginName)].ByteSize,
           stringAttribs[nameof(M64.AudioPluginName)].Encoding),
 
-        InputPluginName = reader.ReadString(0xC4, stringAttribs[nameof(M64.InputPluginName)].ByteSize,
+        InputPluginName = reader.ReadString(0x1A2, stringAttribs[nameof(M64.InputPluginName)].ByteSize,
           stringAttribs[nameof(M64.InputPluginName)].Encoding),
 
-        RspPluginName = reader.ReadString(0xC4, stringAttribs[nameof(M64.RspPluginName)].ByteSize,
+        RspPluginName = reader.ReadString(0x1E2, stringAttribs[nameof(M64.RspPluginName)].ByteSize,
           stringAttribs[nameof(M64.RspPluginName)].Encoding),
 
         Author = reader.ReadString(0x222, stringAttribs[nameof(M64.Author)].ByteSize,
