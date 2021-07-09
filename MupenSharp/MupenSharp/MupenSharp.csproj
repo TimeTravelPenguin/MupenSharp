@@ -17,6 +17,8 @@
 		<Copyright>Phillip Smith</Copyright>
 		<PackageLicenseExpression></PackageLicenseExpression>
 		<ApplicationIcon>icon.ico</ApplicationIcon>
+		<AssemblyVersion>1.0.3.6</AssemblyVersion>
+		<FileVersion>1.0.3.6</FileVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
