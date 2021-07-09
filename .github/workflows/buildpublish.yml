@@ -1,4 +1,4 @@
-name: build & publish
+name: buildpublish
 on:
   push:
     branches:
