@@ -1,11 +1,28 @@
-name: publish
+name: build & publish
 on:
   push:
     branches:
       - main # Default release branch
 jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+
   publish:
-    name: build, pack & publish
+    name: pack & publish
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -15,7 +32,6 @@ jobs:
         with:
           dotnet-version: 3.1.200
 
-      # Publish
       - name: publish on version change
         id: publish_nuget
         uses: rohith/publish-nuget@v2
