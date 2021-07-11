@@ -13,12 +13,12 @@
 		<PackageProjectUrl>https://github.com/TimeTravelPenguin/MupenSharp</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/TimeTravelPenguin/MupenSharp</RepositoryUrl>
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>1.0.3.7</Version>
+		<Version>1.0.3.8</Version>
 		<Copyright>Phillip Smith</Copyright>
 		<PackageLicenseExpression></PackageLicenseExpression>
 		<ApplicationIcon>icon.ico</ApplicationIcon>
-		<AssemblyVersion>1.0.3.7</AssemblyVersion>
-		<FileVersion>1.0.3.7</FileVersion>
+		<AssemblyVersion>1.0.3.8</AssemblyVersion>
+		<FileVersion>1.0.3.8</FileVersion>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
