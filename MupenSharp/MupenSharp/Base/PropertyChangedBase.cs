@@ -24,7 +24,7 @@ namespace MupenSharp.Base
   /// <summary>
   ///   Base class to implement INPC
   /// </summary>
-  public abstract class PropertyChangedBase : INotifyPropertyChanged
+  internal abstract class PropertyChangedBase : INotifyPropertyChanged
   {
     /// <summary>
     ///   The property changed event handler
