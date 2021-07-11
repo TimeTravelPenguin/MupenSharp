@@ -2,26 +2,30 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: InvalidFileVersionException.cs
 // 
 // Current Data:
-// 2021-01-07 11:52 AM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-06 9:56 AM
+// 2021-07-06 3:25 PM
 
 #endregion
 
+#region usings
+
 using System;
+
+#endregion
 
 namespace MupenSharp.Exceptions
 {
   /// <summary>
   ///   Exception to alert that the .m64 file version is not supported by this library.
   /// </summary>
-  public class InvalidFileVersionException : Exception
+  internal class InvalidFileVersionException : Exception
   {
     /// <summary>
     ///   Exception to alert that the .m64 file version is not supported by this library.

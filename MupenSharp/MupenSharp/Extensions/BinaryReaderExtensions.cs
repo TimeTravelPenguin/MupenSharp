@@ -7,7 +7,7 @@
 // File Name: BinaryReaderExtensions.cs
 // 
 // Current Data:
-// 2021-07-09 12:52 PM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
 // 2021-07-06 3:25 PM
@@ -31,7 +31,7 @@ namespace MupenSharp.Extensions
   /// <summary>
   ///   Extension methods for <see cref="BinaryReader" />.
   /// </summary>
-  public static class BinaryReaderExtensions
+  internal static class BinaryReaderExtensions
   {
     /// <summary>
     ///   Read a single byte from a given offset of a binary stream.

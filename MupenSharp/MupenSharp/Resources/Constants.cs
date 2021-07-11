@@ -2,15 +2,15 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: Constants.cs
 // 
 // Current Data:
-// 2021-01-03 8:40 PM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-03 8:37 PM
+// 2021-07-06 3:25 PM
 
 #endregion
 
@@ -19,7 +19,7 @@ namespace MupenSharp.Resources
   /// <summary>
   ///   Constant variables class
   /// </summary>
-  public static class Constants
+  internal static class Constants
   {
     /// <summary>
     ///   The first four byte of a valid .m64 file

@@ -2,19 +2,23 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: ControllerInput.cs
 // 
 // Current Data:
-// 2021-01-04 11:28 AM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-02 11:17 PM
+// 2021-07-06 3:25 PM
 
 #endregion
 
+#region usings
+
 using System;
+
+#endregion
 
 namespace MupenSharp.Enums
 {

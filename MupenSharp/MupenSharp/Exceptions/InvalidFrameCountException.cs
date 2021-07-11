@@ -2,26 +2,30 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: InvalidFrameCountException.cs
 // 
 // Current Data:
-// 2021-01-04 1:41 PM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-04 1:39 PM
+// 2021-07-06 3:25 PM
 
 #endregion
 
+#region usings
+
 using System;
+
+#endregion
 
 namespace MupenSharp.Exceptions
 {
   /// <summary>
   ///   Exception for when a file's frame count and header frame count property do not match
   /// </summary>
-  public class InvalidFrameCountException : Exception
+  internal class InvalidFrameCountException : Exception
   {
     /// <summary>
     ///   Raises an exception to indicate there is an invalid frame count

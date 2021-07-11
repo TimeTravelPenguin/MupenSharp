@@ -2,21 +2,25 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: M64ParserFactory.cs
 // 
 // Current Data:
-// 2021-01-05 11:02 PM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-04 4:23 PM
+// 2021-07-06 3:25 PM
 
 #endregion
+
+#region usings
 
 using MupenSharp.Base;
 using MupenSharp.Exceptions;
 using MupenSharp.FileParsing.Parsers;
+
+#endregion
 
 namespace MupenSharp.FileParsing
 {

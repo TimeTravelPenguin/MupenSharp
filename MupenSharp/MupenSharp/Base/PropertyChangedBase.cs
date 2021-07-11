@@ -2,29 +2,33 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: PropertyChangedBase.cs
 // 
 // Current Data:
-// 2021-01-04 11:33 AM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-02 11:17 PM
+// 2021-07-06 3:25 PM
 
 #endregion
+
+#region usings
 
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
+#endregion
+
 namespace MupenSharp.Base
 {
   /// <summary>
   ///   Base class to implement INPC
   /// </summary>
-  internal abstract class PropertyChangedBase : INotifyPropertyChanged
+  public abstract class PropertyChangedBase : INotifyPropertyChanged
   {
     /// <summary>
     ///   The property changed event handler

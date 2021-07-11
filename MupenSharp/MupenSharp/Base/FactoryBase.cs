@@ -2,21 +2,25 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: FactoryBase.cs
 // 
 // Current Data:
-// 2021-01-03 7:59 PM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-03 7:34 PM
+// 2021-07-06 3:25 PM
 
 #endregion
+
+#region usings
 
 using System;
 using System.Collections.Generic;
 using MupenSharp.Resources;
+
+#endregion
 
 namespace MupenSharp.Base
 {

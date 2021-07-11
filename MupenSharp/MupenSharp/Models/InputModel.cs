@@ -2,17 +2,19 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: InputModel.cs
 // 
 // Current Data:
-// 2021-01-04 1:25 PM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-04 11:29 AM
+// 2021-07-06 3:25 PM
 
 #endregion
+
+#region usings
 
 using System;
 using System.Collections.Generic;
@@ -23,6 +25,8 @@ using MupenSharp.Base;
 using MupenSharp.Enums;
 using MupenSharp.Extensions;
 using MupenSharp.Resources;
+
+#endregion
 
 /* TODO: Implement:
  Mupen64 will trigger a power off/on reset when the value for the controller info is specifically set to Reserved1 = 0x01, and Reserved2 = 0x01.
@@ -150,7 +154,7 @@ namespace MupenSharp.Models
     /// <returns></returns>
     public override string ToString()
     {
-      return $"{(X, Y)} {GetButtons().Join(", ")}";
+      return $"{(X, Y)} {GetButtons().Join()}";
     }
 
     /// <summary>

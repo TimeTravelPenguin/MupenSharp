@@ -2,21 +2,25 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: StringEncodingAttribute.cs
 // 
 // Current Data:
-// 2021-01-02 10:41 PM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-02 8:56 PM
+// 2021-07-06 3:25 PM
 
 #endregion
+
+#region usings
 
 using System;
 using JetBrains.Annotations;
 using MupenSharp.Enums;
+
+#endregion
 
 namespace MupenSharp.Attributes
 {
@@ -25,7 +29,7 @@ namespace MupenSharp.Attributes
   /// </summary>
   [UsedImplicitly]
   [AttributeUsage(AttributeTargets.Property)]
-  public class StringEncodingAttribute : Attribute
+  internal class StringEncodingAttribute : Attribute
   {
     /// <summary>
     ///   Sets the string encoding type for reading and writing

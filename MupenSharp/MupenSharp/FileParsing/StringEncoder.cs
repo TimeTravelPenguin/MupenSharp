@@ -2,28 +2,32 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: StringEncoder.cs
 // 
 // Current Data:
-// 2021-01-02 11:07 PM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-02 8:56 PM
+// 2021-07-06 3:25 PM
 
 #endregion
+
+#region usings
 
 using System;
 using MupenSharp.Enums;
 using MupenSharp.Resources;
+
+#endregion
 
 namespace MupenSharp.FileParsing
 {
   /// <summary>
   ///   Static class string encoder helper
   /// </summary>
-  public static class StringEncoder
+  internal static class StringEncoder
   {
     /// <summary>
     ///   Encode a byte array with a particular <see cref="Encoding" />.

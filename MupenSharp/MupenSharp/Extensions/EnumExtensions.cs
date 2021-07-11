@@ -2,28 +2,32 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: EnumExtensions.cs
 // 
 // Current Data:
-// 2021-01-01 10:44 PM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-01 8:04 PM
+// 2021-07-06 3:25 PM
 
 #endregion
+
+#region usings
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
+
+#endregion
 
 namespace MupenSharp.Extensions
 {
   /// <summary>
   ///   Extension methods for type <see cref="Enum" />.
   /// </summary>
-  public static class EnumExtensions
+  internal static class EnumExtensions
   {
     /// <summary>
     ///   Returns an array of type <typeparamref name="T" /> containing <see cref="Enum" /> values.

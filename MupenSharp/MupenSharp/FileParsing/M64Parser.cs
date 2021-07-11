@@ -2,17 +2,19 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: M64Parser.cs
 // 
 // Current Data:
-// 2021-01-05 11:13 PM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-04 4:23 PM
+// 2021-07-06 3:25 PM
 
 #endregion
+
+#region usings
 
 using System;
 using System.IO;
@@ -21,6 +23,8 @@ using MupenSharp.Extensions;
 using MupenSharp.Models;
 using MupenSharp.Resources;
 
+#endregion
+
 namespace MupenSharp.FileParsing
 {
   /// <summary>
@@ -28,7 +32,7 @@ namespace MupenSharp.FileParsing
   /// </summary>
   public static class M64Parser
   {
-    private static readonly M64ParserFactory ParserFactory = new M64ParserFactory();
+    private static readonly M64ParserFactory ParserFactory = new();
 
     /// <summary>
     ///   Parses the file <paramref name="path" />.

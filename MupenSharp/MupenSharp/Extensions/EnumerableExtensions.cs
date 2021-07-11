@@ -2,28 +2,32 @@
 
 // Name: Phillip Smith
 // 
-// Solution: MupenSharp
+// Solution: MupenTasStudio
 // Project: MupenSharp
 // File Name: EnumerableExtensions.cs
 // 
 // Current Data:
-// 2021-01-07 12:11 PM
+// 2021-07-11 11:21 AM
 // 
 // Creation Date:
-// 2021-01-06 4:55 PM
+// 2021-07-06 3:25 PM
 
 #endregion
+
+#region usings
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
+
+#endregion
 
 namespace MupenSharp.Extensions
 {
   /// <summary>
   ///   Extension methods for <see cref="IEnumerable{T}" />.
   /// </summary>
-  public static class EnumerableExtensions
+  internal static class EnumerableExtensions
   {
     /// <summary>
     ///   Join a collection of elements and return them as a comma-separated string.
