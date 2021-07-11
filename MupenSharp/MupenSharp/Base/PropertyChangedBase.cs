@@ -7,7 +7,7 @@
 // File Name: PropertyChangedBase.cs
 // 
 // Current Data:
-// 2021-07-11 11:21 AM
+// 2021-07-11 12:13 PM
 // 
 // Creation Date:
 // 2021-07-06 3:25 PM
@@ -39,7 +39,7 @@ namespace MupenSharp.Base
     ///   Raises property changed event
     /// </summary>
     /// <param name="propertyName"></param>
-    protected void OnPropertyChanged(string propertyName)
+    protected void OnPropertyChanged([CallerMemberName] string propertyName = null)
     {
       PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
