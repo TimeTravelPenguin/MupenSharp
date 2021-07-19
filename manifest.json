@@ -4,372 +4,12 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Attributes.StringEncodingAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Attributes.StringEncodingAttribute.html",
-          "hash": "yfpMErUA/ILWhQGNp1LW/w=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Attributes.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Attributes.html",
-          "hash": "fiaTBDWUavaY/o3C6qnp7A=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Base.PropertyChangedBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Base.PropertyChangedBase.html",
-          "hash": "S3rRdvY1EhhF4PLEcHuOFA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Base.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Base.html",
-          "hash": "eLs2qSDG8juXigSuQtPEtQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Enums.AnalogueInput.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Enums.AnalogueInput.html",
-          "hash": "Dxv4fNOpjbMu55p2hWo3Uw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Enums.ControllerInput.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Enums.ControllerInput.html",
-          "hash": "LcKWUt8RjtUWZGemuweAEA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Enums.Encoding.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Enums.Encoding.html",
-          "hash": "2cMMAGvZK2pXubq16N7mqw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Enums.RegionCode.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Enums.RegionCode.html",
-          "hash": "kbm73So0R6eOKH4kZhydIw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Enums.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Enums.html",
-          "hash": "2gC15UlxZRSgr36YxBfBhQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Exceptions.InvalidFileVersionException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Exceptions.InvalidFileVersionException.html",
-          "hash": "LPIcQ31kQiPVvKqTAQVfLQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Exceptions.InvalidFrameCountException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Exceptions.InvalidFrameCountException.html",
-          "hash": "gWUvaqwYmqRNcRnUQss90Q=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Exceptions.NoControllerException.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Exceptions.NoControllerException.html",
-          "hash": "kMRz8vL8JLUbdfd5hZT1ng=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Exceptions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Exceptions.html",
-          "hash": "HFYmxdr2d/0qHn+LqpUp/A=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Extensions.BinaryReaderExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Extensions.BinaryReaderExtensions.html",
-          "hash": "q+YXLtdgUtSSDMXg+BGZfA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Extensions.EnumExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Extensions.EnumExtensions.html",
-          "hash": "uioEO7NjABKUNC2hMHvhxg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Extensions.EnumerableExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Extensions.EnumerableExtensions.html",
-          "hash": "VFUJSf0jS2Rs+UosHSZLRA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Extensions.InputModelExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Extensions.InputModelExtensions.html",
-          "hash": "+UzcNBnQ9RvmdoOcrBp65w=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Extensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Extensions.html",
-          "hash": "olgLsPOEeZjfcAkjwIjQnw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.FileParsing.M64Parser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.FileParsing.M64Parser.html",
-          "hash": "DlU0E+HMBZWvTMbabtd04Q=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.FileParsing.Parsers.IParser.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.FileParsing.Parsers.IParser.html",
-          "hash": "Z7K+J3ZnYh8mifRKK/oykQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.FileParsing.Parsers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.FileParsing.Parsers.html",
-          "hash": "hMZFEksR9EB/ELTHO+dOdQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.FileParsing.StringEncoder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.FileParsing.StringEncoder.html",
-          "hash": "P7v7kCnRL9n1HMw6CcbVCw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.FileParsing.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.FileParsing.html",
-          "hash": "b4NrnvOA7yFTK4KorG3M5Q=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Models.IM64.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Models.IM64.html",
-          "hash": "agGvVQaBq56twz+k9OWOaA=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Models.InputModel.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Models.InputModel.html",
-          "hash": "ouluU+yUoXmhFDk1ZzuEHw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Models.M64.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Models.M64.html",
-          "hash": "w/E9oFnGdwt2g877S/l63g=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Models.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Models.html",
-          "hash": "tnB3RXRdSHrPRSXGTyLNTw=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Resources.Constants.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Resources.Constants.html",
-          "hash": "t5kftmo925YHUG5gshgRyg=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/MupenSharp.Resources.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/MupenSharp.Resources.html",
-          "hash": "nF6rl5r3Fs/OZoap1p9YkQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "HQxbznXXF8OZGf8v30PLIQ=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html",
-          "hash": "dBYB3xFwSLEJTinQkk9SsA=="
+          "hash": "eLbPYKnVSGpt2T5yqt0GbT3uUsu91xheMhXfadQfuXE="
         }
       },
       "is_incremental": false,
@@ -381,10 +21,10 @@
       "output": {
         ".html": {
           "relative_path": "articles/startup.html",
-          "hash": "AEfRa6Rk+UPym83K8sevHA=="
+          "hash": "wL7pLYVrKj64urLaXMWq3/nTopBBl3VwZ2//zYR4KNU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -393,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/toc.html",
-          "hash": "2D6XL1rpIfZECEMnKBHJfw=="
+          "hash": "8YAPsW4ZIfsWn16M9MG9N81GWkxJoK32NUG6siTR4Mk="
         }
       },
       "is_incremental": false,
@@ -438,10 +78,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "jiCMCq5LbUNnm9WsDwDbzg=="
+          "hash": "lFn2IefRkFU9bRUcYqslQhRTqflAdlZ9sFLZVRlALsU="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -450,7 +90,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "pUBjG3vS3RpiCslQ0O7rnA=="
+          "hash": "dlxX1/ddJssiQznbLngNEFxkmpR5MspJMyuoshTbM+M="
         }
       },
       "is_incremental": false,
@@ -460,23 +100,19 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Cannot build incrementally because docfx version changed from 2.56.6.0 to 2.57.2.0.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "DocfxVersionChanged"
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 3,
-          "skipped_file_count": 3
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 29,
-          "skipped_file_count": 29
+          "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
