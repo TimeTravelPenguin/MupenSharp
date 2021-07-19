@@ -7,7 +7,7 @@
 // File Name: M64.cs
 // 
 // Current Data:
-// 2021-07-11 11:21 AM
+// 2021-07-17 10:20 AM
 // 
 // Creation Date:
 // 2021-07-06 3:25 PM
@@ -16,6 +16,8 @@
 
 #region usings
 
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using MupenSharp.Attributes;
@@ -60,6 +62,12 @@ namespace MupenSharp.Models
     {
       get => _movieUid;
       set => SetValue(ref _movieUid, value);
+    }
+
+    public InputModel this[int i]
+    {
+      get => ControllerInputs[i];
+      set => ControllerInputs[i] = value;
     }
 
     /// <summary>
@@ -291,6 +299,69 @@ namespace MupenSharp.Models
       // Notify change when ControllerInputs notifies change
       ((INotifyPropertyChanged) ControllerInputs).PropertyChanged +=
         delegate { OnPropertyChanged(GetType().FullName); };
+    }
+
+    public bool ControllerPresent(Controller controller)
+    {
+      var controllerProperty = controller switch
+      {
+        Controller.ControllerOne => ControllerProperty.ControllerOnePresent,
+        Controller.ControllerTwo => ControllerProperty.ControllerTwoPresent,
+        Controller.ControllerThree => ControllerProperty.ControllerThreePresent,
+        Controller.ControllerFour => ControllerProperty.ControllerFourPresent,
+        _ => throw new ArgumentOutOfRangeException(nameof(controller), controller, null)
+      };
+
+      return ((ControllerProperty) ControllerFlags).HasFlag(controllerProperty);
+    }
+
+    /// <summary>
+    ///   Get the input of a particular controller.
+    /// </summary>
+    /// <param name="controller">The controller to get the input of.</param>
+    /// <param name="input">The input frame of interest.</param>
+    /// <returns>Returns the input of the controller for that input frame.</returns>
+    public InputModel GetControllerInput(Controller controller, int input)
+    {
+      if (!ControllerPresent(controller))
+      {
+        throw new Exception($"Controller '{controller}' is not present.");
+      }
+
+      var offset = (int) controller;
+      if (ControllerInputs.Count * ControllerCount > input + offset)
+      {
+        throw new IndexOutOfRangeException($"The input '{input}' falls out of range.");
+      }
+
+      return ControllerInputs[input + offset];
+    }
+
+    /// <summary>
+    ///   Get all inputs for a given controller.
+    /// </summary>
+    /// <param name="controller">The controller to get the inputs.</param>
+    /// <returns>Returns the inputs of the given controller.</returns>
+    public IEnumerable<InputModel> GetControllerInputs(Controller controller)
+    {
+      if (!ControllerPresent(controller))
+      {
+        throw new Exception($"Controller '{controller}' is not present.");
+      }
+
+      var inputs = new List<InputModel>();
+      if (ControllerInputs.Count == 0)
+      {
+        return inputs;
+      }
+
+      var offset = (int) controller;
+      for (var i = 0; i < ControllerInputs.Count; i += (int) ControllerCount)
+      {
+        inputs.Add(ControllerInputs[i + offset]);
+      }
+
+      return inputs;
     }
   }
 }
