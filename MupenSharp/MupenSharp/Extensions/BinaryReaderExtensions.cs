@@ -121,7 +121,6 @@ namespace MupenSharp.Extensions
       return BitConverter.ToUInt16(reader.ReadBytes(offset, 2), 0);
     }
 
-
     /// <summary>
     ///   Reads a number of bytes from a given offset of a binary stream and returns it as a string with a specific encoding.
     /// </summary>
