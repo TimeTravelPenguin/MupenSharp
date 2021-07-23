@@ -187,7 +187,6 @@ namespace MupenSharp.Models
       return new InputModel(input);
     }
 
-
     /// <summary>
     ///   Explicitly converts an <see cref="InputModel" /> array into a <see cref="byte" />.
     /// </summary>
