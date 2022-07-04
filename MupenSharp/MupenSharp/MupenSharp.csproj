@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
-		<LangVersion>9</LangVersion>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<LangVersion>latest</LangVersion>
 		<NeutralLanguage>en</NeutralLanguage>
 		<Authors>Phillip Smith</Authors>
 		<Company>Phillip Smith</Company>
@@ -22,7 +22,7 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-		<DocumentationFile>D:\C#_Offline\MupenMovieEditor\MupenSharp\MupenSharp.xml</DocumentationFile>
+		<DocumentationFile>D:\ForkRepos\MupenSharp\MupenSharp\MupenSharp\MupenSharp\MupenSharp.xml</DocumentationFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -30,7 +30,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="JetBrains.Annotations" Version="2021.1.0" />
+		<PackageReference Include="AllOverIt" Version="5.9.2" />
+		<PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
+		<PackageReference Include="ReactiveUI" Version="18.2.5" />
+		<PackageReference Include="ReactiveUI.Fody" Version="18.2.5" />
 	</ItemGroup>
 
 	<ItemGroup>

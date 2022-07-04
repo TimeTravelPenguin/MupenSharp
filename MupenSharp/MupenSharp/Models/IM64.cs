@@ -16,6 +16,7 @@
 
 #region usings
 
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
 #endregion
@@ -156,7 +157,7 @@ namespace MupenSharp.Models
     ///   The collection of controller inputs every input frame and controller,
     ///   containing analogue x, y positions and buttons pressed.
     /// </summary>
-    ObservableCollection<InputModel> ControllerInputs { get; }
+    IList<InputModel> ControllerInputs { get; }
 
     /// <summary>
     ///   The number of input samples from the controllers.

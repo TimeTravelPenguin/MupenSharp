@@ -1,372 +1,967 @@
 <?xml version="1.0"?>
-
 <doc>
-	<assembly>
-		<name>MupenSharp</name>
-	</assembly>
-	<members>
-		<member name="T:MupenSharp.Attributes.StringEncodingAttribute">
-			<summary>
-				Attribute used to specify a string encoding and byte size.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Attributes.StringEncodingAttribute.Encoding">
-			<summary>
-				Sets the string encoding type for reading and writing
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Attributes.StringEncodingAttribute.ByteSize">
-			<summary>
-				The size of the string in bytes
-			</summary>
-		</member>
-		<member name="M:MupenSharp.Attributes.StringEncodingAttribute.#ctor(MupenSharp.Enums.Encoding,System.Int32)">
-			<summary>
-				Attribute used to specify a string encoding and byte size.
-			</summary>
-			<param name="encoding">The type of encoding of the string.</param>
-			<param name="byteSize">The number of bytes of the string.</param>
-		</member>
-		<member name="T:MupenSharp.Extensions.EnumExtensions">
-			<summary>
-				Extension methods for type <see cref="T:System.Enum" />.
-			</summary>
-		</member>
-		<member name="M:MupenSharp.Extensions.EnumExtensions.EnumToArray``1">
-			<summary>
-				Returns an array of type <typeparamref name="T" /> containing <see cref="T:System.Enum" /> values.
-			</summary>
-			<typeparam name="T">
-				The element type of the array
-			</typeparam>
-			<returns>
-				Returns an array of type <typeparamref name="T" />
-			</returns>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.Version">
-			<summary>
-				Version number. Should be 3.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.VICount">
-			<summary>
-				The number of frames (vertical interrupts).
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.RerecordCount">
-			<summary>
-				The number of file rerecords.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.ViPerSecond">
-			<summary>
-				Frames (vertical interrupts) per second.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.ControllerCount">
-			<summary>
-				The number of controllers enabled for the file.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.MovieStartType">
-			<summary>
-				The movie start type.
-				<list type="table">
-					<listheader>
-						<term>
-							Value
-						</term>
-						<term>
-							Description
-						</term>
-					</listheader>
-					<item>
-						<term>1</term>
-						<term>
-							movie begins from snapshot (the snapshot will be loaded from an external file with the movie filename.
-							and a .st extension)
-						</term>
-					</item>
-					<item>
-						<term> 2</term>
-						<term>
-							movie begins from power-on
-						</term>
-					</item>
-					<item>
-						<term>other values</term>
-						<term>
-							invalid movie
-						</term>
-					</item>
-				</list>
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.ControllerFlags">
-			<summary>
-				Flags set for each controller.
-				<list type="bullet">
-					<item>
-						<term>bit 0</term>
-						<description>
-							Controller 1 present
-						</description>
-					</item>
-					<item>
-						<term>bit 4</term>
-						<description>
-							Controller 1 has mempak
-						</description>
-					</item>
-					<item>
-						<term>bit 8</term>
-						<description>
-							Controller 1 has rumblepak
-						</description>
-					</item>
-				</list>
-				+1..3 for controllers 2..4.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.NameOfRom">
-			<summary>
-				The internal name of ROM used when recording, directly from ROM.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.Crc32">
-			<summary>
-				CRC32 of ROM used when recording, directly from ROM.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.RegionCode">
-			<summary>
-				The country code of ROM used when recording, directly from ROM.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.MovieDescription">
-			<summary>
-				The movie description info.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.ControllerInputs">
-			<summary>
-				The input for every input frame, containing analogue x, y positions and buttons pressed.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.InputCount">
-			<summary>
-				The number of input samples from the controllers.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.IM64.Author">
-			<summary>
-				The Author info of the movie.
-			</summary>
-		</member>
-		<member name="M:MupenSharp.Models.InputModel.#ctor(System.Byte[])">
-			<summary>
-				InputModel representing data contained within an .m64 file.
-			</summary>
-			<param name="input">
-				A 4-byte value containing X and Y analogue positions, and the XOR of buttons pressed.
-				The first two bytes are the XOR of the buttons, followed by the X and Y inputs
-				represented by 1-byte each.
-				<para />
-				<example>
-					Given the input 0xC0182541, this can be seen as:
-					<list type="bullet">
-						<item>
-							<term>Button Flags</term>
-							<description>2-bytes = C0 18</description>
-						</item>
-						<item>
-							<term>X Analogue</term>
-							<description>1-byte = 25</description>
-						</item>
-						<item>
-							<term>Y Analogue</term>
-							<description>1-byte = 41</description>
-						</item>
-					</list>
-				</example>
-				<remarks>
-					When reading from an .m64 file from offset 0x400, 4-bytes at a time, the following code works if the
-					hex input is NOT REVERSED.
-				</remarks>
-			</param>
-		</member>
-		<member name="M:MupenSharp.Models.InputModel.op_Explicit(System.Byte[])~MupenSharp.Models.InputModel">
-			<summary>
-				Implicitly converts a <see cref="T:System.Byte" /> array into an InputModel
-			</summary>
-			<param name="input"></param>
-		</member>
-		<member name="M:MupenSharp.Models.InputModel.op_Explicit(MupenSharp.Models.InputModel)~System.Byte[]">
-			<summary>
-				Explicitly converts a
-			</summary>
-			<param name="input"></param>
-		</member>
-		<member name="T:MupenSharp.Models.M64">
-			<summary>
-				Stores data of a .m64 file.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.Version">
-			<summary>
-				Version number. Should be 3.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.VICount">
-			<summary>
-				The number of frames (vertical interrupts).
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.RerecordCount">
-			<summary>
-				The number of file rerecords.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.ViPerSecond">
-			<summary>
-				Frames (vertical interrupts) per second.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.ControllerCount">
-			<summary>
-				The number of controllers enabled for the file.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.MovieStartType">
-			<summary>
-				The movie start type.
-				<list type="table">
-					<listheader>
-						<term>
-							Value
-						</term>
-						<term>
-							Description
-						</term>
-					</listheader>
-					<item>
-						<term>1</term>
-						<term>
-							movie begins from snapshot (the snapshot will be loaded from an external file with the movie filename.
-							and a .st extension)
-						</term>
-					</item>
-					<item>
-						<term> 2</term>
-						<term>
-							movie begins from power-on
-						</term>
-					</item>
-					<item>
-						<term>other values</term>
-						<term>
-							invalid movie
-						</term>
-					</item>
-				</list>
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.ControllerFlags">
-			<summary>
-				Flags set for each controller.
-				<list type="bullet">
-					<item>
-						<term>bit 0</term>
-						<description>
-							Controller 1 present
-						</description>
-					</item>
-					<item>
-						<term>bit 4</term>
-						<description>
-							Controller 1 has mempak
-						</description>
-					</item>
-					<item>
-						<term>bit 8</term>
-						<description>
-							Controller 1 has rumblepak
-						</description>
-					</item>
-				</list>
-				+1..3 for controllers 2..4.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.NameOfRom">
-			<summary>
-				The internal name of ROM used when recording, directly from ROM.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.Crc32">
-			<summary>
-				CRC32 of ROM used when recording, directly from ROM.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.RegionCode">
-			<summary>
-				The country code of ROM used when recording, directly from ROM.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.MovieDescription">
-			<summary>
-				The movie description info.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.ControllerInputs">
-			<summary>
-				The input for every input frame, containing analogue x, y positions and buttons pressed.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.InputCount">
-			<summary>
-				The number of input samples from the controllers.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Models.M64.Author">
-			<summary>
-				The Author info of the movie.
-			</summary>
-		</member>
-		<member name="T:MupenSharp.Resources.ExceptionsResource">
-			<summary>
-				A strongly-typed resource class, for looking up localized strings, etc.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Resources.ExceptionsResource.ResourceManager">
-			<summary>
-				Returns the cached ResourceManager instance used by this class.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Resources.ExceptionsResource.Culture">
-			<summary>
-				Overrides the current thread's CurrentUICulture property for all
-				resource lookups using this strongly typed resource class.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Resources.ExceptionsResource.ArgumentIsNull">
-			<summary>
-				Looks up a localized string similar to {0} is null.
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Resources.ExceptionsResource.CannotBeNullOrWhitespace">
-			<summary>
-				Looks up a localized string similar to Value cannot be null or whitespace..
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Resources.ExceptionsResource.InputArrayInvalidLength">
-			<summary>
-				Looks up a localized string similar to The array is of an invalid length. The byte[] should be of length 4..
-			</summary>
-		</member>
-		<member name="P:MupenSharp.Resources.ExceptionsResource.InvalidFilePath">
-			<summary>
-				Looks up a localized string similar to The file path is invalid..
-			</summary>
-		</member>
-	</members>
+    <assembly>
+        <name>MupenSharp</name>
+    </assembly>
+    <members>
+        <member name="T:MupenSharp.Attributes.StringEncodingAttribute">
+            <summary>
+              Attribute used to specify a string encoding and byte size.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Attributes.StringEncodingAttribute.Encoding">
+            <summary>
+              Sets the string encoding type for reading and writing
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Attributes.StringEncodingAttribute.ByteSize">
+            <summary>
+              The size of the string in bytes
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Attributes.StringEncodingAttribute.#ctor(MupenSharp.Enums.Encoding,System.Int32)">
+            <summary>
+              Attribute used to specify a string encoding and byte size.
+            </summary>
+            <param name="encoding">The type of encoding of the string.</param>
+            <param name="byteSize">The number of bytes of the string.</param>
+        </member>
+        <member name="T:MupenSharp.Base.PropertyChangedBase">
+            <summary>
+              Base class to implement INPC
+            </summary>
+        </member>
+        <member name="E:MupenSharp.Base.PropertyChangedBase.PropertyChanged">
+            <summary>
+              The property changed event handler
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Base.PropertyChangedBase.OnPropertyChanged(System.String)">
+            <summary>
+              Raises property changed event
+            </summary>
+            <param name="propertyName"></param>
+        </member>
+        <member name="M:MupenSharp.Base.PropertyChangedBase.SetValue``1(``0@,``0,System.String)">
+            <summary>
+              Sets the value of a property and raises event changed if and only if the value is different
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="field">The field to set the value of</param>
+            <param name="value">The new value</param>
+            <param name="propertyName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:MupenSharp.Enums.AnalogueInput">
+            <summary>
+              Enum for Analogue Inputs
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.AnalogueInput.X">
+            <summary>
+              The horizontal analogue coordinate
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.AnalogueInput.Y">
+            <summary>
+              The vertical analogue coordinate
+            </summary>
+        </member>
+        <member name="T:MupenSharp.Enums.Controller">
+            <summary>
+              Enum to indicate a specific controller selection.
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.Controller.ControllerOne">
+            <summary>
+              Controller in port one. Has offset 0.
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.Controller.ControllerTwo">
+            <summary>
+              Controller in port two. Has offset 1.
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.Controller.ControllerThree">
+            <summary>
+              Controller in port three. Has offset 2.
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.Controller.ControllerFour">
+            <summary>
+              Controller in port four. Has offset 3.
+            </summary>
+        </member>
+        <member name="T:MupenSharp.Enums.ControllerInput">
+            <summary>
+              Controller button bit flags
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.CRight">
+            <summary>
+              The C-Right button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.CLeft">
+            <summary>
+              The C-Left button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.CDown">
+            <summary>
+              The C-Down button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.CUp">
+            <summary>
+              The C-Up button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.R">
+            <summary>
+              The right shoulder button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.L">
+            <summary>
+              The left shoulder button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.Reserved1">
+            <summary>
+              Reserved input 01
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.Reserved2">
+            <summary>
+              Reserved input 02
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.DigitalPadRight">
+            <summary>
+              Right D-Pad button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.DigitalPadLeft">
+            <summary>
+              Left D-Pad button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.DigitalPadDown">
+            <summary>
+              Down D-Pad button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.DigitalPadUp">
+            <summary>
+              Up D-Pad button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.Start">
+            <summary>
+              The Start button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.Z">
+            <summary>
+              The Z button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.B">
+            <summary>
+              The B button
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerInput.A">
+            <summary>
+              The A button
+            </summary>
+        </member>
+        <member name="T:MupenSharp.Enums.ControllerProperty">
+            <summary>
+              Properties to determine controller, controller memory pack, and controller rumble pack presence.
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerProperty.ControllerOnePresent">
+            <summary>
+            Presence flag for controller 1
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerProperty.ControllerTwoPresent">
+            <summary>
+            Presence flag for controller 2
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerProperty.ControllerThreePresent">
+            <summary>
+            Presence flag for controller 3
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerProperty.ControllerFourPresent">
+            <summary>
+            Presence flag for controller 4
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerProperty.ControllerOneMemoryPackPresent">
+            <summary>
+            Presence flag for controller 1 memory pack
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerProperty.ControllerTwoMemoryPackPresent">
+            <summary>
+            Presence flag for controller 2 memory pack
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerProperty.ControllerThreeMemoryPackPresent">
+            <summary>
+            Presence flag for controller 3 memory pack
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerProperty.ControllerFourMemoryPackPresent">
+            <summary>
+            Presence flag for controller 4 memory pack
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerProperty.ControllerOneRumblePackPresent">
+            <summary>
+            Presence flag for controller 1 rumble pack
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerProperty.ControllerTwoRumblePackPresent">
+            <summary>
+            Presence flag for controller 2 rumble pack
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerProperty.ControllerThreeRumblePackPresent">
+            <summary>
+            Presence flag for controller 3 rumble pack
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.ControllerProperty.ControllerFourRumblePackPresent">
+            <summary>
+            Presence flag for controller 4 rumble pack
+            </summary>
+        </member>
+        <member name="T:MupenSharp.Enums.Encoding">
+            <summary>
+              String encoding enums
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.Encoding.ASCII">
+            <summary>
+              ASCII encoding
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.Encoding.UTF8">
+            <summary>
+              UTF-8 encoding
+            </summary>
+        </member>
+        <member name="T:MupenSharp.Enums.RegionCode">
+            <summary>
+              Known region codes for SM64 --- OBSOLETE
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.RegionCode.U">
+            <summary>
+              SM64 USA region code
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.RegionCode.J">
+            <summary>
+              SM64 Japan region code
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.RegionCode.GhostV1">
+            <summary>
+              Region code for SM64 Ghost ROM hack v1
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Enums.RegionCode.GhostV2">
+            <summary>
+              Region code for SM64 Ghost ROM hack v2
+            </summary>
+        </member>
+        <member name="T:MupenSharp.Exceptions.InvalidFileVersionException">
+            <summary>
+              Exception to alert that the .m64 file version is not supported by this library.
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Exceptions.InvalidFileVersionException.#ctor">
+            <summary>
+              Exception to alert that the .m64 file version is not supported by this library.
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Exceptions.InvalidFileVersionException.#ctor(System.String)">
+            <summary>
+              Exception to alert that the .m64 file version is not supported by this library.
+            </summary>
+            <param name="message">The exception message</param>
+        </member>
+        <member name="T:MupenSharp.Exceptions.InvalidFrameCountException">
+            <summary>
+              Exception for when a file's frame count and header frame count property do not match
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Exceptions.InvalidFrameCountException.#ctor">
+            <summary>
+              Raises an exception to indicate there is an invalid frame count
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Exceptions.InvalidFrameCountException.#ctor(System.String)">
+            <summary>
+              Raises an exception to indicate there is an invalid frame count
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:MupenSharp.Exceptions.NoControllerException">
+            <summary>
+              Exception to alert there is no controller present for the .m64 file
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Exceptions.NoControllerException.#ctor">
+            <summary>
+              Exception to alert there is no controller present for the .m64 file
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Exceptions.NoControllerException.#ctor(System.String)">
+            <summary>
+              Exception to alert there is no controller present for the .m64 file
+            </summary>
+            <param name="message">The exception message</param>
+        </member>
+        <member name="T:MupenSharp.Extensions.BinaryReaderExtensions">
+            <summary>
+              Extension methods for <see cref="T:System.IO.BinaryReader" />.
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Extensions.BinaryReaderExtensions.ReadByte(System.IO.BinaryReader,System.Int64)">
+            <summary>
+              Read a single byte from a given offset of a binary stream.
+            </summary>
+            <param name="reader">The binary reader.</param>
+            <param name="offset">The offset byte to read onward from.</param>
+            <returns>The byte read.</returns>
+        </member>
+        <member name="M:MupenSharp.Extensions.BinaryReaderExtensions.ReadBytes(System.IO.BinaryReader,System.Int64,System.Int32)">
+            <summary>
+              Reads a number of bytes from a given offset of a binary stream.
+            </summary>
+            <param name="reader">The binary reader.</param>
+            <param name="offset">The offset byte to read onward from.</param>
+            <param name="length">The number of bytes to read from the offset.</param>
+            <returns>The array of bytes read.</returns>
+        </member>
+        <member name="M:MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt32(System.IO.BinaryReader,System.Int64)">
+            <summary>
+              Reads 4 bytes from a given offset of a binary stream and returns it as an <see cref="T:System.UInt32" />.
+            </summary>
+            <param name="reader">The binary reader.</param>
+            <param name="offset">The offset byte to read onward from.</param>
+            <returns>Returns the read <see cref="T:System.UInt32" /> value.</returns>
+        </member>
+        <member name="M:MupenSharp.Extensions.BinaryReaderExtensions.ReadInt32(System.IO.BinaryReader,System.Int64)">
+            <summary>
+              Reads 4 bytes from a given offset of a binary stream and returns it as an <see cref="T:System.Int32" />.
+            </summary>
+            <param name="reader">The binary reader.</param>
+            <param name="offset">The offset byte to read onward from.</param>
+            <returns>Returns the read <see cref="T:System.Int32" /> value.</returns>
+        </member>
+        <member name="M:MupenSharp.Extensions.BinaryReaderExtensions.ReadUInt16(System.IO.BinaryReader,System.Int64)">
+            <summary>
+              Reads 2 bytes from a given offset of a binary stream and returns it as an <see cref="T:System.UInt16" />.
+            </summary>
+            <param name="reader">The binary reader.</param>
+            <param name="offset">The offset byte to read onward from.</param>
+            <returns>Returns the read <see cref="T:System.UInt16" /> value.</returns>
+        </member>
+        <member name="M:MupenSharp.Extensions.BinaryReaderExtensions.ReadString(System.IO.BinaryReader,System.Int64,System.Int32,MupenSharp.Enums.Encoding)">
+            <summary>
+              Reads a number of bytes from a given offset of a binary stream and returns it as a string with a specific encoding.
+            </summary>
+            <param name="reader">The binary reader.</param>
+            <param name="offset">The offset byte to read onward from.</param>
+            <param name="length">The number of bytes to read.</param>
+            <param name="encoding">The encoding type of the string.</param>
+            <returns>A string, decoded from the read bytes.</returns>
+        </member>
+        <member name="T:MupenSharp.Extensions.EnumerableExtensions">
+            <summary>
+              Extension methods for <see cref="T:System.Collections.Generic.IEnumerable`1" />.
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Extensions.EnumerableExtensions.Join``1(System.Collections.Generic.IEnumerable{``0},System.String)">
+            <summary>
+              Join a collection of elements and return them as a comma-separated string.
+            </summary>
+            <typeparam name="T">The object type contained by the IEnumerable.</typeparam>
+            <param name="collection">The collection of elements to join.</param>
+            <param name="separator">The separator character. Default is ", ".</param>
+            <returns>A string composed of the collection elements with separators where appropriate.</returns>
+        </member>
+        <member name="M:MupenSharp.Extensions.EnumerableExtensions.IsAll``1(System.Collections.Generic.IEnumerable{``0},``0)">
+            <summary>
+              Check all elements of the collection are equal to a given value.
+            </summary>
+            <typeparam name="T">The element type of the IEnumerable that inherits <see cref="T:System.IEquatable`1" />.</typeparam>
+            <param name="collection">The collection of elements which will be equated.</param>
+            <param name="value">The value to equate each element of the collection to.</param>
+            <returns>True if all elements equate <see langword="true" /> to <paramref name="value" />.</returns>
+        </member>
+        <member name="T:MupenSharp.Extensions.EnumExtensions">
+            <summary>
+              Extension methods for type <see cref="T:System.Enum" />.
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Extensions.EnumExtensions.EnumToArray``1">
+            <summary>
+              Returns an array of type <typeparamref name="T" /> containing <see cref="T:System.Enum" /> values.
+            </summary>
+            <typeparam name="T">
+              The element type of the array
+            </typeparam>
+            <returns>
+              Returns an array of type <typeparamref name="T" />
+            </returns>
+        </member>
+        <member name="T:MupenSharp.FileParsing.M64Parser">
+            <summary>
+              Parser object that can read and write a .m64 file
+            </summary>
+        </member>
+        <member name="M:MupenSharp.FileParsing.M64Parser.Parse(System.String)">
+            <summary>
+              Parses the file <paramref name="path" />.
+            </summary>
+            <param name="path">The path of the .m64 file</param>
+            <returns>Returns object with data of parsed file</returns>
+        </member>
+        <member name="T:MupenSharp.FileParsing.Parsers.IParser">
+            <summary>
+              Parser Interface for all m64 file versions
+            </summary>
+        </member>
+        <member name="M:MupenSharp.FileParsing.Parsers.IParser.Parse(System.IO.FileInfo)">
+            <summary>
+              Create an object containing data of a specific m64 file
+            </summary>
+            <param name="m64File">The file to parse</param>
+            <returns></returns>
+        </member>
+        <member name="M:MupenSharp.FileParsing.Parsers.IParser.ValidateReservedOffsets(System.IO.FileInfo)">
+            <summary>
+              Validates a file is a valid m64 file.
+            </summary>
+            <param name="m64File">The m64 file to validate.</param>
+            <returns>True if the file is valid.</returns>
+        </member>
+        <member name="M:MupenSharp.FileParsing.Parsers.MupenV3Parser.Parse(System.IO.FileInfo)">
+            <summary>
+            </summary>
+            <param name="m64File"></param>
+            <returns></returns>
+            <exception cref="T:MupenSharp.Exceptions.InvalidFrameCountException">
+              Raises exception if the header's frame count does not match the file body length
+            </exception>
+        </member>
+        <member name="T:MupenSharp.FileParsing.StringEncoder">
+            <summary>
+              Static class string encoder helper
+            </summary>
+        </member>
+        <member name="M:MupenSharp.FileParsing.StringEncoder.Encode(System.Byte[],MupenSharp.Enums.Encoding)">
+            <summary>
+              Encode a byte array with a particular <see cref="T:MupenSharp.Enums.Encoding" />.
+            </summary>
+            <param name="bytes">Byte array to be encoded</param>
+            <param name="encoding">The encoding type.</param>
+            <returns>Encoded string</returns>
+        </member>
+        <member name="T:MupenSharp.Models.IM64">
+            <summary>
+              M64 file interface
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.Version">
+            <summary>
+              Version number. Should be 3.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.ViCount">
+            <summary>
+              The number of frames (vertical interrupts).
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.RerecordCount">
+            <summary>
+              The number of file rerecords.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.ViPerSecond">
+            <summary>
+              Frames (vertical interrupts) per second.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.ControllerCount">
+            <summary>
+              The number of controllers enabled for the file.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.MovieStartType">
+            <summary>
+              The movie start type.
+              <list type="table">
+                <listheader>
+                  <term>
+                    Value
+                  </term>
+                  <term>
+                    Description
+                  </term>
+                </listheader>
+                <item>
+                  <term>1</term>
+                  <term>
+                    movie begins from snapshot (the snapshot will be loaded from an external file with the movie filename.
+                    and a .st extension)
+                  </term>
+                </item>
+                <item>
+                  <term> 2</term>
+                  <term>
+                    movie begins from power-on
+                  </term>
+                </item>
+                <item>
+                  <term>other values</term>
+                  <term>
+                    invalid movie
+                  </term>
+                </item>
+              </list>
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.ControllerFlags">
+            <summary>
+              Flags set for each controller.
+              <list type="bullet">
+                <item>
+                  <term>bit 0</term>
+                  <description>
+                    Controller 1 present
+                  </description>
+                </item>
+                <item>
+                  <term>bit 4</term>
+                  <description>
+                    Controller 1 has mempak
+                  </description>
+                </item>
+                <item>
+                  <term>bit 8</term>
+                  <description>
+                    Controller 1 has rumblepak
+                  </description>
+                </item>
+              </list>
+              +1..3 for controllers 2..4.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.RomName">
+            <summary>
+              The internal name of ROM used when recording, directly from ROM.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.VideoPluginName">
+            <summary>
+              The name of video plugin used when recording, directly from plugin
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.AudioPluginName">
+            <summary>
+              The name of audio plugin used when recording, directly from plugin
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.InputPluginName">
+            <summary>
+              The name of input plugin used when recording, directly from plugin
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.RspPluginName">
+            <summary>
+              The name of rsp plugin used when recording, directly from plugin
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.Crc32">
+            <summary>
+              CRC32 of ROM used when recording, directly from ROM.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.RegionCode">
+            <summary>
+              The country code of ROM used when recording, directly from ROM.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.MovieDescription">
+            <summary>
+              The movie description info.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.ControllerInputs">
+            <summary>
+              The collection of controller inputs every input frame and controller,
+              containing analogue x, y positions and buttons pressed.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.InputCount">
+            <summary>
+              The number of input samples from the controllers.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.IM64.Author">
+            <summary>
+              The Author info of the movie.
+            </summary>
+        </member>
+        <member name="T:MupenSharp.Models.InputModel">
+            <summary>
+              A wrapper for controller input for a particular frame
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.InputModel.X">
+            <summary>
+              The analogue x coordinate
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.InputModel.Y">
+            <summary>
+              The analogue y coordinate
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.InputModel.Buttons">
+            <summary>
+              The array of bytes representing the combination of buttons pressed
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Models.InputModel.#ctor(System.Byte[])">
+            <summary>
+              InputModel representing data contained within an .m64 file.
+            </summary>
+            <param name="input">
+              A 4-byte value containing X and Y analogue positions, and the XOR of buttons pressed.
+              The first two bytes are the XOR of the buttons, followed by the X and Y inputs
+              represented by 1-byte each.
+              <para />
+              <example>
+                Given the input 0xC0182541, this can be seen as:
+                <list type="bullet">
+                  <item>
+                    <term>Button Flags</term>
+                    <description>2-bytes = C0 18</description>
+                  </item>
+                  <item>
+                    <term>X Analogue</term>
+                    <description>1-byte = 25</description>
+                  </item>
+                  <item>
+                    <term>Y Analogue</term>
+                    <description>1-byte = 41</description>
+                  </item>
+                </list>
+              </example>
+              <remarks>
+                When reading from an .m64 file from offset 0x400, 4-bytes at a time, the following code works if the
+                hex input is NOT REVERSED.
+              </remarks>
+            </param>
+        </member>
+        <member name="M:MupenSharp.Models.InputModel.SetControllerInput(MupenSharp.Enums.ControllerInput,System.Boolean)">
+            <summary>
+              Sets a controller input to be either pressed or unpressed
+            </summary>
+            <param name="input">The button type to set</param>
+            <param name="isPressed">The state the button is to be set</param>
+        </member>
+        <member name="M:MupenSharp.Models.InputModel.GetButtonState(MupenSharp.Enums.ControllerInput)">
+            <summary>
+              Returns the state of a particular button
+            </summary>
+            <param name="input"></param>
+            <returns>True is button is pressed</returns>
+        </member>
+        <member name="M:MupenSharp.Models.InputModel.ToString">
+            <summary>
+              Override to return string of analogue inputs and buttons pressed
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MupenSharp.Models.InputModel.GetButtons">
+            <summary>
+              Returns a string of pressed button inputs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MupenSharp.Models.InputModel.op_Explicit(System.Byte[])~MupenSharp.Models.InputModel">
+            <summary>
+              Implicitly converts a <see cref="T:System.Byte" /> array into an <see cref="T:MupenSharp.Models.InputModel" />.
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="M:MupenSharp.Models.InputModel.op_Explicit(MupenSharp.Models.InputModel)~System.Byte[]">
+            <summary>
+              Explicitly converts an <see cref="T:MupenSharp.Models.InputModel" /> array into a <see cref="T:System.Byte" />.
+            </summary>
+            <param name="input"></param>
+        </member>
+        <member name="T:MupenSharp.Models.M64">
+            <summary>
+              Stores data of a .m64 file.
+              Refer to the <see href="http://tasvideos.org/EmulatorResources/Mupen/M64.html">header documentation</see> for more
+              information.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.MovieUid">
+            <summary>
+              The UID of the movie.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.RomName">
+            <summary>
+              The internal name of ROM used when recording, directly from ROM.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.VideoPluginName">
+            <summary>
+              The name of video plugin used when recording, directly from plugin
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.AudioPluginName">
+            <summary>
+              The name of audio plugin used when recording, directly from plugin
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.InputPluginName">
+            <summary>
+              The name of input plugin used when recording, directly from plugin
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.RspPluginName">
+            <summary>
+              The name of rsp plugin used when recording, directly from plugin
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.ControllerInputs">
+            <summary>
+              The collection of controller inputs every input frame and controller,
+              containing analogue x, y positions and buttons pressed.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.Version">
+            <summary>
+              Version number. Should be 3.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.ViCount">
+            <summary>
+              The number of frames (vertical interrupts).
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.RerecordCount">
+            <summary>
+              The number of file rerecords.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.ViPerSecond">
+            <summary>
+              Frames (vertical interrupts) per second.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.ControllerCount">
+            <summary>
+              The number of controllers enabled for the file.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.MovieStartType">
+            <summary>
+              The movie start type.
+              <list type="table">
+                <listheader>
+                  <term>
+                    Value
+                  </term>
+                  <term>
+                    Description
+                  </term>
+                </listheader>
+                <item>
+                  <term>1</term>
+                  <term>
+                    movie begins from snapshot (the snapshot will be loaded from an external file with the movie filename.
+                    and a .st extension)
+                  </term>
+                </item>
+                <item>
+                  <term> 2</term>
+                  <term>
+                    movie begins from power-on
+                  </term>
+                </item>
+                <item>
+                  <term>other values</term>
+                  <term>
+                    invalid movie
+                  </term>
+                </item>
+              </list>
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.ControllerFlags">
+            <summary>
+              Flags set for each controller.
+              <list type="bullet">
+                <item>
+                  <term>bit 0</term>
+                  <description>
+                    Controller 1 present
+                  </description>
+                </item>
+                <item>
+                  <term>bit 4</term>
+                  <description>
+                    Controller 1 has mempak
+                  </description>
+                </item>
+                <item>
+                  <term>bit 8</term>
+                  <description>
+                    Controller 1 has rumblepak
+                  </description>
+                </item>
+              </list>
+              +1..3 for controllers 2..4.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.Crc32">
+            <summary>
+              CRC32 of ROM used when recording, directly from ROM.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.RegionCode">
+            <summary>
+              The country code of ROM used when recording, directly from ROM.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.MovieDescription">
+            <summary>
+              The movie description info.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.InputCount">
+            <summary>
+              The number of input samples from the controllers (for one controller).
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Models.M64.Author">
+            <summary>
+              The Author info of the movie.
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Models.M64.#ctor">
+            <summary>
+              Object wrapper to encapsulate the data of a .m64 file
+            </summary>
+        </member>
+        <member name="M:MupenSharp.Models.M64.GetControllerInput(MupenSharp.Enums.Controller,System.Int32)">
+            <summary>
+              Get the input of a particular controller.
+            </summary>
+            <param name="controller">The controller to get the input of.</param>
+            <param name="input">The input frame of interest.</param>
+            <returns>Returns the input of the controller for that input frame.</returns>
+        </member>
+        <member name="M:MupenSharp.Models.M64.GetControllerInputs(MupenSharp.Enums.Controller)">
+            <summary>
+              Get all inputs for a given controller.
+            </summary>
+            <param name="controller">The controller to get the inputs.</param>
+            <returns>Returns the inputs of the given controller.</returns>
+        </member>
+        <member name="T:MupenSharp.Resources.Constants">
+            <summary>
+              Constant variables class
+            </summary>
+        </member>
+        <member name="F:MupenSharp.Resources.Constants.ValidM64Signature">
+            <summary>
+              The first four byte of a valid .m64 file
+            </summary>
+        </member>
+        <member name="T:MupenSharp.Resources.ExceptionsResource">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Resources.ExceptionsResource.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Resources.ExceptionsResource.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Resources.ExceptionsResource.ArgumentIsNull">
+            <summary>
+              Looks up a localized string similar to {0} is null.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Resources.ExceptionsResource.CannotBeNullOrWhitespace">
+            <summary>
+              Looks up a localized string similar to Value cannot be null or whitespace..
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Resources.ExceptionsResource.FilePathNotSet">
+            <summary>
+              Looks up a localized string similar to The file path has not been set.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Resources.ExceptionsResource.InputArrayInvalidLength">
+            <summary>
+              Looks up a localized string similar to The array is of an invalid length. The byte[] should be of length 4..
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Resources.ExceptionsResource.InvalidEncodingType">
+            <summary>
+              Looks up a localized string similar to The given encoding type is invalid.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Resources.ExceptionsResource.InvalidFilePath">
+            <summary>
+              Looks up a localized string similar to The file path is invalid..
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Resources.ExceptionsResource.NotM64">
+            <summary>
+              Looks up a localized string similar to The given file is not a m64 file.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Resources.ExceptionsResource.NullReference">
+            <summary>
+              Looks up a localized string similar to &apos;{0}&apos; is null.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Resources.ExceptionsResource.RegistryDoenNotContainKey">
+            <summary>
+              Looks up a localized string similar to Registry does not contain the requested key.
+            </summary>
+        </member>
+        <member name="P:MupenSharp.Resources.ExceptionsResource.RegistryKeyAlreadyExist">
+            <summary>
+              Looks up a localized string similar to Registry already contains the given key.
+            </summary>
+        </member>
+    </members>
 </doc>

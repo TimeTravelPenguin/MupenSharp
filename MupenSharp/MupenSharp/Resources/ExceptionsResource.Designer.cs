@@ -19,7 +19,7 @@ namespace MupenSharp.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class ExceptionsResource {
@@ -61,7 +61,7 @@ namespace MupenSharp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {0} is null.
+        ///   Looks up a localized string similar to {0} is null..
         /// </summary>
         internal static string ArgumentIsNull {
             get {
@@ -79,15 +79,6 @@ namespace MupenSharp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The file path has not been set.
-        /// </summary>
-        internal static string FilePathNotSet {
-            get {
-                return ResourceManager.GetString("FilePathNotSet", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to The array is of an invalid length. The byte[] should be of length 4..
         /// </summary>
         internal static string InputArrayInvalidLength {
@@ -97,7 +88,7 @@ namespace MupenSharp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The given encoding type is invalid.
+        ///   Looks up a localized string similar to The given encoding type is invalid..
         /// </summary>
         internal static string InvalidEncodingType {
             get {
@@ -115,7 +106,7 @@ namespace MupenSharp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The given file is not a m64 file.
+        ///   Looks up a localized string similar to The given file is not a m64 file..
         /// </summary>
         internal static string NotM64 {
             get {
@@ -124,7 +115,7 @@ namespace MupenSharp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &apos;{0}&apos; is null.
+        ///   Looks up a localized string similar to &apos;{0}&apos; is null..
         /// </summary>
         internal static string NullReference {
             get {
@@ -133,20 +124,11 @@ namespace MupenSharp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Registry does not contain the requested key.
+        ///   Looks up a localized string similar to A reserved offset has a value that is non-zero..
         /// </summary>
-        internal static string RegistryDoenNotContainKey {
+        internal static string ReservedOffsetValueInvalid {
             get {
-                return ResourceManager.GetString("RegistryDoenNotContainKey", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Registry already contains the given key.
-        /// </summary>
-        internal static string RegistryKeyAlreadyExist {
-            get {
-                return ResourceManager.GetString("RegistryKeyAlreadyExist", resourceCulture);
+                return ResourceManager.GetString("ReservedOffsetValueInvalid", resourceCulture);
             }
         }
     }
