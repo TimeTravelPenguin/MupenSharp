@@ -21,7 +21,6 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using JetBrains.Annotations;
-using MupenSharp.Base;
 using MupenSharp.Enums;
 using MupenSharp.Extensions;
 using MupenSharp.Resources;
@@ -36,7 +35,7 @@ namespace MupenSharp.Models
   /// <summary>
   ///   A wrapper for controller input for a particular frame
   /// </summary>
-  public class InputModel : PropertyChangedBase
+  public class InputModel
   {
     private sbyte _x;
     private sbyte _y;
@@ -154,7 +153,7 @@ namespace MupenSharp.Models
     /// <returns></returns>
     public override string ToString()
     {
-      return $"{(X, Y)} {GetButtons().Join()}";
+      return $"{(X, Y)} {string.Join(", ", GetButtons())}";
     }
 
     /// <summary>

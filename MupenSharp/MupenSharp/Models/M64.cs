@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using MupenSharp.Attributes;
 using MupenSharp.Enums;
-using ReactiveUI;
-using ReactiveUI.Fody.Helpers;
 
 namespace MupenSharp.Models;
 
@@ -12,46 +10,40 @@ namespace MupenSharp.Models;
 ///   Refer to the <see href="http://tasvideos.org/EmulatorResources/Mupen/M64.html">header documentation</see> for more
 ///   information.
 /// </summary>
-public class M64 : ReactiveObject, IM64
+public class M64 : IM64
 {
   /// <summary>
   ///   The UID of the movie.
   /// </summary>
-  [Reactive]
   public int MovieUid { get; set; }
 
   /// <summary>
   ///   The internal name of ROM used when recording, directly from ROM.
   /// </summary>
-  [Reactive]
   [StringEncoding(Encoding.ASCII, 32)]
   public string RomName { get; set; }
 
   /// <summary>
   ///   The name of video plugin used when recording, directly from plugin
   /// </summary>
-  [Reactive]
   [StringEncoding(Encoding.ASCII, 64)]
   public string VideoPluginName { get; set; }
 
   /// <summary>
   ///   The name of audio plugin used when recording, directly from plugin
   /// </summary>
-  [Reactive]
   [StringEncoding(Encoding.ASCII, 64)]
   public string AudioPluginName { get; set; }
 
   /// <summary>
   ///   The name of input plugin used when recording, directly from plugin
   /// </summary>
-  [Reactive]
   [StringEncoding(Encoding.ASCII, 64)]
   public string InputPluginName { get; set; }
 
   /// <summary>
   ///   The name of rsp plugin used when recording, directly from plugin
   /// </summary>
-  [Reactive]
   [StringEncoding(Encoding.ASCII, 64)]
   public string RspPluginName { get; set; }
 
@@ -60,37 +52,31 @@ public class M64 : ReactiveObject, IM64
   ///   containing analogue x, y positions and buttons pressed.
   /// </summary>
   // TODO: Implement multiple controller support
-  [Reactive]
   public IList<InputModel> ControllerInputs { get; set; }
 
   /// <summary>
   ///   Version number. Should be 3.
   /// </summary>
-  [Reactive]
   public uint Version { get; set; }
 
   /// <summary>
   ///   The number of frames (vertical interrupts).
   /// </summary>
-  [Reactive]
   public uint ViCount { get; set; }
 
   /// <summary>
   ///   The number of file rerecords.
   /// </summary>
-  [Reactive]
   public uint RerecordCount { get; set; }
 
   /// <summary>
   ///   Frames (vertical interrupts) per second.
   /// </summary>
-  [Reactive]
   public uint ViPerSecond { get; set; }
 
   /// <summary>
   ///   The number of controllers enabled for the file.
   /// </summary>
-  [Reactive]
   public uint ControllerCount { get; set; }
 
   /// <summary>
@@ -125,7 +111,6 @@ public class M64 : ReactiveObject, IM64
   ///     </item>
   ///   </list>
   /// </summary>
-  [Reactive]
   public ushort MovieStartType { get; set; }
 
   /// <summary>
@@ -152,38 +137,32 @@ public class M64 : ReactiveObject, IM64
   ///   </list>
   ///   +1..3 for controllers 2..4.
   /// </summary>
-  [Reactive]
   public uint ControllerFlags { get; set; }
 
   /// <summary>
   ///   CRC32 of ROM used when recording, directly from ROM.
   /// </summary>
-  [Reactive]
   public uint Crc32 { get; set; }
 
   /// <summary>
   ///   The country code of ROM used when recording, directly from ROM.
   /// </summary>
-  [Reactive]
   public ushort RegionCode { get; set; }
 
   /// <summary>
   ///   The movie description info.
   /// </summary>
-  [Reactive]
   [StringEncoding(Encoding.UTF8, 256)]
   public string MovieDescription { get; set; }
 
   /// <summary>
   ///   The number of input samples from the controllers (for one controller).
   /// </summary>
-  [Reactive]
   public uint InputCount { get; set; }
 
   /// <summary>
   ///   The Author info of the movie.
   /// </summary>
-  [Reactive]
   [StringEncoding(Encoding.UTF8, 222)]
   public string Author { get; set; }
 
