@@ -32,16 +32,20 @@ You can view the [documentation](https://timetravelpenguin.github.io/MupenSharp/
 In order to read a .m64 file, you can do the following:
 
 ```cs
+using MupenSharp.Models;
+using MupenSharp.FileParsing;
+using MupenSharp.Enums;
+
 const string file = "C://path/to/file.m64";
-M64 m64 = M64Parser.Parse(file);
+M64 m64 = MupenV3Parser.Parse(file);
 
 Console.WriteLine($"Author(s): {m64.Author}");
-Console.WriteLine($"ROM name: {m64.NameOfRom}");
+Console.WriteLine($"ROM name: {m64.RomName}");
 
 var frameCount = 1;
-foreach (var inputFrame in m64.Inputs)
+foreach (var inputFrame in m64.GetControllerInputs(Controller.ControllerOne))
 {
-    Console.WriteLine($"Frame {frameCount++}:\t{inputFrame}");
+  Console.WriteLine($"Frame {frameCount++}:\t{inputFrame}");
 }
 ```
 
