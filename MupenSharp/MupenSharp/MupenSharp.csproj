@@ -22,7 +22,12 @@
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-		<DocumentationFile>D:\ForkRepos\MupenSharp\MupenSharp\MupenSharp\MupenSharp\MupenSharp.xml</DocumentationFile>
+		<DocumentationFile>bin\Debug\netstandard2.1\MupenSharp.xml</DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+	  <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+	  <DocumentationFile>bin\Release\netstandard2.1\MupenSharp.xml</DocumentationFile>
 	</PropertyGroup>
 
 	<ItemGroup>
