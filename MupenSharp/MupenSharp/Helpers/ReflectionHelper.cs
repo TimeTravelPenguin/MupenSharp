@@ -23,19 +23,18 @@ using System.Reflection;
 
 #endregion
 
-namespace MupenSharp.Helpers
-{
-  internal static class ReflectionHelper
-  {
-    public static Dictionary<string, TAttribute> GetPropertyAttributeDictionaryOfType<TAttribute>(this Type type)
-      where TAttribute : Attribute
-    {
-      var attr = (from prop in type.GetProperties()
-          from attribs in prop.GetCustomAttributes(typeof(TAttribute)).Cast<TAttribute>()
-          select new KeyValuePair<string, TAttribute>(prop.Name, attribs))
-        .ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
+namespace MupenSharp.Helpers;
 
-      return attr;
+internal static class ReflectionHelper
+{
+    public static Dictionary<string, TAttribute> GetPropertyAttributeDictionaryOfType<TAttribute>(this Type type)
+        where TAttribute : Attribute
+    {
+        var attr = (from prop in type.GetProperties()
+                from attribs in prop.GetCustomAttributes(typeof(TAttribute)).Cast<TAttribute>()
+                select new KeyValuePair<string, TAttribute>(prop.Name, attribs))
+            .ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
+
+        return attr;
     }
-  }
 }

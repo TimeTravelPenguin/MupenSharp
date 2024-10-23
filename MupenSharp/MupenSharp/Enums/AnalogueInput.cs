@@ -1,17 +1,17 @@
 ﻿namespace MupenSharp.Enums;
 
 /// <summary>
-///   Enum for Analogue Inputs
+///     Enum for Analogue Inputs
 /// </summary>
 public enum AnalogueInput
 {
-  /// <summary>
-  ///   The horizontal analogue coordinate
-  /// </summary>
-  X,
+    /// <summary>
+    ///     The horizontal analogue coordinate
+    /// </summary>
+    X,
 
-  /// <summary>
-  ///   The vertical analogue coordinate
-  /// </summary>
-  Y
+    /// <summary>
+    ///     The vertical analogue coordinate
+    /// </summary>
+    Y
 }

@@ -4,11 +4,11 @@ namespace MupenSharp.Exceptions;
 
 internal class InvalidFileVersionException : Exception
 {
-  public InvalidFileVersionException()
-  {
-  }
+    public InvalidFileVersionException()
+    {
+    }
 
-  public InvalidFileVersionException(string message) : base(message)
-  {
-  }
+    public InvalidFileVersionException(string message) : base(message)
+    {
+    }
 }

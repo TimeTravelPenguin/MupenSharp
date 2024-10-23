@@ -4,11 +4,11 @@ namespace MupenSharp.Exceptions;
 
 internal class NoControllerException : Exception
 {
-  public NoControllerException()
-  {
-  }
+    public NoControllerException()
+    {
+    }
 
-  public NoControllerException(string message) : base(message)
-  {
-  }
+    public NoControllerException(string message) : base(message)
+    {
+    }
 }
