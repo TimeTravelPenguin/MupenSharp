@@ -14,16 +14,15 @@
 
 #endregion
 
-namespace MupenSharp.Resources
+namespace MupenSharp.Resources;
+
+/// <summary>
+///     Constant variables class
+/// </summary>
+internal static class Constants
 {
-  /// <summary>
-  ///   Constant variables class
-  /// </summary>
-  internal static class Constants
-  {
     /// <summary>
-    ///   The first four byte of a valid .m64 file
+    ///     The first four bytes of a valid .m64 file
     /// </summary>
-    public static readonly byte[] ValidM64Signature = {0x4D, 0x36, 0x34, 0x1A};
-  }
+    public static readonly byte[] ValidM64Signature = [0x4D, 0x36, 0x34, 0x1A];
 }

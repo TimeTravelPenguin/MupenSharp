@@ -1,69 +1,63 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<TargetFramework>netstandard2.1</TargetFramework>
-		<LangVersion>latest</LangVersion>
-		<NeutralLanguage>en</NeutralLanguage>
-		<Authors>Phillip Smith</Authors>
-		<Company>Phillip Smith</Company>
-		<Description>.Net Standard library to read and write .m64 files for Mupen64</Description>
-		<PackageIcon>nugetIcon.png</PackageIcon>
-		<PackageTags>mupen, n64, m64</PackageTags>
-		<EnableNETAnalyzers>true</EnableNETAnalyzers>
-		<PackageProjectUrl>https://github.com/TimeTravelPenguin/MupenSharp</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/TimeTravelPenguin/MupenSharp</RepositoryUrl>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Version>1.0.3.8</Version>
-		<Copyright>Phillip Smith</Copyright>
-		<PackageLicenseExpression></PackageLicenseExpression>
-		<ApplicationIcon>icon.ico</ApplicationIcon>
-		<AssemblyVersion>1.0.3.8</AssemblyVersion>
-		<FileVersion>1.0.3.8</FileVersion>
-	</PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <NeutralLanguage>en</NeutralLanguage>
+        <Authors>Phillip Smith</Authors>
+        <Company>Phillip Smith</Company>
+        <Description>.Net Standard library to read and write .m64 files for Mupen64</Description>
+        <PackageIcon>nugetIcon.png</PackageIcon>
+        <PackageTags>mupen, n64, m64</PackageTags>
+        <EnableNETAnalyzers>true</EnableNETAnalyzers>
+        <PackageProjectUrl>https://github.com/TimeTravelPenguin/MupenSharp</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/TimeTravelPenguin/MupenSharp</RepositoryUrl>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>1.1.0</Version>
+        <Copyright>Phillip Smith</Copyright>
+        <PackageLicenseExpression></PackageLicenseExpression>
+        <ApplicationIcon>icon.ico</ApplicationIcon>
+        <AssemblyVersion>1.1.0</AssemblyVersion>
+        <FileVersion>1.1.0</FileVersion>
+    </PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-		<DocumentationFile>bin\Debug\netstandard2.1\MupenSharp.xml</DocumentationFile>
-	</PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DocumentationFile>bin\Debug\netstandard2.1\MupenSharp.xml</DocumentationFile>
+    </PropertyGroup>
 
-	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-	  <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
-	  <DocumentationFile>bin\Release\netstandard2.1\MupenSharp.xml</DocumentationFile>
-	</PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+        <DocumentationFile>bin\Release\netstandard2.1\MupenSharp.xml</DocumentationFile>
+    </PropertyGroup>
 
-	<ItemGroup>
-	  <Content Include="icon.ico" />
-	</ItemGroup>
+    <ItemGroup>
+        <Content Include="icon.ico"/>
+    </ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Include="AllOverIt" Version="7.26.0" />
-		<PackageReference Include="JetBrains.Annotations" Version="2024.2.0" />
-	</ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="AllOverIt" Version="7.26.0"/>
+        <PackageReference Include="JetBrains.Annotations" Version="2024.2.0"/>
+    </ItemGroup>
 
-	<ItemGroup>
-		<Reference Include="System.ComponentModel.DataAnnotations">
-			<HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.8\System.ComponentModel.DataAnnotations.dll</HintPath>
-		</Reference>
-	</ItemGroup>
+    <ItemGroup>
+        <None Include="..\..\Images\nugetIcon.png">
+            <Pack>True</Pack>
+            <PackagePath></PackagePath>
+        </None>
+    </ItemGroup>
 
-	<ItemGroup>
-		<None Include="..\..\Images\nugetIcon.png">
-			<Pack>True</Pack>
-			<PackagePath></PackagePath>
-		</None>
-	</ItemGroup>
+    <ItemGroup>
+        <Compile Update="Resources\ExceptionsResource.Designer.cs">
+            <DesignTime>True</DesignTime>
+            <AutoGen>True</AutoGen>
+            <DependentUpon>ExceptionsResource.resx</DependentUpon>
+        </Compile>
+    </ItemGroup>
 
-	<ItemGroup>
-		<Compile Update="Resources\ExceptionsResource.Designer.cs">
-			<DesignTime>True</DesignTime>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>ExceptionsResource.resx</DependentUpon>
-		</Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-		<EmbeddedResource Update="Resources\ExceptionsResource.resx">
-			<Generator>ResXFileCodeGenerator</Generator>
-			<LastGenOutput>ExceptionsResource.Designer.cs</LastGenOutput>
-		</EmbeddedResource>
-	</ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Update="Resources\ExceptionsResource.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>ExceptionsResource.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+    </ItemGroup>
 </Project>
