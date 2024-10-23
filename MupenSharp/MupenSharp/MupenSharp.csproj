@@ -11,14 +11,15 @@
         <PackageTags>mupen, n64, m64</PackageTags>
         <EnableNETAnalyzers>true</EnableNETAnalyzers>
         <PackageProjectUrl>https://github.com/TimeTravelPenguin/MupenSharp</PackageProjectUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
         <RepositoryUrl>https://github.com/TimeTravelPenguin/MupenSharp</RepositoryUrl>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>1.1.0</Version>
+        <Version>1.1.2</Version>
         <Copyright>Phillip Smith</Copyright>
         <PackageLicenseExpression></PackageLicenseExpression>
         <ApplicationIcon>icon.ico</ApplicationIcon>
-        <AssemblyVersion>1.1.0</AssemblyVersion>
-        <FileVersion>1.1.0</FileVersion>
+        <AssemblyVersion>1.1.2</AssemblyVersion>
+        <FileVersion>1.1.2</FileVersion>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -32,6 +33,7 @@
 
     <ItemGroup>
         <Content Include="icon.ico"/>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
     <ItemGroup>
