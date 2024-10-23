@@ -52,7 +52,7 @@ public class M64 : IM64
     ///     containing analogue x, y positions and buttons pressed.
     /// </summary>
     // TODO: Implement multiple controller support
-    public IList<InputModel> ControllerInputs { get; set; }
+    public IList<InputModel> ControllerInputs { get; set; } = new List<InputModel>();
 
     /// <summary>
     ///     Version number. Should be 3.
