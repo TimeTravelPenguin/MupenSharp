@@ -27,7 +27,7 @@ public class MupenV3Parser
     /// <exception cref="FileNotFoundException"></exception>
     public static bool ValidateReservedOffsets(FileInfo m64File)
     {
-        if (m64File.WhenNotNull(nameof(m64File)).Exists)
+        if (!m64File.WhenNotNull(nameof(m64File)).Exists)
             throw new FileNotFoundException(ExceptionsResource.InvalidFilePath, nameof(m64File));
 
         using var reader = new BinaryReader(m64File.Open(FileMode.Open, FileAccess.Read));
